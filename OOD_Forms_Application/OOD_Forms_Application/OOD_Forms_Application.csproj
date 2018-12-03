@@ -52,6 +52,18 @@
     <Compile Include="ControlPanel.Designer.cs">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationAdd.Designer.cs">
+      <DependentUpon>LocationAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationDelete.Designer.cs">
+      <DependentUpon>LocationDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileDelete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,18 @@
     </Compile>
     <Compile Include="ProfileAdd.Designer.cs">
       <DependentUpon>ProfileAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationEdit.Designer.cs">
+      <DependentUpon>LocationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationSearch.Designer.cs">
+      <DependentUpon>LocationSearch.cs</DependentUpon>
     </Compile>
     <Compile Include="ProfileSearch.cs">
       <SubType>Form</SubType>
@@ -76,6 +100,12 @@
     <Compile Include="ProfileEdit.Designer.cs">
       <DependentUpon>ProfileEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationView.Designer.cs">
+      <DependentUpon>LocationView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,17 +117,32 @@
     <EmbeddedResource Include="ControlPanel.resx">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LocationAdd.resx">
+      <DependentUpon>LocationAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationDelete.resx">
+      <DependentUpon>LocationDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfileDelete.resx">
       <DependentUpon>ProfileDelete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileAdd.resx">
       <DependentUpon>ProfileAdd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LocationEdit.resx">
+      <DependentUpon>LocationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationSearch.resx">
+      <DependentUpon>LocationSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfileSearch.resx">
       <DependentUpon>ProfileSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileEdit.resx">
       <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationView.resx">
+      <DependentUpon>LocationView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileView.resx">
       <DependentUpon>ProfileView.cs</DependentUpon>
