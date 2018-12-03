@@ -46,16 +46,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ControlPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ControlPanel.Designer.cs">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileDelete.Designer.cs">
+      <DependentUpon>ProfileDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileAdd.Designer.cs">
+      <DependentUpon>ProfileAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileSearch.Designer.cs">
+      <DependentUpon>ProfileSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileEdit.Designer.cs">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileView.Designer.cs">
+      <DependentUpon>ProfileView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="ControlPanel.resx">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileDelete.resx">
+      <DependentUpon>ProfileDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdd.resx">
+      <DependentUpon>ProfileAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileSearch.resx">
+      <DependentUpon>ProfileSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileEdit.resx">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileView.resx">
+      <DependentUpon>ProfileView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
