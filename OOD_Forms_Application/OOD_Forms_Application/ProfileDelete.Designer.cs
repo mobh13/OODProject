@@ -71,9 +71,9 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(-2, -76);
+            this.label1.Location = new System.Drawing.Point(-2, -86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1080, 317);
+            this.label1.Size = new System.Drawing.Size(1080, 327);
             this.label1.TabIndex = 4;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -113,16 +113,16 @@
             this.cmbProfiles.AllowDrop = true;
             this.cmbProfiles.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProfiles.FormattingEnabled = true;
-            this.cmbProfiles.Location = new System.Drawing.Point(480, 366);
+            this.cmbProfiles.Location = new System.Drawing.Point(481, 354);
             this.cmbProfiles.Name = "cmbProfiles";
-            this.cmbProfiles.Size = new System.Drawing.Size(221, 42);
+            this.cmbProfiles.Size = new System.Drawing.Size(247, 42);
             this.cmbProfiles.TabIndex = 35;
             // 
             // lblProfileID
             // 
             this.lblProfileID.AutoSize = true;
             this.lblProfileID.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfileID.Location = new System.Drawing.Point(334, 369);
+            this.lblProfileID.Location = new System.Drawing.Point(335, 357);
             this.lblProfileID.Name = "lblProfileID";
             this.lblProfileID.Size = new System.Drawing.Size(140, 34);
             this.lblProfileID.TabIndex = 34;
@@ -133,7 +133,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1079, 614);
+            this.ClientSize = new System.Drawing.Size(1079, 594);
             this.Controls.Add(this.cmbProfiles);
             this.Controls.Add(this.lblProfileID);
             this.Controls.Add(this.btnClose);
@@ -143,7 +143,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
             this.Name = "ProfileDelete";
-            this.Text = "ProfileView";
+            this.Text = "Delete Profile";
             this.Load += new System.EventHandler(this.ProfileView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

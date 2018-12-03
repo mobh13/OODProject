@@ -57,6 +57,7 @@
             this.lblID = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dtpBirthdate = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -289,11 +290,11 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(200, 726);
+            this.textBox1.Location = new System.Drawing.Point(180, 726);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(677, 275);
+            this.textBox1.Size = new System.Drawing.Size(712, 275);
             this.textBox1.TabIndex = 33;
             // 
             // textBox2
@@ -332,12 +333,23 @@
             this.dtpBirthdate.Size = new System.Drawing.Size(298, 37);
             this.dtpBirthdate.TabIndex = 37;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(67, 726);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 30);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Results";
+            // 
             // ProfileSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1079, 1050);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpBirthdate);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox2);
@@ -367,7 +379,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
             this.Name = "ProfileSearch";
-            this.Text = "ProfileView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Search Profiles";
             this.Load += new System.EventHandler(this.ProfileView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -405,5 +418,6 @@
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dtpBirthdate;
+        private System.Windows.Forms.Label label4;
     }
 }

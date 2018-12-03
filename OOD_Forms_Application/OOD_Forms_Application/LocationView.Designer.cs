@@ -105,9 +105,9 @@
             // btnSubmit
             // 
             this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(787, 277);
+            this.btnSubmit.Location = new System.Drawing.Point(762, 274);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(131, 39);
+            this.btnSubmit.Size = new System.Drawing.Size(131, 42);
             this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -203,7 +203,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
             this.Name = "LocationView";
-            this.Text = "ProfileView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "View Location";
             this.Load += new System.EventHandler(this.ProfileView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

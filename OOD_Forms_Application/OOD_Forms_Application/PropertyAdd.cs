@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OOD_Forms_Application
 {
-    public partial class LocationSearch : Form
+    public partial class PropertyAdd : Form
     {
-        public LocationSearch()
+        public PropertyAdd()
         {
             InitializeComponent();
         }
@@ -34,7 +34,7 @@ namespace OOD_Forms_Application
 
         private void ProfileView_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void label4_Click(object sender, EventArgs e)

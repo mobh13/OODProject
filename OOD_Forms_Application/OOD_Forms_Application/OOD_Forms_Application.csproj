@@ -64,6 +64,24 @@
     <Compile Include="LocationDelete.Designer.cs">
       <DependentUpon>LocationDelete.cs</DependentUpon>
     </Compile>
+    <Compile Include="PropertyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyAdd.Designer.cs">
+      <DependentUpon>PropertyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyBuySell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyBuySell.Designer.cs">
+      <DependentUpon>PropertyBuySell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyDelete.Designer.cs">
+      <DependentUpon>PropertyDelete.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileDelete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +106,18 @@
     <Compile Include="LocationSearch.Designer.cs">
       <DependentUpon>LocationSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="PropertyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyEdit.Designer.cs">
+      <DependentUpon>PropertyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertySearch.Designer.cs">
+      <DependentUpon>PropertySearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +136,12 @@
     <Compile Include="LocationView.Designer.cs">
       <DependentUpon>LocationView.cs</DependentUpon>
     </Compile>
+    <Compile Include="PropertView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertView.Designer.cs">
+      <DependentUpon>PropertView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfileView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +159,15 @@
     <EmbeddedResource Include="LocationDelete.resx">
       <DependentUpon>LocationDelete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PropertyAdd.resx">
+      <DependentUpon>PropertyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyBuySell.resx">
+      <DependentUpon>PropertyBuySell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyDelete.resx">
+      <DependentUpon>PropertyDelete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfileDelete.resx">
       <DependentUpon>ProfileDelete.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +180,12 @@
     <EmbeddedResource Include="LocationSearch.resx">
       <DependentUpon>LocationSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEdit.resx">
+      <DependentUpon>PropertyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertySearch.resx">
+      <DependentUpon>PropertySearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfileSearch.resx">
       <DependentUpon>ProfileSearch.cs</DependentUpon>
     </EmbeddedResource>
@@ -143,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LocationView.resx">
       <DependentUpon>LocationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertView.resx">
+      <DependentUpon>PropertView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfileView.resx">
       <DependentUpon>ProfileView.cs</DependentUpon>

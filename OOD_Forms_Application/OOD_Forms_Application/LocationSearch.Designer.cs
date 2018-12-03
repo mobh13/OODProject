@@ -43,6 +43,7 @@
             this.lblSubLocationID = new System.Windows.Forms.Label();
             this.lblLcoationName = new System.Windows.Forms.Label();
             this.lblLocationID = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -125,11 +126,11 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(224, 543);
+            this.textBox1.Location = new System.Drawing.Point(202, 543);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(677, 308);
+            this.textBox1.Size = new System.Drawing.Size(709, 308);
             this.textBox1.TabIndex = 33;
             // 
             // cmbLocationID
@@ -187,12 +188,23 @@
             this.lblLocationID.TabIndex = 35;
             this.lblLocationID.Text = "Location ID:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(82, 543);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 30);
+            this.label4.TabIndex = 58;
+            this.label4.Text = "Results";
+            // 
             // LocationSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1079, 890);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbLocationID);
             this.Controls.Add(this.txtLcoationID);
             this.Controls.Add(this.txtLocationName);
@@ -208,7 +220,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
             this.Name = "LocationSearch";
-            this.Text = "ProfileView";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Search Locations";
             this.Load += new System.EventHandler(this.ProfileView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -232,5 +245,6 @@
         private System.Windows.Forms.Label lblSubLocationID;
         private System.Windows.Forms.Label lblLcoationName;
         private System.Windows.Forms.Label lblLocationID;
+        private System.Windows.Forms.Label label4;
     }
 }
