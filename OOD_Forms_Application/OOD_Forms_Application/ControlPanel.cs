@@ -16,30 +16,20 @@ namespace OOD_Forms_Application
         {
             InitializeComponent();
         }
-        void ExpandPath(TreeNode SelectedNode)
-        {
-            while (SelectedNode.Parent != null)
-            {
-                SelectedNode.Parent.Expand();
-            }
-        }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-            treeView1.CollapseAll();
-            ExpandPath(e.Node);
+          
         }
 
         private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)
         {
-            treeView1.CollapseAll();
-            ExpandPath(e.Node);
+         
         }
 
         private void treeView1_BeforeExpand(object sender, TreeViewCancelEventArgs e)
         {
-            treeView1.CollapseAll();
-            ExpandPath(e.Node);
+            
         }
 
         private void treeView1_AfterSelect_1(object sender, TreeViewEventArgs e)
@@ -51,7 +41,7 @@ namespace OOD_Forms_Application
         {
 
         }
-        private int imgCount = 6;
+        private int imgCount = 1;
 
         private void loadNextImage()
         {
@@ -69,97 +59,107 @@ namespace OOD_Forms_Application
 
         private void treeView1_NodeMouseClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            if (e.Node.Parent != null)
-            {
-                if (e.Node.Parent.Text == "Profile")
-                {
-                    if (e.Node.Text == "View")
-                    {
-                        ProfileView pView = new ProfileView();
-                        pView.Show();
-                    }
-                    else if (e.Node.Text == "Search")
-                    {
-                        ProfileSearch pSearch = new ProfileSearch();
-                        pSearch.Show();
-                    }
-                    else if (e.Node.Text == "Add")
-                    {
-                        ProfileAdd pAdd = new ProfileAdd();
-                        pAdd.Show();
-                    }
-                    else if (e.Node.Text == "Edit")
-                    {
-                        ProfileEdit pEdit = new ProfileEdit();
-                        pEdit.Show();
-                    }
-                    else if (e.Node.Text == "Delete")
-                    {
-                        ProfileDelete pDelete = new ProfileDelete();
-                        pDelete.Show();
-                    }
-                }else if (e.Node.Parent.Text == "Location")
-                {
-                    if (e.Node.Text == "View")
-                    {
-                        LocationView lView = new LocationView();
-                        lView.Show();
-                    }
-                    else if (e.Node.Text == "Search")
-                    {
-                        LocationSearch lSearch = new LocationSearch();
-                        lSearch.Show();
-                    }
-                    else if (e.Node.Text == "Add")
-                    {
-                        LocationAdd lAdd = new LocationAdd();
-                        lAdd.Show();
-                    }
-                    else if (e.Node.Text == "Edit")
-                    {
-                        LocationEdit lEdit = new LocationEdit();
-                        lEdit.Show();
-                    }
-                    else if (e.Node.Text == "Delete")
-                    {
-                        LocationDelete lDelete = new LocationDelete();
-                        lDelete.Show();
-                    }
-                }
-                else if (e.Node.Parent.Text == "Property")
-                {
-                    if (e.Node.Text == "View")
-                    {
-                        PropertView pView = new PropertView();
-                        pView.Show();
-                    }
-                    else if (e.Node.Text == "Search")
-                    {
-                        PropertySearch pSearch = new PropertySearch();
-                        pSearch.Show();
-                    }
-                    else if (e.Node.Text == "Add")
-                    {
-                        PropertyAdd pAdd = new PropertyAdd();
-                        pAdd.Show();
-                    }
-                    else if (e.Node.Text == "Edit")
-                    {
-                        PropertyEdit pEdit = new PropertyEdit();
-                        pEdit.Show();
-                    }
-                    else if (e.Node.Text == "Delete")
-                    {
-                        PropertyDelete pDelete = new PropertyDelete();
-                        pDelete.Show();
-                    }
-                    else if (e.Node.Text == "Sell & Buy")
-                    {
-                        PropertyBuySell pBuySell = new PropertyBuySell();
-                        pBuySell.Show();
-                    }
-                }
-            }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void viewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileView pView = new ProfileView();
+            pView.Show();
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileAdd pAdd = new ProfileAdd();
+            pAdd.Show();
+        }
+
+        private void searchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileSearch pSearch = new ProfileSearch();
+            pSearch.Show();
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileDelete pDelete = new ProfileDelete();
+            pDelete.Show();
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProfileEdit pEdit = new ProfileEdit();
+            pEdit.Show();
+        }
+
+        private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PropertView pView = new PropertView();
+            pView.Show();
+        }
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PropertyAdd pAdd = new PropertyAdd();
+            pAdd.Show();
+        }
+
+        private void searchToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PropertySearch pSearch = new PropertySearch();
+            pSearch.Show();
+        }
+
+        private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PropertyDelete pDelete = new PropertyDelete();
+            pDelete.Show();
+        }
+
+        private void editToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PropertyEdit pEdit = new PropertyEdit();
+            pEdit.Show();
+        }
+
+        private void buySellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PropertyBuySell pBuySell = new PropertyBuySell();
+            pBuySell.Show();
+        }
+
+        private void viewToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            LocationView lView = new LocationView();
+            lView.Show();
+        }
+
+        private void addToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            LocationAdd lAdd = new LocationAdd();
+            lAdd.Show();
+        }
+
+        private void searchToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            LocationSearch lSearch = new LocationSearch();
+            lSearch.Show();
+        }
+
+        private void dToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LocationDelete lDelete = new LocationDelete();
+            lDelete.Show();
+        }
+
+        private void editToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            LocationEdit lEdit = new LocationEdit();
+            lEdit.Show();
         }
     }
 }
