@@ -79,9 +79,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(2, -49);
+            this.label1.Location = new System.Drawing.Point(8, -1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1096, 291);
+            this.label1.Size = new System.Drawing.Size(1096, 243);
             this.label1.TabIndex = 1;
             // 
             // timer1
@@ -129,7 +129,7 @@
             // 
             this.viewToolStripMenuItem.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(252, 48);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
             this.viewToolStripMenuItem.Text = "View";
             this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
@@ -137,7 +137,7 @@
             // 
             this.addToolStripMenuItem.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(252, 48);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
@@ -145,7 +145,7 @@
             // 
             this.searchToolStripMenuItem.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(252, 48);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
@@ -153,7 +153,7 @@
             // 
             this.deleteToolStripMenuItem.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(252, 48);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -161,7 +161,7 @@
             // 
             this.editToolStripMenuItem.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(252, 48);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
@@ -244,7 +244,7 @@
             // 
             this.viewToolStripMenuItem2.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.viewToolStripMenuItem2.Name = "viewToolStripMenuItem2";
-            this.viewToolStripMenuItem2.Size = new System.Drawing.Size(252, 48);
+            this.viewToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
             this.viewToolStripMenuItem2.Text = "View";
             this.viewToolStripMenuItem2.Click += new System.EventHandler(this.viewToolStripMenuItem2_Click);
             // 
@@ -252,7 +252,7 @@
             // 
             this.addToolStripMenuItem2.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.addToolStripMenuItem2.Name = "addToolStripMenuItem2";
-            this.addToolStripMenuItem2.Size = new System.Drawing.Size(252, 48);
+            this.addToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
             this.addToolStripMenuItem2.Text = "Add";
             this.addToolStripMenuItem2.Click += new System.EventHandler(this.addToolStripMenuItem2_Click);
             // 
@@ -260,7 +260,7 @@
             // 
             this.searchToolStripMenuItem2.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.searchToolStripMenuItem2.Name = "searchToolStripMenuItem2";
-            this.searchToolStripMenuItem2.Size = new System.Drawing.Size(252, 48);
+            this.searchToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
             this.searchToolStripMenuItem2.Text = "Search";
             this.searchToolStripMenuItem2.Click += new System.EventHandler(this.searchToolStripMenuItem2_Click);
             // 
@@ -268,7 +268,7 @@
             // 
             this.dToolStripMenuItem.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.dToolStripMenuItem.Name = "dToolStripMenuItem";
-            this.dToolStripMenuItem.Size = new System.Drawing.Size(252, 48);
+            this.dToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
             this.dToolStripMenuItem.Text = "Delete";
             this.dToolStripMenuItem.Click += new System.EventHandler(this.dToolStripMenuItem_Click);
             // 
@@ -276,13 +276,14 @@
             // 
             this.editToolStripMenuItem2.Image = global::OOD_Forms_Application.Properties.Resources.forward;
             this.editToolStripMenuItem2.Name = "editToolStripMenuItem2";
-            this.editToolStripMenuItem2.Size = new System.Drawing.Size(252, 48);
+            this.editToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
             this.editToolStripMenuItem2.Text = "Edit";
             this.editToolStripMenuItem2.Click += new System.EventHandler(this.editToolStripMenuItem2_Click);
             // 
             // slidShow
             // 
-            this.slidShow.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.slidShow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.slidShow.Image = ((System.Drawing.Image)(resources.GetObject("slidShow.Image")));
             this.slidShow.Location = new System.Drawing.Point(340, 259);
