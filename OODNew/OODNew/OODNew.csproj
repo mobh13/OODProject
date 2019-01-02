@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5CA34FE-AEDD-464E-9009-694B8F23FE51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OODNew</RootNamespace>
+    <AssemblyName>OODNew</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ControlPanel.cs" />
+    <Compile Include="ControlPanel.Designer.cs">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationAdd.cs" />
+    <Compile Include="LocationAdd.Designer.cs">
+      <DependentUpon>LocationAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationDelete.cs" />
+    <Compile Include="LocationDelete.Designer.cs">
+      <DependentUpon>LocationDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationEdit.cs" />
+    <Compile Include="LocationEdit.Designer.cs">
+      <DependentUpon>LocationEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationSearch.cs" />
+    <Compile Include="LocationSearch.Designer.cs">
+      <DependentUpon>LocationSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationView.cs" />
+    <Compile Include="LocationView.Designer.cs">
+      <DependentUpon>LocationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logincs.cs" />
+    <Compile Include="Logincs.Designer.cs">
+      <DependentUpon>Logincs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileAdd.cs" />
+    <Compile Include="ProfileAdd.Designer.cs">
+      <DependentUpon>ProfileAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileDelete.cs" />
+    <Compile Include="ProfileDelete.Designer.cs">
+      <DependentUpon>ProfileDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileEdit.cs" />
+    <Compile Include="ProfileEdit.Designer.cs">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileSearch.cs" />
+    <Compile Include="ProfileSearch.Designer.cs">
+      <DependentUpon>ProfileSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileView.cs" />
+    <Compile Include="ProfileView.Designer.cs">
+      <DependentUpon>ProfileView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropertView.cs" />
+    <Compile Include="PropertView.Designer.cs">
+      <DependentUpon>PropertView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyAdd.cs" />
+    <Compile Include="PropertyAdd.Designer.cs">
+      <DependentUpon>PropertyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyBuySell.cs" />
+    <Compile Include="PropertyBuySell.Designer.cs">
+      <DependentUpon>PropertyBuySell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyDelete.cs" />
+    <Compile Include="PropertyDelete.Designer.cs">
+      <DependentUpon>PropertyDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyEdit.cs" />
+    <Compile Include="PropertyEdit.Designer.cs">
+      <DependentUpon>PropertyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PropertySearch.cs" />
+    <Compile Include="PropertySearch.Designer.cs">
+      <DependentUpon>PropertySearch.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ControlPanel.resx">
+      <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationAdd.resx">
+      <DependentUpon>LocationAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationDelete.resx">
+      <DependentUpon>LocationDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationEdit.resx">
+      <DependentUpon>LocationEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationSearch.resx">
+      <DependentUpon>LocationSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationView.resx">
+      <DependentUpon>LocationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logincs.resx">
+      <DependentUpon>Logincs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileAdd.resx">
+      <DependentUpon>ProfileAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileDelete.resx">
+      <DependentUpon>ProfileDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileEdit.resx">
+      <DependentUpon>ProfileEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileSearch.resx">
+      <DependentUpon>ProfileSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileView.resx">
+      <DependentUpon>ProfileView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PropertView.resx">
+      <DependentUpon>PropertView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyAdd.resx">
+      <DependentUpon>PropertyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyBuySell.resx">
+      <DependentUpon>PropertyBuySell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyDelete.resx">
+      <DependentUpon>PropertyDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyEdit.resx">
+      <DependentUpon>PropertyEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertySearch.resx">
+      <DependentUpon>PropertySearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\radio_dot_1018892.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
