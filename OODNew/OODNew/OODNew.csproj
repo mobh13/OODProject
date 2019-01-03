@@ -59,79 +59,120 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlPanel.cs" />
+    <Compile Include="ControlPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ControlPanel.Designer.cs">
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocationAdd.cs" />
+    <Compile Include="LocationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LocationAdd.Designer.cs">
       <DependentUpon>LocationAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocationDelete.cs" />
+    <Compile Include="LocationDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LocationDelete.Designer.cs">
       <DependentUpon>LocationDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocationEdit.cs" />
+    <Compile Include="LocationEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LocationEdit.Designer.cs">
       <DependentUpon>LocationEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocationSearch.cs" />
+    <Compile Include="LocationSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LocationSearch.Designer.cs">
       <DependentUpon>LocationSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="LocationView.cs" />
+    <Compile Include="LocationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LocationView.Designer.cs">
       <DependentUpon>LocationView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Logincs.cs" />
+    <Compile Include="Logincs.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Logincs.Designer.cs">
       <DependentUpon>Logincs.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileAdd.cs" />
+    <Compile Include="ProfileAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProfileAdd.Designer.cs">
       <DependentUpon>ProfileAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileDelete.cs" />
+    <Compile Include="ProfileDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProfileDelete.Designer.cs">
       <DependentUpon>ProfileDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileEdit.cs" />
+    <Compile Include="ProfileEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProfileEdit.Designer.cs">
       <DependentUpon>ProfileEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileSearch.cs" />
+    <Compile Include="ProfileSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProfileSearch.Designer.cs">
       <DependentUpon>ProfileSearch.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProfileView.cs" />
+    <Compile Include="ProfileView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ProfileView.Designer.cs">
       <DependentUpon>ProfileView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropertView.cs" />
+    <Compile Include="PropertView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PropertView.Designer.cs">
       <DependentUpon>PropertView.cs</DependentUpon>
     </Compile>
-    <Compile Include="PropertyAdd.cs" />
+    <Compile Include="PropertyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PropertyAdd.Designer.cs">
       <DependentUpon>PropertyAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="PropertyBuySell.cs" />
+    <Compile Include="PropertyBuySell.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PropertyBuySell.Designer.cs">
       <DependentUpon>PropertyBuySell.cs</DependentUpon>
     </Compile>
-    <Compile Include="PropertyDelete.cs" />
+    <Compile Include="PropertyDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PropertyDelete.Designer.cs">
       <DependentUpon>PropertyDelete.cs</DependentUpon>
     </Compile>
-    <Compile Include="PropertyEdit.cs" />
+    <Compile Include="PropertyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PropertyEdit.Designer.cs">
       <DependentUpon>PropertyEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="PropertySearch.cs" />
+    <Compile Include="PropertySearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PropertySearch.Designer.cs">
       <DependentUpon>PropertySearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealEstateDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RealEstateDataSet.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ControlPanel.resx">
       <DependentUpon>ControlPanel.cs</DependentUpon>
@@ -211,6 +252,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="RealEstateDataSet.xsc">
+      <DependentUpon>RealEstateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RealEstateDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RealEstateDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="RealEstateDataSet.xss">
+      <DependentUpon>RealEstateDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\forward.png" />
   </ItemGroup>
   <ItemGroup>

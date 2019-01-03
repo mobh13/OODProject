@@ -16,7 +16,7 @@ namespace OODNew
         [STAThread]
         static void Main()
         {
-            connection = new SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\\users\\user\\documents\\visual studio 2013\\Projects\\OODNew\\OODNew\\RealEstate.mdf;Integrated Security=True");
+            connection = new SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\\users\\user\\documents\\Github\\OODProject\\OODNew\\OODNew\\RealEstate.mdf;Integrated Security=True");
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

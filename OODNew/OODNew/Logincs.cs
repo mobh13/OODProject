@@ -46,14 +46,14 @@ namespace OODNew
                  command = Program.Connection.CreateCommand();
                 command.Parameters.Clear();
                 command.Parameters.AddWithValue("@username", username);
-                command.CommandText = "Select Count(*) From User where Username = @username";
+                command.CommandText = "Select Count(*) From [User] where Username = @username";
                  reader = command.ExecuteReader();
                  reader.Read();
                 if (Convert.ToInt32(reader.GetValue(0)) == 1)
                 {
                     command.Parameters.Clear();
                     command.Parameters.AddWithValue("@username", username);
-                    command.CommandText = "Select * From User where Username = @username";
+                    command.CommandText = "Select * From [User] where Username = @username";
                     reader = command.ExecuteReader();
                     reader.Read();
                     if (reader.GetValue(7).ToString() == password)
