@@ -16,8 +16,8 @@ namespace OODNew
         [STAThread]
         static void Main()
         {
-            connection = new SqlConnection("Data Source=(LocalDB)\v11.0;AttachDbFilename=c:\\users\\user\\documents\\Github\\OODProject\\OODNew\\OODNew\\RealEstate.mdf;Integrated Security=True");
-
+            connection = new SqlConnection();
+            connection.ConnectionString = Properties.Settings.Default.RealEstateConnectionString;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Logincs());

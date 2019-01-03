@@ -39,7 +39,7 @@ namespace OODNew
             List<string> list = new List<string>();
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
-            command.CommandText = "Select * From Role";
+            command.CommandText = "Select * From [Role]";
             reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -112,7 +112,7 @@ namespace OODNew
 
                 
               
-                command.CommandText = "Insert into User values(@name,@dob,@email,@phone,@address,@username,@password,@role,@commission,@cpr)";
+                command.CommandText = "Insert into [User] values(@name,@dob,@email,@phone,@address,@username,@password,@role,@commission,@cpr)";
               int rowEffected = 0;
                 try{            
                     rowEffected= command.ExecuteNonQuery();

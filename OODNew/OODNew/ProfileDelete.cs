@@ -40,7 +40,7 @@ namespace OODNew
             List<string> list = new List<string>();
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
-            command.CommandText = "Select * From User";
+            command.CommandText = "Select * From [User]";
             reader = command.ExecuteReader();
             while (reader.Read())
             {

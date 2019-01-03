@@ -39,16 +39,18 @@ namespace OODNew
             List<string> list = new List<string>();
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
-            command.CommandText = "Select * From User";
+            command.CommandText = "Select * From [User]";
             reader = command.ExecuteReader();
             while (reader.Read())
             {
                 list.Add(reader.GetValue(0).ToString());
             }
-           cmbProfiles.DataSource = list;
-           cmbProfiles.SelectedIndex = -1;
             reader.Close();
             Program.Connection.Close();
+            cmbProfiles.SelectedIndex = -1;
+           cmbProfiles.DataSource = list;
+           
+            
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -78,13 +80,18 @@ namespace OODNew
 
         private void cmbProfiles_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string id = cmbProfiles.SelectedText;
-            Program.Connection.Open();
+            
+           
+            if (cmbProfiles.SelectedIndex != -1)
+            {
+                string id = cmbProfiles.SelectedText;
+                       Program.Connection.Open();
             command = Program.Connection.CreateCommand();
             command.Parameters.Clear();
             command.Parameters.AddWithValue("id", id);
-            command.CommandText = "Select * From User where id = @id";
+            command.CommandText = "Select * From [User] where Id = @id";
             reader = command.ExecuteReader();
+            reader.Read();
             txtName.Text = reader.GetValue(1).ToString();
             txtEmail.Text = reader.GetValue(3).ToString();
                  txtUsername.Text = reader.GetValue(6).ToString();
@@ -98,11 +105,14 @@ namespace OODNew
                 string roleID = reader.GetValue(8).ToString();
                 command.Parameters.Clear();
                 command.Parameters.AddWithValue("id", roleID);
-                command.CommandText = "Select * From Role where role_id = @id";
+                command.CommandText = "Select * From [Role] where role_id = @id";
                 reader = command.ExecuteReader();
                 txtRole.Text = reader.GetValue(1).ToString();
                 reader.Close();
                 Program.Connection.Close();
+
+            }
+     
                
         }
 

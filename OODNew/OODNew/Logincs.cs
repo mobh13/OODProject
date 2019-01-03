@@ -51,6 +51,7 @@ namespace OODNew
                  reader.Read();
                 if (Convert.ToInt32(reader.GetValue(0)) == 1)
                 {
+                    reader.Close();
                     command.Parameters.Clear();
                     command.Parameters.AddWithValue("@username", username);
                     command.CommandText = "Select * From [User] where Username = @username";
@@ -58,6 +59,8 @@ namespace OODNew
                     reader.Read();
                     if (reader.GetValue(7).ToString() == password)
                     {
+                        reader.Close();
+                        Program.Connection.Close();
                         ControlPanel controlPanel = new ControlPanel();
                         controlPanel.Show();
                         this.Hide();
@@ -65,11 +68,11 @@ namespace OODNew
                     else
                     {
                         MessageBox.Show("Error password is wrong");
-
+                        reader.Close();
+                        Program.Connection.Close();
                     }
                 }
-                reader.Close();
-                Program.Connection.Close();
+               
             }
         }
 
