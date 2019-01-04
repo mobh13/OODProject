@@ -107,11 +107,11 @@
             this.cmbProfiles.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProfiles.FormattingEnabled = true;
             this.cmbProfiles.Location = new System.Drawing.Point(271, 187);
-            this.cmbProfiles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbProfiles.Margin = new System.Windows.Forms.Padding(2);
             this.cmbProfiles.Name = "cmbProfiles";
             this.cmbProfiles.Size = new System.Drawing.Size(149, 30);
             this.cmbProfiles.TabIndex = 7;
-            this.cmbProfiles.SelectedIndexChanged += new System.EventHandler(this.cmbProfiles_SelectedIndexChanged);
+            this.cmbProfiles.SelectionChangeCommitted += new System.EventHandler(this.cmbProfiles_SelectionChangeCommitted);
             // 
             // lblLine
             // 
@@ -252,7 +252,7 @@
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.Location = new System.Drawing.Point(145, 319);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.ReadOnly = true;
             this.txtUsername.Size = new System.Drawing.Size(200, 29);
@@ -263,7 +263,7 @@
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(145, 277);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.ReadOnly = true;
             this.txtEmail.Size = new System.Drawing.Size(200, 29);
@@ -274,7 +274,7 @@
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(145, 235);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(200, 29);
@@ -285,7 +285,7 @@
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.Location = new System.Drawing.Point(145, 360);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.ReadOnly = true;
             this.txtPassword.Size = new System.Drawing.Size(200, 29);
@@ -296,7 +296,7 @@
             this.txtCPR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCPR.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCPR.Location = new System.Drawing.Point(145, 399);
-            this.txtCPR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCPR.Margin = new System.Windows.Forms.Padding(2);
             this.txtCPR.Name = "txtCPR";
             this.txtCPR.ReadOnly = true;
             this.txtCPR.Size = new System.Drawing.Size(200, 29);
@@ -307,7 +307,7 @@
             this.txtDOB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDOB.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDOB.Location = new System.Drawing.Point(145, 439);
-            this.txtDOB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDOB.Margin = new System.Windows.Forms.Padding(2);
             this.txtDOB.Name = "txtDOB";
             this.txtDOB.ReadOnly = true;
             this.txtDOB.Size = new System.Drawing.Size(200, 29);
@@ -318,7 +318,7 @@
             this.txtCommission.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCommission.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCommission.Location = new System.Drawing.Point(502, 316);
-            this.txtCommission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCommission.Margin = new System.Windows.Forms.Padding(2);
             this.txtCommission.Name = "txtCommission";
             this.txtCommission.ReadOnly = true;
             this.txtCommission.Size = new System.Drawing.Size(200, 29);
@@ -329,7 +329,7 @@
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(502, 277);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.ReadOnly = true;
             this.txtPhone.Size = new System.Drawing.Size(200, 29);
@@ -340,7 +340,7 @@
             this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.Location = new System.Drawing.Point(502, 235);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(200, 29);
@@ -351,7 +351,7 @@
             this.txtRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtRole.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRole.Location = new System.Drawing.Point(502, 360);
-            this.txtRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRole.Margin = new System.Windows.Forms.Padding(2);
             this.txtRole.Name = "txtRole";
             this.txtRole.ReadOnly = true;
             this.txtRole.Size = new System.Drawing.Size(200, 29);
@@ -363,7 +363,7 @@
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
             this.btnClear.Location = new System.Drawing.Point(271, 481);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 27);
             this.btnClear.TabIndex = 30;
@@ -376,7 +376,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Location = new System.Drawing.Point(381, 481);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(87, 27);
             this.btnClose.TabIndex = 31;
@@ -389,7 +389,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(342, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -431,7 +431,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProfileView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Profile";

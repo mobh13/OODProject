@@ -79,6 +79,8 @@ namespace OODNew
         private void btnAdd_Click(object sender, EventArgs e)
         {
             bool isEmpty = false;
+            bool isChecked = false;
+            
             foreach (Control ctr in Controls)
             {
                 if (ctr is TextBox && ctr.Text =="")
@@ -90,11 +92,34 @@ namespace OODNew
             {
                 isEmpty = true;
             }
+            double resDouble = 0.0;
+            if (!double.TryParse(txtCommission.Text, out  resDouble)){
+
+                MessageBox.Show("Error Please Enter a valid commision");
+
+                isChecked = false;
+            }
+            else
+            {
+                isChecked = true;
+            }
+            int resInt = 0;
+              if (!int.TryParse(txtCPR.Text, out resInt)){
+
+                MessageBox.Show("Error Please Enter a valid CPR");
+
+                isChecked = false;
+            } else
+            {
+                isChecked = true;
+            }
+         
+              
             if (isEmpty)
             {
                 MessageBox.Show("Error Please Fill all information");
             }
-            else
+            else if(!isEmpty && isChecked)
             {
                 Program.Connection.Open();
                 command = Program.Connection.CreateCommand();
@@ -107,8 +132,8 @@ namespace OODNew
                 command.Parameters.AddWithValue("address", txtAddress.Text);
                 command.Parameters.AddWithValue("phone", txtPhone.Text);
                 command.Parameters.AddWithValue("commission", txtCommission.Text);
-                command.Parameters.AddWithValue("role", cmbRole.SelectedIndex.ToString());
-                command.Parameters.AddWithValue("dob", dtpBirthdate.Value.ToString("dd-mm-YYY"));
+                command.Parameters.AddWithValue("role", cmbRole.SelectedIndex +1);
+                command.Parameters.AddWithValue("dob", dtpBirthdate.Value.ToString("d/MMM/yyyy"));
 
                 
               
