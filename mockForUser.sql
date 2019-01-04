@@ -1,5 +1,5 @@
-﻿insert into [User]  values ('Nickola Hullins', '14-Dec-1994', 'nhullins0@hhs.gov', '7399377830', '698 Bunting Place', 'nhullins0', 'oUnDgxRe1VBc', 2, 0.29, 909951730);
-insert into [User]   values ('Julina Timbrell', '17-Nov-1993', 'jtimbrell1@newsvine.com', '7499327958', '12 Carpenter Court', 'jtimbrell1', 'wpI0qrWfA', 3, 0.12, 827825089);
+﻿insert into [User]  values ('Mohamed Madan', '14-Dec-1994', 'nhullins0@hhs.gov', '7399377830', '698 Bunting Place', 'admin', '123', 1, 0.29, 909951730);
+insert into [User]   values ('Julina Timbrell', '17-Nov-1993', 'jtimbrell1@newsvine.com', '7499327958', '12 Carpenter Court', 'admffdfin', 'wpI0qrWfA', 3, 0.12, 827825089);
 insert into [User]   values ('Lucina Phelps', '23-May-1989', 'lphelps2@yahoo.com', '7062853003', '949 Glendale Terrace', 'lphelps2', 'fLJPIJmnnH', 3, 0.04, 910003090);
 insert into [User]   values ('Patsy Wink', '19-Mar-1982', 'pwink3@gnu.org', '2331181751', '52 South Point', 'pwink3', 'K1hh9iVA0Eh', 2, 0.02, 857205608);
 insert into [User]   values ('Cherianne Formoy', '19-May-1994', 'cformoy4@seesaa.net', '6884941834', '0278 Del Mar Parkway', 'cformoy4', '19Kuu48Ty0', 3, 0.27, 929425262);

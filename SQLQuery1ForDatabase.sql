@@ -140,7 +140,7 @@ CREATE TABLE [Application]
 (
 	[Id] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
 	[Property_Id] int NOT NULL,
-	[Date] datetime NOT NULL,
+	[Date] varchar(250) NOT NULL,
 	[User_Id] int NOT NULL
 )
 GO
@@ -148,8 +148,8 @@ GO
 CREATE TABLE [Backup]
 (
 	[Backup_id] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
-	[Date] datetime NOT NULL,
-	[Size] decimal(10,2) NOT NULL,
+	[Date] varchar(250) NOT NULL,
+	[Size] varchar(250) NOT NULL,
 	[User_id] int NOT NULL
 )
 GO
@@ -157,9 +157,9 @@ GO
 CREATE TABLE [Bid]
 (
 	[Id] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
-	[Amount] decimal(10,2) NOT NULL,
+	[Amount] varchar(250) NOT NULL,
 	[Application_Id] int NOT NULL,
-	[Date] datetime NOT NULL
+	[Date] varchar(250) NOT NULL
 )
 GO
 
@@ -191,8 +191,8 @@ CREATE TABLE [Message]
 	[Id] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
 	[Sender_Id] int NOT NULL,
 	[Reciver_Id] int NOT NULL,
-	[Date] datetime NULL,
-	[Importance] int NULL,
+	[Date] varchar(250) NULL,
+	[Importance] varchar(250) NULL,
 	[Subject] text NULL,
 	[Body] text NULL
 )
@@ -202,7 +202,7 @@ CREATE TABLE [Payment]
 (
 	[Id] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
 	[Payment_Type] int NOT NULL,
-	[Date] datetime NOT NULL,
+	[Date] varchar(250) NOT NULL,
 	[Bid_Id] int NOT NULL,
 	[PaymentStatusId] int NULL
 )
@@ -229,7 +229,7 @@ CREATE TABLE [Property]
 	[Location_Id] int NULL,
 	[name] varchar(250) NULL,
 	[Agent_Id] int NULL,
-	[Price] decimal(10,2) NULL,
+	[Price] varchar(250) NULL,
 	[Descreption] text NULL,
 	[PropertyStatusId] int NULL
 )
@@ -269,14 +269,14 @@ CREATE TABLE [User]
 (
 	[Id] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
 	[Name] varchar(250) NOT NULL,
-	[DOB] date NULL,
+	[DOB] varchar(250) NULL,
 	[Email] varchar(250) NOT NULL,
 	[Phone] varchar(250) NULL,
 	[Address] text NULL,
 	[Username] varchar(250) NOT NULL,
 	[Password] varchar(250) NOT NULL,
 	[role_Id] int NULL,
-	[Commission] decimal(10,2) NULL,
+	[Commission] varchar(250) NULL,
 	[CPR] varchar(250) NOT NULL
 )
 GO

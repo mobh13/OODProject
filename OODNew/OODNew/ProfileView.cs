@@ -47,9 +47,10 @@ namespace OODNew
             }
             reader.Close();
             Program.Connection.Close();
-            cmbProfiles.SelectedIndex = -1;
+            cmbProfiles.DataSource = null;
            cmbProfiles.DataSource = list;
-           
+           cmbProfiles.SelectedIndex = -1;
+
             
         }
 
@@ -78,43 +79,7 @@ namespace OODNew
 
         }
 
-        private void cmbProfiles_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-           
-            if (cmbProfiles.SelectedIndex != -1)
-            {
-                string id = cmbProfiles.SelectedText;
-                       Program.Connection.Open();
-            command = Program.Connection.CreateCommand();
-            command.Parameters.Clear();
-            command.Parameters.AddWithValue("id", id);
-            command.CommandText = "Select * From [User] where Id = @id";
-            reader = command.ExecuteReader();
-            reader.Read();
-            txtName.Text = reader.GetValue(1).ToString();
-            txtEmail.Text = reader.GetValue(3).ToString();
-                 txtUsername.Text = reader.GetValue(6).ToString();
-                txtPassword.Text = reader.GetValue(7).ToString();
-                txtCPR.Text = reader.GetValue(10).ToString();
-                txtAddress.Text = reader.GetValue(5).ToString();
-                txtPhone.Text = reader.GetValue(4).ToString();
-                txtCommission.Text = reader.GetValue(9).ToString();
-                txtDOB.Text = reader.GetValue(2).ToString();
-                reader.Close();
-                string roleID = reader.GetValue(8).ToString();
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", roleID);
-                command.CommandText = "Select * From [Role] where role_id = @id";
-                reader = command.ExecuteReader();
-                txtRole.Text = reader.GetValue(1).ToString();
-                reader.Close();
-                Program.Connection.Close();
-
-            }
-     
-               
-        }
+      
 
         private void btnClear_Click(object sender, EventArgs e)
         {
@@ -126,6 +91,42 @@ namespace OODNew
                 }
             }
             cmbProfiles.SelectedIndex = -1;
+        }
+
+        private void cmbProfiles_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (cmbProfiles.SelectedIndex != -1)
+            {
+                string id = cmbProfiles.SelectedValue.ToString();
+                Program.Connection.Open();
+                command = Program.Connection.CreateCommand();
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("id", id);
+                command.CommandText = "Select * From [User] where Id = @id";
+                reader = command.ExecuteReader();
+                reader.Read();
+                txtName.Text = reader.GetValue(1).ToString();
+                txtEmail.Text = reader.GetValue(3).ToString();
+                txtUsername.Text = reader.GetValue(6).ToString();
+                txtPassword.Text = reader.GetValue(7).ToString();
+                txtCPR.Text = reader.GetValue(10).ToString();
+                txtAddress.Text = reader.GetValue(5).ToString();
+                txtPhone.Text = reader.GetValue(4).ToString();
+                txtCommission.Text = reader.GetValue(9).ToString();
+                txtDOB.Text = reader.GetValue(2).ToString();
+                string roleID = reader.GetValue(8).ToString();
+                reader.Close();
+
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("id", roleID);
+                command.CommandText = "Select * From [Role] where role_id = @id";
+                reader = command.ExecuteReader();
+                reader.Read();
+                txtRole.Text = reader.GetValue(1).ToString();
+                reader.Close();
+                Program.Connection.Close();
+
+            }
         }
     }
 }
