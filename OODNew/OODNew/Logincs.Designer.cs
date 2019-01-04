@@ -103,7 +103,7 @@
             // txtboxUsername
             // 
             this.txtboxUsername.Location = new System.Drawing.Point(434, 313);
-            this.txtboxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtboxUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxUsername.Name = "txtboxUsername";
             this.txtboxUsername.Size = new System.Drawing.Size(286, 27);
             this.txtboxUsername.TabIndex = 11;
@@ -111,7 +111,7 @@
             // txtboxPassword
             // 
             this.txtboxPassword.Location = new System.Drawing.Point(434, 371);
-            this.txtboxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtboxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(286, 27);
@@ -171,9 +171,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Logincs";
             this.Text = "Logincs";
+            this.Load += new System.EventHandler(this.Logincs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
