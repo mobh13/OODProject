@@ -68,7 +68,7 @@
             this.lblTitle.BackColor = System.Drawing.Color.Navy;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(646, 172);
+            this.lblTitle.Location = new System.Drawing.Point(738, 172);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(421, 69);
             this.lblTitle.TabIndex = 3;
@@ -83,15 +83,15 @@
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(-2, -2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1080, 243);
+            this.label1.Size = new System.Drawing.Size(1172, 243);
             this.label1.TabIndex = 4;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnSearch
             // 
-            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(361, 628);
+            this.btnSearch.Location = new System.Drawing.Point(402, 604);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(131, 39);
             this.btnSearch.TabIndex = 8;
@@ -100,10 +100,10 @@
             // 
             // lblName
             // 
-            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(37, 344);
+            this.lblName.Location = new System.Drawing.Point(83, 344);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(100, 32);
             this.lblName.TabIndex = 10;
@@ -111,10 +111,10 @@
             // 
             // lblEmail
             // 
-            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(37, 405);
+            this.lblEmail.Location = new System.Drawing.Point(83, 405);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(90, 32);
             this.lblEmail.TabIndex = 11;
@@ -122,10 +122,10 @@
             // 
             // lblUsername
             // 
-            this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(37, 466);
+            this.lblUsername.Location = new System.Drawing.Point(83, 466);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(149, 32);
             this.lblUsername.TabIndex = 12;
@@ -133,10 +133,10 @@
             // 
             // lblCPR
             // 
-            this.lblCPR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCPR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCPR.AutoSize = true;
             this.lblCPR.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPR.Location = new System.Drawing.Point(37, 526);
+            this.lblCPR.Location = new System.Drawing.Point(83, 526);
             this.lblCPR.Name = "lblCPR";
             this.lblCPR.Size = new System.Drawing.Size(81, 32);
             this.lblCPR.TabIndex = 14;
@@ -144,10 +144,10 @@
             // 
             // lblDOB
             // 
-            this.lblDOB.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblDOB.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblDOB.AutoSize = true;
             this.lblDOB.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.Location = new System.Drawing.Point(574, 526);
+            this.lblDOB.Location = new System.Drawing.Point(620, 526);
             this.lblDOB.Name = "lblDOB";
             this.lblDOB.Size = new System.Drawing.Size(183, 32);
             this.lblDOB.TabIndex = 15;
@@ -155,10 +155,10 @@
             // 
             // lblAddress
             // 
-            this.lblAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(574, 283);
+            this.lblAddress.Location = new System.Drawing.Point(620, 283);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(129, 32);
             this.lblAddress.TabIndex = 16;
@@ -167,10 +167,10 @@
             // 
             // lblPhone
             // 
-            this.lblPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(574, 344);
+            this.lblPhone.Location = new System.Drawing.Point(620, 344);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(103, 32);
             this.lblPhone.TabIndex = 17;
@@ -179,10 +179,10 @@
             // 
             // lblCommission
             // 
-            this.lblCommission.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCommission.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblCommission.AutoSize = true;
             this.lblCommission.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCommission.Location = new System.Drawing.Point(574, 405);
+            this.lblCommission.Location = new System.Drawing.Point(620, 405);
             this.lblCommission.Name = "lblCommission";
             this.lblCommission.Size = new System.Drawing.Size(173, 32);
             this.lblCommission.TabIndex = 18;
@@ -191,10 +191,10 @@
             // 
             // lblRole
             // 
-            this.lblRole.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblRole.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRole.Location = new System.Drawing.Point(574, 465);
+            this.lblRole.Location = new System.Drawing.Point(620, 465);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(78, 32);
             this.lblRole.TabIndex = 19;
@@ -203,73 +203,73 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(217, 463);
+            this.txtUsername.Location = new System.Drawing.Point(263, 463);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(298, 39);
             this.txtUsername.TabIndex = 20;
             // 
             // txtEmail
             // 
-            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(217, 402);
+            this.txtEmail.Location = new System.Drawing.Point(263, 402);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(298, 39);
             this.txtEmail.TabIndex = 21;
             // 
             // txtName
             // 
-            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(217, 341);
+            this.txtName.Location = new System.Drawing.Point(263, 341);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(298, 39);
             this.txtName.TabIndex = 22;
             // 
             // txtCPR
             // 
-            this.txtCPR.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCPR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCPR.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPR.Location = new System.Drawing.Point(217, 523);
+            this.txtCPR.Location = new System.Drawing.Point(263, 523);
             this.txtCPR.Name = "txtCPR";
             this.txtCPR.Size = new System.Drawing.Size(298, 39);
             this.txtCPR.TabIndex = 24;
             // 
             // txtCommission
             // 
-            this.txtCommission.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCommission.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtCommission.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCommission.Location = new System.Drawing.Point(753, 398);
+            this.txtCommission.Location = new System.Drawing.Point(799, 398);
             this.txtCommission.Name = "txtCommission";
             this.txtCommission.Size = new System.Drawing.Size(298, 39);
             this.txtCommission.TabIndex = 26;
             // 
             // txtPhone
             // 
-            this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(753, 341);
+            this.txtPhone.Location = new System.Drawing.Point(799, 341);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(298, 39);
             this.txtPhone.TabIndex = 27;
             // 
             // txtAddress
             // 
-            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(753, 280);
+            this.txtAddress.Location = new System.Drawing.Point(799, 280);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(298, 39);
             this.txtAddress.TabIndex = 28;
             // 
             // btnClear
             // 
-            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(528, 628);
+            this.btnClear.Location = new System.Drawing.Point(569, 604);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(131, 39);
             this.btnClear.TabIndex = 30;
@@ -278,9 +278,9 @@
             // 
             // btnClose
             // 
-            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(700, 628);
+            this.btnClose.Location = new System.Drawing.Point(741, 604);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(131, 39);
             this.btnClose.TabIndex = 31;
@@ -289,39 +289,39 @@
             // 
             // lblLine
             // 
-            this.lblLine.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblLine.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblLine.Location = new System.Drawing.Point(72, 704);
+            this.lblLine.Location = new System.Drawing.Point(144, 675);
             this.lblLine.Name = "lblLine";
             this.lblLine.Size = new System.Drawing.Size(939, 2);
             this.lblLine.TabIndex = 32;
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(180, 726);
+            this.textBox1.Location = new System.Drawing.Point(252, 697);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(712, 275);
+            this.textBox1.Size = new System.Drawing.Size(712, 226);
             this.textBox1.TabIndex = 33;
             // 
             // textBox2
             // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox2.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(217, 280);
+            this.textBox2.Location = new System.Drawing.Point(263, 280);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(298, 39);
             this.textBox2.TabIndex = 35;
             // 
             // lblID
             // 
-            this.lblID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(37, 283);
+            this.lblID.Location = new System.Drawing.Point(83, 283);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(47, 32);
             this.lblID.TabIndex = 34;
@@ -329,30 +329,30 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(753, 464);
+            this.comboBox1.Location = new System.Drawing.Point(799, 464);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(298, 38);
             this.comboBox1.TabIndex = 36;
             // 
             // dtpBirthdate
             // 
-            this.dtpBirthdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtpBirthdate.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dtpBirthdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpBirthdate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpBirthdate.Location = new System.Drawing.Point(753, 523);
+            this.dtpBirthdate.Location = new System.Drawing.Point(799, 523);
             this.dtpBirthdate.Name = "dtpBirthdate";
             this.dtpBirthdate.Size = new System.Drawing.Size(298, 37);
             this.dtpBirthdate.TabIndex = 37;
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(67, 726);
+            this.label4.Location = new System.Drawing.Point(139, 697);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 30);
             this.label4.TabIndex = 58;
@@ -376,7 +376,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1079, 1050);
+            this.ClientSize = new System.Drawing.Size(1171, 958);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dtpBirthdate);
             this.Controls.Add(this.comboBox1);

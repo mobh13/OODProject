@@ -34,7 +34,7 @@ namespace OODNew
 
         private void ProfileView_Load(object sender, EventArgs e)
         {
-            this.dtpBirthdate.CustomFormat = "mm/dd/YYYY";
+            this.dtpBirthdate.CustomFormat = "MM/dd/yyyy";
         }
 
         private void label4_Click(object sender, EventArgs e)
