@@ -77,7 +77,7 @@
             // 
             this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(770, 332);
+            this.btnSearch.Location = new System.Drawing.Point(771, 278);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(131, 39);
             this.btnSearch.TabIndex = 8;
@@ -89,7 +89,7 @@
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(770, 394);
+            this.btnClear.Location = new System.Drawing.Point(771, 340);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(131, 39);
             this.btnClear.TabIndex = 30;
@@ -100,7 +100,7 @@
             // 
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(770, 453);
+            this.btnClose.Location = new System.Drawing.Point(771, 399);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(131, 39);
             this.btnClose.TabIndex = 31;
@@ -109,22 +109,22 @@
             // 
             // lblLine
             // 
-            this.lblLine.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lblLine.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblLine.Location = new System.Drawing.Point(87, 549);
+            this.lblLine.Location = new System.Drawing.Point(89, 470);
             this.lblLine.Name = "lblLine";
             this.lblLine.Size = new System.Drawing.Size(939, 2);
             this.lblLine.TabIndex = 32;
             // 
             // textBox1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(202, 583);
+            this.textBox1.Location = new System.Drawing.Point(228, 502);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(709, 308);
+            this.textBox1.Size = new System.Drawing.Size(709, 253);
             this.textBox1.TabIndex = 33;
             // 
             // cmbLocationID
@@ -132,7 +132,7 @@
             this.cmbLocationID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbLocationID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocationID.FormattingEnabled = true;
-            this.cmbLocationID.Location = new System.Drawing.Point(420, 455);
+            this.cmbLocationID.Location = new System.Drawing.Point(421, 401);
             this.cmbLocationID.Name = "cmbLocationID";
             this.cmbLocationID.Size = new System.Drawing.Size(298, 38);
             this.cmbLocationID.TabIndex = 40;
@@ -141,7 +141,7 @@
             // 
             this.txtLcoationID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLcoationID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLcoationID.Location = new System.Drawing.Point(420, 332);
+            this.txtLcoationID.Location = new System.Drawing.Point(421, 278);
             this.txtLcoationID.Name = "txtLcoationID";
             this.txtLcoationID.Size = new System.Drawing.Size(298, 39);
             this.txtLcoationID.TabIndex = 39;
@@ -150,7 +150,7 @@
             // 
             this.txtLocationName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocationName.Location = new System.Drawing.Point(420, 394);
+            this.txtLocationName.Location = new System.Drawing.Point(421, 340);
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.Size = new System.Drawing.Size(298, 39);
             this.txtLocationName.TabIndex = 38;
@@ -160,7 +160,7 @@
             this.lblSubLocationID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblSubLocationID.AutoSize = true;
             this.lblSubLocationID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubLocationID.Location = new System.Drawing.Point(186, 456);
+            this.lblSubLocationID.Location = new System.Drawing.Point(187, 402);
             this.lblSubLocationID.Name = "lblSubLocationID";
             this.lblSubLocationID.Size = new System.Drawing.Size(228, 32);
             this.lblSubLocationID.TabIndex = 37;
@@ -171,7 +171,7 @@
             this.lblLcoationName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLcoationName.AutoSize = true;
             this.lblLcoationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLcoationName.Location = new System.Drawing.Point(196, 397);
+            this.lblLcoationName.Location = new System.Drawing.Point(197, 343);
             this.lblLcoationName.Name = "lblLcoationName";
             this.lblLcoationName.Size = new System.Drawing.Size(218, 32);
             this.lblLcoationName.TabIndex = 36;
@@ -182,7 +182,7 @@
             this.lblLocationID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLocationID.AutoSize = true;
             this.lblLocationID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocationID.Location = new System.Drawing.Point(249, 335);
+            this.lblLocationID.Location = new System.Drawing.Point(250, 281);
             this.lblLocationID.Name = "lblLocationID";
             this.lblLocationID.Size = new System.Drawing.Size(165, 32);
             this.lblLocationID.TabIndex = 35;
@@ -190,10 +190,10 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(82, 583);
+            this.label4.Location = new System.Drawing.Point(113, 505);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 30);
             this.label4.TabIndex = 58;
@@ -218,7 +218,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1079, 957);
+            this.ClientSize = new System.Drawing.Size(1079, 791);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbLocationID);
             this.Controls.Add(this.txtLcoationID);

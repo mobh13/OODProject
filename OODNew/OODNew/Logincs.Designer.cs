@@ -61,7 +61,7 @@
             this.lblTitle.BackColor = System.Drawing.Color.Navy;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(673, 159);
+            this.lblTitle.Location = new System.Drawing.Point(787, 159);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(176, 69);
             this.lblTitle.TabIndex = 6;
@@ -75,34 +75,34 @@
             this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(-4, -4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(878, 243);
+            this.label1.Size = new System.Drawing.Size(992, 243);
             this.label1.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.label2.Location = new System.Drawing.Point(208, 287);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(273, 301);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 36);
+            this.label2.Size = new System.Drawing.Size(162, 37);
             this.label2.TabIndex = 9;
             this.label2.Text = "Username";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 15F);
-            this.label3.Location = new System.Drawing.Point(208, 343);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(273, 361);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 36);
+            this.label3.Size = new System.Drawing.Size(153, 37);
             this.label3.TabIndex = 10;
             this.label3.Text = "Password";
             // 
             // txtboxUsername
             // 
-            this.txtboxUsername.Location = new System.Drawing.Point(366, 296);
+            this.txtboxUsername.Location = new System.Drawing.Point(434, 313);
             this.txtboxUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxUsername.Name = "txtboxUsername";
             this.txtboxUsername.Size = new System.Drawing.Size(286, 27);
@@ -110,7 +110,7 @@
             // 
             // txtboxPassword
             // 
-            this.txtboxPassword.Location = new System.Drawing.Point(366, 343);
+            this.txtboxPassword.Location = new System.Drawing.Point(434, 371);
             this.txtboxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.PasswordChar = '*';
@@ -122,7 +122,7 @@
             this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Green;
-            this.btnLogin.Location = new System.Drawing.Point(191, 429);
+            this.btnLogin.Location = new System.Drawing.Point(256, 465);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(153, 47);
             this.btnLogin.TabIndex = 33;
@@ -135,7 +135,7 @@
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(548, 429);
+            this.btnClear.Location = new System.Drawing.Point(613, 465);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(153, 47);
             this.btnClear.TabIndex = 32;
@@ -147,7 +147,7 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(373, 429);
+            this.btnClose.Location = new System.Drawing.Point(438, 465);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(153, 47);
             this.btnClose.TabIndex = 34;
@@ -157,9 +157,10 @@
             // 
             // Logincs
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(861, 511);
+            this.ClientSize = new System.Drawing.Size(975, 542);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnClear);

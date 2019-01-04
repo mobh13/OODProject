@@ -109,7 +109,7 @@
             // 
             this.lblLine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblLine.Location = new System.Drawing.Point(37, 331);
+            this.lblLine.Location = new System.Drawing.Point(37, 337);
             this.lblLine.Name = "lblLine";
             this.lblLine.Size = new System.Drawing.Size(939, 2);
             this.lblLine.TabIndex = 9;

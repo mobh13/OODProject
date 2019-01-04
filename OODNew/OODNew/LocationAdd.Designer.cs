@@ -97,7 +97,7 @@
             this.lblLcoationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLcoationName.AutoSize = true;
             this.lblLcoationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLcoationName.Location = new System.Drawing.Point(296, 382);
+            this.lblLcoationName.Location = new System.Drawing.Point(287, 408);
             this.lblLcoationName.Name = "lblLcoationName";
             this.lblLcoationName.Size = new System.Drawing.Size(218, 32);
             this.lblLcoationName.TabIndex = 11;
@@ -108,7 +108,7 @@
             this.lblSubLocationID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSubLocationID.AutoSize = true;
             this.lblSubLocationID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubLocationID.Location = new System.Drawing.Point(531, 308);
+            this.lblSubLocationID.Location = new System.Drawing.Point(522, 308);
             this.lblSubLocationID.Name = "lblSubLocationID";
             this.lblSubLocationID.Size = new System.Drawing.Size(228, 32);
             this.lblSubLocationID.TabIndex = 16;
@@ -119,7 +119,7 @@
             // 
             this.txtLocationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocationName.Location = new System.Drawing.Point(520, 379);
+            this.txtLocationName.Location = new System.Drawing.Point(511, 405);
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.Size = new System.Drawing.Size(298, 39);
             this.txtLocationName.TabIndex = 21;
@@ -161,7 +161,7 @@
             this.cmbLocationID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbLocationID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocationID.FormattingEnabled = true;
-            this.cmbLocationID.Location = new System.Drawing.Point(765, 307);
+            this.cmbLocationID.Location = new System.Drawing.Point(756, 307);
             this.cmbLocationID.Name = "cmbLocationID";
             this.cmbLocationID.Size = new System.Drawing.Size(298, 38);
             this.cmbLocationID.TabIndex = 34;
