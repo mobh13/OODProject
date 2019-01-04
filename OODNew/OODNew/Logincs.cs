@@ -71,6 +71,12 @@ namespace OODNew
                         Program.Connection.Close();
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Error no iser was found");
+                    reader.Close();
+                    Program.Connection.Close();
+                }
                
             }
         }

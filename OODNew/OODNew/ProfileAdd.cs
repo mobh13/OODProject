@@ -14,6 +14,7 @@ namespace OODNew
     {
         private SqlCommand command;
         private SqlDataReader reader;
+        private string oldUsername;
         public ProfileAdd()
         {
             InitializeComponent();
@@ -113,8 +114,23 @@ namespace OODNew
             {
                 isChecked = true;
             }
-         
-              
+
+              if (txtUsername.Text != this.oldUsername)
+              {
+
+                  command.Parameters.Clear();
+                  command.Parameters.AddWithValue("username", txtUsername.Text);
+                  command.CommandText = "select Count(Id) from [User] where Username = @username";
+                  reader = command.ExecuteReader();
+                  reader.Read();
+                  if (Convert.ToInt32(reader.GetValue(0).ToString()) != 0)
+                  {
+                      MessageBox.Show("Error Username already exist");
+
+                      isChecked = false;
+                  }
+
+              }
             if (isEmpty)
             {
                 MessageBox.Show("Error Please Fill all information");
