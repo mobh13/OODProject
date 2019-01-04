@@ -85,6 +85,7 @@ namespace OODNew
                 else
                 {
                     MessageBox.Show("Error no iser was found");
+                    MessageBox.Show("Error no user was found");
                     reader.Close();
                     Program.Connection.Close();
                 }
