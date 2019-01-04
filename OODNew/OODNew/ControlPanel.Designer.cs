@@ -107,7 +107,7 @@
             this.MainMenuNavigation.Location = new System.Drawing.Point(12, 259);
             this.MainMenuNavigation.Margin = new System.Windows.Forms.Padding(3);
             this.MainMenuNavigation.Name = "MainMenuNavigation";
-            this.MainMenuNavigation.Size = new System.Drawing.Size(257, 232);
+            this.MainMenuNavigation.Size = new System.Drawing.Size(257, 301);
             this.MainMenuNavigation.TabIndex = 6;
             this.MainMenuNavigation.Text = "MainMenuNavigation";
             this.MainMenuNavigation.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -288,7 +288,7 @@
             this.slidShow.Image = ((System.Drawing.Image)(resources.GetObject("slidShow.Image")));
             this.slidShow.Location = new System.Drawing.Point(340, 259);
             this.slidShow.Name = "slidShow";
-            this.slidShow.Size = new System.Drawing.Size(687, 388);
+            this.slidShow.Size = new System.Drawing.Size(687, 457);
             this.slidShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidShow.TabIndex = 5;
             this.slidShow.TabStop = false;
@@ -311,7 +311,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1093, 665);
+            this.ClientSize = new System.Drawing.Size(1093, 734);
             this.Controls.Add(this.MainMenuNavigation);
             this.Controls.Add(this.slidShow);
             this.Controls.Add(this.pictureBox1);
