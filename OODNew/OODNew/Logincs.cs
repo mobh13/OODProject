@@ -58,6 +58,17 @@ namespace OODNew
                     reader.Read();
                     if (reader.GetValue(7).ToString() == password)
                     {
+                        Program.UserInfo.Id = reader.GetValue(0).ToString();
+                        Program.UserInfo.Name = reader.GetValue(1).ToString();
+                        Program.UserInfo.Username = reader.GetValue(6).ToString(); ;
+                        Program.UserInfo.Password = reader.GetValue(7).ToString();
+                        Program.UserInfo.Email = reader.GetValue(3).ToString(); ;
+                        Program.UserInfo.CPR = reader.GetValue(10).ToString(); ;
+                        Program.UserInfo.Dob = reader.GetValue(2).ToString(); ;
+                        Program.UserInfo.Role_id = reader.GetValue(8).ToString(); ;
+                        Program.UserInfo.Phone = reader.GetValue(4).ToString(); ;
+                        Program.UserInfo.Address = reader.GetValue(5).ToString(); ;
+                        Program.UserInfo.Commision = reader.GetValue(9).ToString(); ;
                         reader.Close();
                         Program.Connection.Close();
                         ControlPanel controlPanel = new ControlPanel();

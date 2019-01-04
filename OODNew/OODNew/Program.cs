@@ -13,9 +13,11 @@ namespace OODNew
         /// The main entry point for the application.
         /// </summary>
         private static SqlConnection connection;
+        private static User user;
         [STAThread]
         static void Main()
         {
+            user = new User(); 
             connection = new SqlConnection();
             connection.ConnectionString = Properties.Settings.Default.RealEstateConnectionString;
             Application.EnableVisualStyles();
@@ -32,6 +34,18 @@ namespace OODNew
             get
             {
                 return connection;
+            }
+        }
+        public static User UserInfo
+        {
+            set
+            {
+                UserInfo = value;
+
+            }
+            get
+            {
+                return UserInfo;
             }
         }
     }
