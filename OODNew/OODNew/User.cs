@@ -17,7 +17,7 @@ namespace OODNew
         private string address;
         private string commission;
         private string cpr;
-        private string dob; 
+        private string dob;
         private string phone;
 
         public string Id
