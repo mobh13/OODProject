@@ -35,11 +35,11 @@ namespace OODNew
         {
             set
             {
-                this.Name = value;
+                name = value;
             }
             get
             {
-                return this.Name;
+                return name;
             }
         }
         public string Email

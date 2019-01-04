@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
+using System.Data.Sql;
 namespace OODNew
 {
     public partial class ProfileSearch : Form
@@ -81,14 +82,14 @@ namespace OODNew
                     if (ctr.Text != "")
                     {
                         command.Parameters.AddWithValue(ctr.Name, ctr.Text);
-                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString ;
+                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString();
                     }
                 }
             }
             if (Role_Id.SelectedIndex != -1)
             {
                 command.Parameters.AddWithValue(Role_Id.Name, Role_Id.SelectedIndex + 1);
-                command.CommandText = command.CommandText + " and " + Role_Id.Name.ToString() + " = @" + Role_Id.Name.ToString;
+                command.CommandText = command.CommandText + " and " + Role_Id.Name.ToString() + " = @" + Role_Id.Name.ToString();
             }
 
             if (DOB.Value != DateTime.Today)

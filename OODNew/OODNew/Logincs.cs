@@ -97,5 +97,9 @@ namespace OODNew
         {
             Application.Exit();
         }
+        private void Logincs_Load(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

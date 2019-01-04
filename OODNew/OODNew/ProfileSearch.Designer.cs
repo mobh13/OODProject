@@ -437,7 +437,7 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "ProfileSearch";
+            this.Name.Text = "ProfileSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search Profiles";
             this.Load += new System.EventHandler(this.ProfileView_Load);
