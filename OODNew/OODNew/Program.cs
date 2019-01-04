@@ -45,7 +45,7 @@ namespace OODNew
             }
             get
             {
-                return UserInfo;
+                return user;
             }
         }
     }

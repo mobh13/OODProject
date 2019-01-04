@@ -49,7 +49,10 @@ namespace OODNew
             {
                 imgCount = 1;
             }
-            slidShow.ImageLocation = string.Format(@"images\image{0}.jpg",imgCount);
+            slidShow.ImageLocation = string.Format(@"My.Resources.image{0}.jpg", imgCount);
+=======
+            slidShow.ImageLocation = string.Format("Resources\\1546524291810.jpg");
+>>>>>>> e40b2eb9536561e9b1830a596eaf92f16b2d5316
             imgCount++;
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -160,6 +163,11 @@ namespace OODNew
         {
             LocationEdit lEdit = new LocationEdit();
             lEdit.Show();
+        }
+
+        private void ControlPanel_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
