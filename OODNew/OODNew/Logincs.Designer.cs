@@ -174,7 +174,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Logincs";
             this.Text = "Logincs";
-            this.Load += new System.EventHandler(this.Logincs_Load);
+           // this.Load += new System.EventHandler(this.Logincs_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

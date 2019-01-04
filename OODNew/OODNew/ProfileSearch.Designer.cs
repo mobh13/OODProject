@@ -43,7 +43,7 @@
             this.lblRole = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.TextBox();
             this.Email = new System.Windows.Forms.TextBox();
-            this.Name = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
             this.CPR = new System.Windows.Forms.TextBox();
             this.Commission = new System.Windows.Forms.TextBox();
             this.Phone = new System.Windows.Forms.TextBox();
@@ -94,7 +94,7 @@
             this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.Location = new System.Drawing.Point(268, 413);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(87, 27);
             this.btnSearch.TabIndex = 8;
@@ -219,7 +219,7 @@
             this.Username.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Username.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Username.Location = new System.Drawing.Point(175, 317);
-            this.Username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Username.Margin = new System.Windows.Forms.Padding(2);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(200, 29);
             this.Username.TabIndex = 20;
@@ -229,27 +229,27 @@
             this.Email.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Email.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Email.Location = new System.Drawing.Point(175, 275);
-            this.Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Email.Margin = new System.Windows.Forms.Padding(2);
             this.Email.Name = "Email";
             this.Email.Size = new System.Drawing.Size(200, 29);
             this.Email.TabIndex = 21;
             // 
-            // Name
+            // name
             // 
-            this.Name.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Name.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name.Location = new System.Drawing.Point(175, 233);
-            this.Name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(200, 29);
-            this.Name.TabIndex = 22;
+            this.name.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.name.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Location = new System.Drawing.Point(175, 233);
+            this.name.Margin = new System.Windows.Forms.Padding(2);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(200, 29);
+            this.name.TabIndex = 22;
             // 
             // CPR
             // 
             this.CPR.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.CPR.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CPR.Location = new System.Drawing.Point(175, 358);
-            this.CPR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CPR.Margin = new System.Windows.Forms.Padding(2);
             this.CPR.Name = "CPR";
             this.CPR.Size = new System.Drawing.Size(200, 29);
             this.CPR.TabIndex = 24;
@@ -259,7 +259,7 @@
             this.Commission.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Commission.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Commission.Location = new System.Drawing.Point(533, 272);
-            this.Commission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Commission.Margin = new System.Windows.Forms.Padding(2);
             this.Commission.Name = "Commission";
             this.Commission.Size = new System.Drawing.Size(200, 29);
             this.Commission.TabIndex = 26;
@@ -269,7 +269,7 @@
             this.Phone.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Phone.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Phone.Location = new System.Drawing.Point(533, 233);
-            this.Phone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Phone.Margin = new System.Windows.Forms.Padding(2);
             this.Phone.Name = "Phone";
             this.Phone.Size = new System.Drawing.Size(200, 29);
             this.Phone.TabIndex = 27;
@@ -279,7 +279,7 @@
             this.Address.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Address.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Address.Location = new System.Drawing.Point(533, 192);
-            this.Address.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Address.Margin = new System.Windows.Forms.Padding(2);
             this.Address.Name = "Address";
             this.Address.Size = new System.Drawing.Size(200, 29);
             this.Address.TabIndex = 28;
@@ -290,7 +290,7 @@
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
             this.btnClear.Location = new System.Drawing.Point(379, 413);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 27);
             this.btnClear.TabIndex = 30;
@@ -302,7 +302,7 @@
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Location = new System.Drawing.Point(494, 413);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(87, 27);
             this.btnClose.TabIndex = 31;
@@ -324,7 +324,7 @@
             this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.textBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(168, 477);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -336,7 +336,7 @@
             this.Id.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.Id.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Id.Location = new System.Drawing.Point(175, 192);
-            this.Id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Id.Margin = new System.Windows.Forms.Padding(2);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(200, 29);
             this.Id.TabIndex = 35;
@@ -359,7 +359,7 @@
             this.Role_Id.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Role_Id.FormattingEnabled = true;
             this.Role_Id.Location = new System.Drawing.Point(533, 317);
-            this.Role_Id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Role_Id.Margin = new System.Windows.Forms.Padding(2);
             this.Role_Id.Name = "Role_Id";
             this.Role_Id.Size = new System.Drawing.Size(200, 29);
             this.Role_Id.TabIndex = 36;
@@ -370,7 +370,7 @@
             this.DOB.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DOB.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DOB.Location = new System.Drawing.Point(533, 358);
-            this.DOB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DOB.Margin = new System.Windows.Forms.Padding(2);
             this.DOB.Name = "DOB";
             this.DOB.Size = new System.Drawing.Size(200, 27);
             this.DOB.TabIndex = 37;
@@ -393,7 +393,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(342, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -420,7 +420,7 @@
             this.Controls.Add(this.Phone);
             this.Controls.Add(this.Commission);
             this.Controls.Add(this.CPR);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.Email);
             this.Controls.Add(this.Username);
             this.Controls.Add(this.lblRole);
@@ -436,7 +436,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ProfileSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search Profiles";
@@ -464,7 +464,7 @@
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.TextBox Username;
         private System.Windows.Forms.TextBox Email;
-        private System.Windows.Forms.TextBox Name;
+        private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.TextBox CPR;
         private System.Windows.Forms.TextBox Commission;
         private System.Windows.Forms.TextBox Phone;

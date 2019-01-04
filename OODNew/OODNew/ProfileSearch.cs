@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -81,20 +82,22 @@ namespace OODNew
                     if (ctr.Text != "")
                     {
                         command.Parameters.AddWithValue(ctr.Name, ctr.Text);
-                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString ;
+                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString() ;
                     }
                 }
             }
             if (Role_Id.SelectedIndex != -1)
             {
                 command.Parameters.AddWithValue(Role_Id.Name, Role_Id.SelectedIndex + 1);
-                command.CommandText = command.CommandText + " and " + Role_Id.Name.ToString() + " = @" + Role_Id.Name.ToString;
+                command.CommandText = command.CommandText + " and " + Role_Id.Name.ToString() + " = @" + Role_Id.Name.ToString();
             }
 
             if (DOB.Value != DateTime.Today)
             {
-
+                command.Parameters.AddWithValue(DOB.Name.ToString(), DOB.Value.ToString("d/MMM/yyyy"));
+                command.CommandText = command.CommandText + " and " +DOB.Name.ToString() + " = @" + DOB.Name.ToString();
             }
+
           
         }
     }
