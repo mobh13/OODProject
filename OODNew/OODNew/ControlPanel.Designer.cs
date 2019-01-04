@@ -321,6 +321,7 @@
             this.Name = "ControlPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control Panel";
+            this.Load += new System.EventHandler(this.ControlPanel_Load);
             this.MainMenuNavigation.ResumeLayout(false);
             this.MainMenuNavigation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slidShow)).EndInit();
