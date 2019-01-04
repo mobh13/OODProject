@@ -67,9 +67,10 @@
             this.lblTitle.BackColor = System.Drawing.Color.Navy;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(681, 173);
+            this.lblTitle.Location = new System.Drawing.Point(454, 118);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(400, 69);
+            this.lblTitle.Size = new System.Drawing.Size(274, 45);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Control Panel";
             // 
@@ -79,9 +80,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(-4, -1);
+            this.label1.Location = new System.Drawing.Point(-3, -1);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1096, 243);
+            this.label1.Size = new System.Drawing.Size(731, 166);
             this.label1.TabIndex = 1;
             // 
             // timer1
@@ -104,10 +106,11 @@
             this.subMenuProperty,
             this.subMenuLocation});
             this.MainMenuNavigation.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
-            this.MainMenuNavigation.Location = new System.Drawing.Point(12, 259);
-            this.MainMenuNavigation.Margin = new System.Windows.Forms.Padding(3);
+            this.MainMenuNavigation.Location = new System.Drawing.Point(8, 177);
+            this.MainMenuNavigation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MainMenuNavigation.Name = "MainMenuNavigation";
-            this.MainMenuNavigation.Size = new System.Drawing.Size(257, 282);
+            this.MainMenuNavigation.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.MainMenuNavigation.Size = new System.Drawing.Size(171, 193);
             this.MainMenuNavigation.TabIndex = 6;
             this.MainMenuNavigation.Text = "MainMenuNavigation";
             this.MainMenuNavigation.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -122,14 +125,14 @@
             this.editToolStripMenuItem});
             this.subMenuProfile.Image = global::OODNew.Properties.Resources.radio_dot_1018892;
             this.subMenuProfile.Name = "subMenuProfile";
-            this.subMenuProfile.Size = new System.Drawing.Size(160, 47);
+            this.subMenuProfile.Size = new System.Drawing.Size(122, 34);
             this.subMenuProfile.Text = "Profile";
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
-            this.viewToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
+            this.viewToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
             this.viewToolStripMenuItem.Text = "View";
             this.viewToolStripMenuItem.Click += new System.EventHandler(this.viewToolStripMenuItem_Click);
             // 
@@ -137,7 +140,7 @@
             // 
             this.addToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
@@ -145,7 +148,7 @@
             // 
             this.searchToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
             this.searchToolStripMenuItem.Text = "Search";
             this.searchToolStripMenuItem.Click += new System.EventHandler(this.searchToolStripMenuItem_Click);
             // 
@@ -153,7 +156,7 @@
             // 
             this.deleteToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
@@ -161,7 +164,7 @@
             // 
             this.editToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
@@ -176,14 +179,14 @@
             this.buySellToolStripMenuItem});
             this.subMenuProperty.Image = global::OODNew.Properties.Resources.radio_dot_1018892;
             this.subMenuProperty.Name = "subMenuProperty";
-            this.subMenuProperty.Size = new System.Drawing.Size(201, 47);
+            this.subMenuProperty.Size = new System.Drawing.Size(146, 34);
             this.subMenuProperty.Text = "Property";
             // 
             // viewToolStripMenuItem1
             // 
             this.viewToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.viewToolStripMenuItem1.Name = "viewToolStripMenuItem1";
-            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(208, 34);
             this.viewToolStripMenuItem1.Text = "View";
             this.viewToolStripMenuItem1.Click += new System.EventHandler(this.viewToolStripMenuItem1_Click);
             // 
@@ -191,7 +194,7 @@
             // 
             this.addToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(208, 34);
             this.addToolStripMenuItem1.Text = "Add";
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
@@ -199,7 +202,7 @@
             // 
             this.searchToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.searchToolStripMenuItem1.Name = "searchToolStripMenuItem1";
-            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(208, 34);
             this.searchToolStripMenuItem1.Text = "Search";
             this.searchToolStripMenuItem1.Click += new System.EventHandler(this.searchToolStripMenuItem1_Click);
             // 
@@ -207,7 +210,7 @@
             // 
             this.deleteToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(208, 34);
             this.deleteToolStripMenuItem1.Text = "Delete";
             this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
             // 
@@ -215,7 +218,7 @@
             // 
             this.editToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(208, 34);
             this.editToolStripMenuItem1.Text = "Edit";
             this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
             // 
@@ -223,7 +226,7 @@
             // 
             this.buySellToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
             this.buySellToolStripMenuItem.Name = "buySellToolStripMenuItem";
-            this.buySellToolStripMenuItem.Size = new System.Drawing.Size(276, 48);
+            this.buySellToolStripMenuItem.Size = new System.Drawing.Size(208, 34);
             this.buySellToolStripMenuItem.Text = "Buy && Sell";
             this.buySellToolStripMenuItem.Click += new System.EventHandler(this.buySellToolStripMenuItem_Click);
             // 
@@ -237,14 +240,14 @@
             this.editToolStripMenuItem2});
             this.subMenuLocation.Image = global::OODNew.Properties.Resources.radio_dot_1018892;
             this.subMenuLocation.Name = "subMenuLocation";
-            this.subMenuLocation.Size = new System.Drawing.Size(209, 47);
+            this.subMenuLocation.Size = new System.Drawing.Size(153, 34);
             this.subMenuLocation.Text = "Location";
             // 
             // viewToolStripMenuItem2
             // 
             this.viewToolStripMenuItem2.Image = global::OODNew.Properties.Resources.forward;
             this.viewToolStripMenuItem2.Name = "viewToolStripMenuItem2";
-            this.viewToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
+            this.viewToolStripMenuItem2.Size = new System.Drawing.Size(176, 34);
             this.viewToolStripMenuItem2.Text = "View";
             this.viewToolStripMenuItem2.Click += new System.EventHandler(this.viewToolStripMenuItem2_Click);
             // 
@@ -252,7 +255,7 @@
             // 
             this.addToolStripMenuItem2.Image = global::OODNew.Properties.Resources.forward;
             this.addToolStripMenuItem2.Name = "addToolStripMenuItem2";
-            this.addToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
+            this.addToolStripMenuItem2.Size = new System.Drawing.Size(176, 34);
             this.addToolStripMenuItem2.Text = "Add";
             this.addToolStripMenuItem2.Click += new System.EventHandler(this.addToolStripMenuItem2_Click);
             // 
@@ -260,7 +263,7 @@
             // 
             this.searchToolStripMenuItem2.Image = global::OODNew.Properties.Resources.forward;
             this.searchToolStripMenuItem2.Name = "searchToolStripMenuItem2";
-            this.searchToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
+            this.searchToolStripMenuItem2.Size = new System.Drawing.Size(176, 34);
             this.searchToolStripMenuItem2.Text = "Search";
             this.searchToolStripMenuItem2.Click += new System.EventHandler(this.searchToolStripMenuItem2_Click);
             // 
@@ -268,7 +271,7 @@
             // 
             this.dToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
             this.dToolStripMenuItem.Name = "dToolStripMenuItem";
-            this.dToolStripMenuItem.Size = new System.Drawing.Size(232, 48);
+            this.dToolStripMenuItem.Size = new System.Drawing.Size(176, 34);
             this.dToolStripMenuItem.Text = "Delete";
             this.dToolStripMenuItem.Click += new System.EventHandler(this.dToolStripMenuItem_Click);
             // 
@@ -276,7 +279,7 @@
             // 
             this.editToolStripMenuItem2.Image = global::OODNew.Properties.Resources.forward;
             this.editToolStripMenuItem2.Name = "editToolStripMenuItem2";
-            this.editToolStripMenuItem2.Size = new System.Drawing.Size(232, 48);
+            this.editToolStripMenuItem2.Size = new System.Drawing.Size(176, 34);
             this.editToolStripMenuItem2.Text = "Edit";
             this.editToolStripMenuItem2.Click += new System.EventHandler(this.editToolStripMenuItem2_Click);
             // 
@@ -286,9 +289,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.slidShow.Image = ((System.Drawing.Image)(resources.GetObject("slidShow.Image")));
-            this.slidShow.Location = new System.Drawing.Point(374, 259);
+            this.slidShow.Location = new System.Drawing.Point(249, 177);
+            this.slidShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.slidShow.Name = "slidShow";
-            this.slidShow.Size = new System.Drawing.Size(686, 417);
+            this.slidShow.Size = new System.Drawing.Size(457, 285);
             this.slidShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidShow.TabIndex = 5;
             this.slidShow.TabStop = false;
@@ -299,8 +303,9 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(519, 243);
+            this.pictureBox1.Size = new System.Drawing.Size(346, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -308,19 +313,21 @@
             // 
             // ControlPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1093, 715);
+            this.ClientSize = new System.Drawing.Size(729, 489);
             this.Controls.Add(this.MainMenuNavigation);
             this.Controls.Add(this.slidShow);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
             this.MainMenuStrip = this.MainMenuNavigation;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ControlPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control Panel";
+            this.Load += new System.EventHandler(this.ControlPanel_Load);
             this.MainMenuNavigation.ResumeLayout(false);
             this.MainMenuNavigation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slidShow)).EndInit();
