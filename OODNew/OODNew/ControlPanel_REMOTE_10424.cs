@@ -124,7 +124,7 @@ namespace OODNew
 
         private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            PropertyView pView = new PropertyView();
+            PropertView pView = new PropertView();
             pView.Show();
         }
 
@@ -242,13 +242,8 @@ namespace OODNew
             reader.Read();
             string userRole = reader.GetValue(0).ToString();
             this.lblNameRole.Text = "User: " + userName + ", Role: " + userRole;
-<<<<<<< HEAD
-            Program.Connection.Close();
-
-=======
             reader.Close();
             Program.Connection.Close(); 
->>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
         }
 
         private void subMenuLocation_Click(object sender, EventArgs e)
@@ -260,10 +255,6 @@ namespace OODNew
             Logincs login = new Logincs();
             this.Close();
             login.Show();
-<<<<<<< HEAD
-            Program.UserInfo = new User();
-=======
->>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
         }
     }
 }

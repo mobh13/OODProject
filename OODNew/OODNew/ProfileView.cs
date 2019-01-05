@@ -39,7 +39,15 @@ namespace OODNew
             List<string> list = new List<string>();
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
-            command.CommandText = "Select * From [User]";
+            if (Program.UserInfo.Role_id == "1")
+            {
+                command.CommandText = "Select * From [User]";
+            }
+            else
+            {
+                command.Parameters.AddWithValue("id", Program.UserInfo.Id);
+                command.CommandText = "Select * From [User] Where Id= @id";
+            }
             reader = command.ExecuteReader();
             while (reader.Read())
             {

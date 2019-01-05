@@ -22,7 +22,7 @@ namespace OODNew
             connection.ConnectionString = Properties.Settings.Default.RealEstateConnectionString;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ControlPanel());
+            Application.Run(new LocationSearch());
         }
         public static SqlConnection Connection
         {
@@ -40,7 +40,7 @@ namespace OODNew
         {
             set
             {
-                UserInfo = value;
+                user = value;
 
             }
             get

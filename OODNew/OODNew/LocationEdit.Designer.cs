@@ -33,16 +33,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblLocationID = new System.Windows.Forms.Label();
             this.cmbLocations = new System.Windows.Forms.ComboBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
             this.lblLine = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.cmbLocationID = new System.Windows.Forms.ComboBox();
             this.txtLocationName = new System.Windows.Forms.TextBox();
             this.lblSubID = new System.Windows.Forms.Label();
             this.lblLocationName = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtSubID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,8 +78,12 @@
             this.lblLocationID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocationID.AutoSize = true;
             this.lblLocationID.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblLocationID.Location = new System.Drawing.Point(175, 190);
             this.lblLocationID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+=======
+            this.lblLocationID.Location = new System.Drawing.Point(298, 277);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.lblLocationID.Name = "lblLocationID";
             this.lblLocationID.Size = new System.Drawing.Size(119, 22);
             this.lblLocationID.TabIndex = 6;
@@ -92,11 +95,16 @@
             this.cmbLocations.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbLocations.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocations.FormattingEnabled = true;
+<<<<<<< HEAD
             this.cmbLocations.Location = new System.Drawing.Point(297, 187);
             this.cmbLocations.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.cmbLocations.Location = new System.Drawing.Point(486, 274);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.cmbLocations.Name = "cmbLocations";
             this.cmbLocations.Size = new System.Drawing.Size(200, 30);
             this.cmbLocations.TabIndex = 7;
+<<<<<<< HEAD
             // 
             // btnSubmit
             // 
@@ -109,6 +117,9 @@
             this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+=======
+            this.cmbLocations.SelectionChangeCommitted += new System.EventHandler(this.cmbLocations_SelectionChangeCommitted);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             // 
             // lblLine
             // 
@@ -125,24 +136,37 @@
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
+<<<<<<< HEAD
             this.btnClear.Location = new System.Drawing.Point(336, 387);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 27);
+=======
+            this.btnClear.Location = new System.Drawing.Point(478, 560);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(131, 50);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.btnClear.TabIndex = 30;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.btnClose.Location = new System.Drawing.Point(445, 387);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(87, 27);
+=======
+            this.btnClose.Location = new System.Drawing.Point(666, 560);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(131, 50);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.btnClose.TabIndex = 31;
-            this.btnClose.Text = "Clsoe";
+            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // btnUpdate
@@ -150,14 +174,21 @@
             this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Black;
+<<<<<<< HEAD
             this.btnUpdate.Location = new System.Drawing.Point(229, 387);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(87, 27);
+=======
+            this.btnUpdate.Location = new System.Drawing.Point(292, 560);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(131, 50);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.btnUpdate.TabIndex = 32;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+<<<<<<< HEAD
             // 
             // cmbLocationID
             // 
@@ -169,13 +200,19 @@
             this.cmbLocationID.Name = "cmbLocationID";
             this.cmbLocationID.Size = new System.Drawing.Size(200, 29);
             this.cmbLocationID.TabIndex = 38;
+=======
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             // 
             // txtLocationName
             // 
             this.txtLocationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.txtLocationName.Location = new System.Drawing.Point(297, 257);
             this.txtLocationName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.txtLocationName.Location = new System.Drawing.Point(486, 375);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.Size = new System.Drawing.Size(200, 29);
             this.txtLocationName.TabIndex = 37;
@@ -185,8 +222,12 @@
             this.lblSubID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSubID.AutoSize = true;
             this.lblSubID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblSubID.Location = new System.Drawing.Point(141, 316);
             this.lblSubID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+=======
+            this.lblSubID.Location = new System.Drawing.Point(247, 461);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.lblSubID.Name = "lblSubID";
             this.lblSubID.Size = new System.Drawing.Size(158, 21);
             this.lblSubID.TabIndex = 36;
@@ -197,8 +238,12 @@
             this.lblLocationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocationName.AutoSize = true;
             this.lblLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.lblLocationName.Location = new System.Drawing.Point(147, 259);
             this.lblLocationName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+=======
+            this.lblLocationName.Location = new System.Drawing.Point(262, 378);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.lblLocationName.Name = "lblLocationName";
             this.lblLocationName.Size = new System.Drawing.Size(151, 21);
             this.lblLocationName.TabIndex = 35;
@@ -218,13 +263,27 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // txtSubID
+            // 
+            this.txtSubID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtSubID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSubID.Location = new System.Drawing.Point(486, 458);
+            this.txtSubID.Name = "txtSubID";
+            this.txtSubID.Size = new System.Drawing.Size(298, 39);
+            this.txtSubID.TabIndex = 38;
+            // 
             // LocationEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(719, 445);
             this.Controls.Add(this.cmbLocationID);
+=======
+            this.ClientSize = new System.Drawing.Size(1079, 650);
+            this.Controls.Add(this.txtSubID);
+>>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
             this.Controls.Add(this.txtLocationName);
             this.Controls.Add(this.lblSubID);
             this.Controls.Add(this.lblLocationName);
@@ -232,7 +291,6 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblLine);
-            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.cmbLocations);
             this.Controls.Add(this.lblLocationID);
             this.Controls.Add(this.pictureBox1);
@@ -256,14 +314,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLocationID;
         private System.Windows.Forms.ComboBox cmbLocations;
-        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblLine;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.ComboBox cmbLocationID;
         private System.Windows.Forms.TextBox txtLocationName;
         private System.Windows.Forms.Label lblSubID;
         private System.Windows.Forms.Label lblLocationName;
+        private System.Windows.Forms.TextBox txtSubID;
     }
 }

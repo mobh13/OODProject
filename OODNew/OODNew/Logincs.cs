@@ -84,7 +84,6 @@ namespace OODNew
                 }
                 else
                 {
-                    MessageBox.Show("Error no iser was found");
                     MessageBox.Show("Error no user was found");
                     reader.Close();
                     Program.Connection.Close();
@@ -95,7 +94,7 @@ namespace OODNew
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         private void Logincs_Load(object sender, EventArgs e)
         {
@@ -105,6 +104,12 @@ namespace OODNew
         private void Logincs_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Register reg = new Register();
+            reg.Show();
         }
     }
 }

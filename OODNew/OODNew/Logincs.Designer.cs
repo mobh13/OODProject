@@ -39,6 +39,7 @@
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +86,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(182, 206);
+<<<<<<< HEAD
+            this.label2.Location = new System.Drawing.Point(179, 208);
+=======
+            this.label2.Location = new System.Drawing.Point(246, 299);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 23);
             this.label2.TabIndex = 9;
@@ -95,7 +101,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(182, 247);
+<<<<<<< HEAD
+            this.label3.Location = new System.Drawing.Point(179, 249);
+=======
+            this.label3.Location = new System.Drawing.Point(246, 359);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(103, 23);
             this.label3.TabIndex = 10;
@@ -103,17 +114,34 @@
             // 
             // txtboxUsername
             // 
-            this.txtboxUsername.Location = new System.Drawing.Point(289, 214);
+<<<<<<< HEAD
+            this.txtboxUsername.Location = new System.Drawing.Point(287, 211);
             this.txtboxUsername.Name = "txtboxUsername";
             this.txtboxUsername.Size = new System.Drawing.Size(192, 20);
+=======
+            this.txtboxUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxUsername.Location = new System.Drawing.Point(410, 302);
+            this.txtboxUsername.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxUsername.Name = "txtboxUsername";
+            this.txtboxUsername.Size = new System.Drawing.Size(286, 37);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.txtboxUsername.TabIndex = 11;
             // 
             // txtboxPassword
             // 
-            this.txtboxPassword.Location = new System.Drawing.Point(289, 254);
+<<<<<<< HEAD
+            this.txtboxPassword.Location = new System.Drawing.Point(287, 252);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.PasswordChar = '*';
             this.txtboxPassword.Size = new System.Drawing.Size(192, 20);
+=======
+            this.txtboxPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxPassword.Location = new System.Drawing.Point(410, 360);
+            this.txtboxPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.PasswordChar = '*';
+            this.txtboxPassword.Size = new System.Drawing.Size(286, 37);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.txtboxPassword.TabIndex = 12;
             // 
             // btnLogin
@@ -121,10 +149,14 @@
             this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Green;
-            this.btnLogin.Location = new System.Drawing.Point(171, 318);
+<<<<<<< HEAD
+            this.btnLogin.Location = new System.Drawing.Point(224, 315);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.btnLogin.Location = new System.Drawing.Point(216, 465);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(102, 32);
+            this.btnLogin.Size = new System.Drawing.Size(110, 32);
             this.btnLogin.TabIndex = 33;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -135,10 +167,14 @@
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(409, 318);
+<<<<<<< HEAD
+            this.btnClear.Location = new System.Drawing.Point(452, 315);
             this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.btnClear.Location = new System.Drawing.Point(595, 465);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(102, 32);
+            this.btnClear.Size = new System.Drawing.Size(110, 32);
             this.btnClear.TabIndex = 32;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -148,21 +184,39 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(292, 318);
+<<<<<<< HEAD
+            this.btnClose.Location = new System.Drawing.Point(338, 315);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.btnClose.Location = new System.Drawing.Point(410, 465);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(102, 32);
+            this.btnClose.Size = new System.Drawing.Size(110, 32);
             this.btnClose.TabIndex = 34;
-            this.btnClose.Text = "Clsoe";
+            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(110, 315);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(110, 32);
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Register";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Logincs
             // 
             this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(650, 371);
+            this.ClientSize = new System.Drawing.Size(650, 388);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.btnClear);
@@ -173,7 +227,12 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
+<<<<<<< HEAD
+=======
+            this.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 704e78aec4913f4c2b6a6b6246dfb10c84407790
             this.Name = "Logincs";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logincs";
             this.Load += new System.EventHandler(this.Logincs_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -194,6 +253,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button button1;
 
 
     }
