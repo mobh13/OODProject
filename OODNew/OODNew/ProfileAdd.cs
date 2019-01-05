@@ -181,5 +181,11 @@ namespace OODNew
             cmbRole.SelectedIndex = -1;
             dtpBirthdate.Value = DateTime.Now;
         }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }

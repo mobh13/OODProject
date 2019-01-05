@@ -91,7 +91,7 @@ namespace OODNew
             List<string> bidIdList = new List<string>();
             List<string> applicationIdList = new List<string>();
 
-               DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this Profile?",
+               DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this Profile ? \n Warning: All Profile Related records is going to be deleted For Example: Application , bids.",
                "Delete Notice", MessageBoxButtons.YesNo);
                if (dialogResult == DialogResult.Yes)
                {
@@ -100,7 +100,18 @@ namespace OODNew
                    command = Program.Connection.CreateCommand();
                     command.Parameters.Clear();
                 command.Parameters.AddWithValue("id", id);
-                command.CommandText = "Select Id from [Bid] where Application_Id in(select Id from [Application] where User_Id = @id)";
+                   command.CommandText = "Select Count(Id) from [Property] where Agent_Id = @id)";
+                reader = command.ExecuteReader();
+                   reader.Read();
+                   if(Convert.ToInt32(reader.GetValue(0).ToString() ) != 0 ){
+                       MessageBox.Show("Error this user has properties, you cannot delete a profile that has a property linked with.");
+                       reader.Close();
+
+                   }else{
+                       reader.Close();
+                          command.Parameters.Clear();
+                command.Parameters.AddWithValue("id", id);
+                         command.CommandText = "Select Id from [Bid] where Application_Id in(select Id from [Application] where User_Id = @id)";
                 reader = command.ExecuteReader();
                 while (reader.Read())
                 {
@@ -201,17 +212,7 @@ namespace OODNew
                 {
                     MessageBox.Show(ex.ToString());
                 }
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", id);
-                command.CommandText = "Delete From [Property] where Agent_Id=@id";
-                try
-                {
-                    command.ExecuteNonQuery();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
+              
                 command.Parameters.Clear();
                 command.Parameters.AddWithValue("id", id);
                 command.CommandText = "Delete From [User] where Id=@id";
@@ -224,12 +225,26 @@ namespace OODNew
                     MessageBox.Show(ex.ToString());
                 }
 
+                   }
+              
+
                 Program.Connection.Close();
                 LoadCmb();
 
 
                
                }
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            LoadCmb();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
 
         }
     }

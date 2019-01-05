@@ -65,9 +65,10 @@
             this.lblTitle.BackColor = System.Drawing.Color.Navy;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(742, 172);
+            this.lblTitle.Location = new System.Drawing.Point(495, 118);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(325, 69);
+            this.lblTitle.Size = new System.Drawing.Size(223, 45);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Add Profile";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
@@ -78,9 +79,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(-2, -1);
+            this.label1.Location = new System.Drawing.Point(-1, -1);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1080, 243);
+            this.label1.Size = new System.Drawing.Size(720, 166);
             this.label1.TabIndex = 4;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -88,9 +90,10 @@
             // 
             this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btnAdd.Location = new System.Drawing.Point(326, 690);
+            this.btnAdd.Location = new System.Drawing.Point(217, 472);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(130, 39);
+            this.btnAdd.Size = new System.Drawing.Size(87, 27);
             this.btnAdd.TabIndex = 8;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -101,9 +104,10 @@
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(38, 300);
+            this.lblName.Location = new System.Drawing.Point(25, 205);
+            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(100, 32);
+            this.lblName.Size = new System.Drawing.Size(69, 21);
             this.lblName.TabIndex = 10;
             this.lblName.Text = "Name:";
             // 
@@ -112,9 +116,10 @@
             this.lblEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(38, 360);
+            this.lblEmail.Location = new System.Drawing.Point(25, 246);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(90, 32);
+            this.lblEmail.Size = new System.Drawing.Size(60, 21);
             this.lblEmail.TabIndex = 11;
             this.lblEmail.Text = "Email:";
             // 
@@ -123,9 +128,10 @@
             this.lblUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(38, 421);
+            this.lblUsername.Location = new System.Drawing.Point(25, 288);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(149, 32);
+            this.lblUsername.Size = new System.Drawing.Size(103, 21);
             this.lblUsername.TabIndex = 12;
             this.lblUsername.Text = "Username:";
             // 
@@ -134,9 +140,10 @@
             this.lblPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPassword.AutoSize = true;
             this.lblPassword.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassword.Location = new System.Drawing.Point(38, 481);
+            this.lblPassword.Location = new System.Drawing.Point(25, 329);
+            this.lblPassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(149, 32);
+            this.lblPassword.Size = new System.Drawing.Size(100, 21);
             this.lblPassword.TabIndex = 13;
             this.lblPassword.Text = "Password: ";
             // 
@@ -145,9 +152,10 @@
             this.lblCPR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCPR.AutoSize = true;
             this.lblCPR.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCPR.Location = new System.Drawing.Point(38, 541);
+            this.lblCPR.Location = new System.Drawing.Point(25, 370);
+            this.lblCPR.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCPR.Name = "lblCPR";
-            this.lblCPR.Size = new System.Drawing.Size(81, 32);
+            this.lblCPR.Size = new System.Drawing.Size(57, 21);
             this.lblCPR.TabIndex = 14;
             this.lblCPR.Text = "CPR: ";
             // 
@@ -156,9 +164,10 @@
             this.lblDOB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblDOB.AutoSize = true;
             this.lblDOB.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDOB.Location = new System.Drawing.Point(38, 607);
+            this.lblDOB.Location = new System.Drawing.Point(25, 415);
+            this.lblDOB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDOB.Name = "lblDOB";
-            this.lblDOB.Size = new System.Drawing.Size(183, 32);
+            this.lblDOB.Size = new System.Drawing.Size(128, 21);
             this.lblDOB.TabIndex = 15;
             this.lblDOB.Text = "Date of Birth: ";
             // 
@@ -167,9 +176,10 @@
             this.lblAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(574, 300);
+            this.lblAddress.Location = new System.Drawing.Point(383, 205);
+            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(129, 32);
+            this.lblAddress.Size = new System.Drawing.Size(90, 21);
             this.lblAddress.TabIndex = 16;
             this.lblAddress.Text = "Address: ";
             this.lblAddress.Click += new System.EventHandler(this.lblAddress_Click);
@@ -179,9 +189,10 @@
             this.lblPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(574, 360);
+            this.lblPhone.Location = new System.Drawing.Point(383, 246);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(103, 32);
+            this.lblPhone.Size = new System.Drawing.Size(72, 21);
             this.lblPhone.TabIndex = 17;
             this.lblPhone.Text = "Phone:";
             this.lblPhone.Click += new System.EventHandler(this.lblPhone_Click);
@@ -191,9 +202,10 @@
             this.lblCommission.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblCommission.AutoSize = true;
             this.lblCommission.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCommission.Location = new System.Drawing.Point(574, 421);
+            this.lblCommission.Location = new System.Drawing.Point(383, 288);
+            this.lblCommission.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCommission.Name = "lblCommission";
-            this.lblCommission.Size = new System.Drawing.Size(173, 32);
+            this.lblCommission.Size = new System.Drawing.Size(119, 21);
             this.lblCommission.TabIndex = 18;
             this.lblCommission.Text = "Commission:";
             this.lblCommission.Click += new System.EventHandler(this.lblCommission_Click);
@@ -203,9 +215,10 @@
             this.lblRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblRole.AutoSize = true;
             this.lblRole.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRole.Location = new System.Drawing.Point(574, 481);
+            this.lblRole.Location = new System.Drawing.Point(383, 329);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(78, 32);
+            this.lblRole.Size = new System.Drawing.Size(53, 21);
             this.lblRole.TabIndex = 19;
             this.lblRole.Text = "Role:";
             this.lblRole.Click += new System.EventHandler(this.lblRole_Click);
@@ -214,94 +227,105 @@
             // 
             this.txtUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.Location = new System.Drawing.Point(218, 418);
+            this.txtUsername.Location = new System.Drawing.Point(145, 286);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(298, 39);
+            this.txtUsername.Size = new System.Drawing.Size(200, 29);
             this.txtUsername.TabIndex = 20;
             // 
             // txtEmail
             // 
             this.txtEmail.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(218, 357);
+            this.txtEmail.Location = new System.Drawing.Point(145, 244);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(298, 39);
+            this.txtEmail.Size = new System.Drawing.Size(200, 29);
             this.txtEmail.TabIndex = 21;
             // 
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(218, 297);
+            this.txtName.Location = new System.Drawing.Point(145, 203);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(298, 39);
+            this.txtName.Size = new System.Drawing.Size(200, 29);
             this.txtName.TabIndex = 22;
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(218, 478);
+            this.txtPassword.Location = new System.Drawing.Point(145, 327);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(298, 39);
+            this.txtPassword.Size = new System.Drawing.Size(200, 29);
             this.txtPassword.TabIndex = 23;
             // 
             // txtCPR
             // 
             this.txtCPR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCPR.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCPR.Location = new System.Drawing.Point(218, 538);
+            this.txtCPR.Location = new System.Drawing.Point(145, 368);
+            this.txtCPR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCPR.Name = "txtCPR";
-            this.txtCPR.Size = new System.Drawing.Size(298, 39);
+            this.txtCPR.Size = new System.Drawing.Size(200, 29);
             this.txtCPR.TabIndex = 24;
             // 
             // txtCommission
             // 
             this.txtCommission.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtCommission.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCommission.Location = new System.Drawing.Point(753, 414);
+            this.txtCommission.Location = new System.Drawing.Point(502, 283);
+            this.txtCommission.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCommission.Name = "txtCommission";
-            this.txtCommission.Size = new System.Drawing.Size(298, 39);
+            this.txtCommission.Size = new System.Drawing.Size(200, 29);
             this.txtCommission.TabIndex = 26;
             // 
             // txtPhone
             // 
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPhone.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(753, 357);
+            this.txtPhone.Location = new System.Drawing.Point(502, 244);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(298, 39);
+            this.txtPhone.Size = new System.Drawing.Size(200, 29);
             this.txtPhone.TabIndex = 27;
             // 
             // txtAddress
             // 
             this.txtAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAddress.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(753, 297);
+            this.txtAddress.Location = new System.Drawing.Point(502, 203);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(298, 39);
+            this.txtAddress.Size = new System.Drawing.Size(200, 29);
             this.txtAddress.TabIndex = 28;
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(644, 691);
+            this.btnClose.Location = new System.Drawing.Point(429, 473);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(130, 39);
+            this.btnClose.Size = new System.Drawing.Size(87, 27);
             this.btnClose.TabIndex = 33;
             this.btnClose.Text = "Clsoe";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnClear
             // 
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(484, 691);
+            this.btnClear.Location = new System.Drawing.Point(323, 473);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(130, 39);
+            this.btnClear.Size = new System.Drawing.Size(87, 27);
             this.btnClear.TabIndex = 32;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -311,9 +335,10 @@
             // 
             this.dtpBirthdate.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dtpBirthdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpBirthdate.Location = new System.Drawing.Point(218, 603);
+            this.dtpBirthdate.Location = new System.Drawing.Point(145, 413);
+            this.dtpBirthdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dtpBirthdate.Name = "dtpBirthdate";
-            this.dtpBirthdate.Size = new System.Drawing.Size(486, 37);
+            this.dtpBirthdate.Size = new System.Drawing.Size(325, 27);
             this.dtpBirthdate.TabIndex = 34;
             // 
             // cmbRole
@@ -321,9 +346,10 @@
             this.cmbRole.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbRole.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Location = new System.Drawing.Point(753, 476);
+            this.cmbRole.Location = new System.Drawing.Point(502, 326);
+            this.cmbRole.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(298, 42);
+            this.cmbRole.Size = new System.Drawing.Size(200, 30);
             this.cmbRole.TabIndex = 35;
             // 
             // pictureBox1
@@ -331,9 +357,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Navy;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(2, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(1, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(513, 243);
+            this.pictureBox1.Size = new System.Drawing.Size(342, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -341,10 +368,10 @@
             // 
             // ProfileAdd
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1078, 763);
+            this.ClientSize = new System.Drawing.Size(719, 522);
             this.Controls.Add(this.cmbRole);
             this.Controls.Add(this.dtpBirthdate);
             this.Controls.Add(this.btnClose);
@@ -371,6 +398,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProfileAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Profile";

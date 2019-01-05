@@ -382,6 +382,7 @@
             this.btnClose.TabIndex = 31;
             this.btnClose.Text = "Clsoe";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 

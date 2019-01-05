@@ -296,6 +296,7 @@
             this.btnClear.TabIndex = 30;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClose
             // 
@@ -308,6 +309,7 @@
             this.btnClose.TabIndex = 31;
             this.btnClose.Text = "Clsoe";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblLine
             // 
@@ -406,7 +408,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(781, 603);
+            this.ClientSize = new System.Drawing.Size(781, 662);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DOB);
             this.Controls.Add(this.Role_Id);

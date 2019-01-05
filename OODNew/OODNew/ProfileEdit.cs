@@ -234,5 +234,24 @@ namespace OODNew
                 Program.Connection.Close();
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            foreach (Control ctr in Controls)
+            {
+                if (ctr is TextBox)
+                {
+                    ctr.Text = "";
+                }
+            }
+            comboBox1.Items.Clear();
+            dateTimePicker1.Value = DateTime.Now;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
 }
