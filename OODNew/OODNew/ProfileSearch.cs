@@ -36,7 +36,22 @@ namespace OODNew
 
         private void ProfileView_Load(object sender, EventArgs e)
         {
-            this.DOB.CustomFormat = "MM/dd/yyyy";
+            this.DOB.CustomFormat = "d/MMM/yyyy";
+            List<string> list = new List<string>();
+            Program.Connection.Open();
+            command = Program.Connection.CreateCommand();
+            command.CommandText = "Select * From [Role]";
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                list.Add(reader.GetValue(1).ToString());
+            }
+            
+            Role_Id.DataSource = list;
+            
+            Role_Id.SelectedIndex = -1;
+            reader.Close();
+            Program.Connection.Close();
           
         }
 
@@ -72,8 +87,8 @@ namespace OODNew
             command.Parameters.Clear();
            
             command.CommandText = "Select * From [User] where 1 = 1";
-            reader = command.ExecuteReader();
-            reader.Read();
+            textBox1.Text = null;
+
             foreach (Control ctr in Controls)
             {
                 if (ctr is TextBox)
@@ -81,25 +96,52 @@ namespace OODNew
                     if (ctr.Text != "")
                     {
                         command.Parameters.AddWithValue(ctr.Name, ctr.Text);
-                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString() ;
+                        command.CommandText = command.CommandText + " and " + ctr.Name.ToString() + " Like( '%' + @" + ctr.Name.ToString() + " + '%' ) ";
 
-                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString();
                     }
                 }
             }
             if (Role_Id.SelectedIndex != -1)
             {
                 command.Parameters.AddWithValue(Role_Id.Name, Role_Id.SelectedIndex + 1);
-                command.CommandText = command.CommandText + " and " + Role_Id.Name.ToString() + " = @" + Role_Id.Name.ToString();
+                command.CommandText = command.CommandText + " and " + Role_Id.Name.ToString() + " Like( @" + Role_Id.Name.ToString() + " ) ";
             }
 
-            if (DOB.Value != DateTime.Today)
+            if (DOB.Value.ToString("d/MMM/yyyy") != DateTime.Today.ToString("d/MMM/yyyy"))
             {
                 command.Parameters.AddWithValue(DOB.Name.ToString(), DOB.Value.ToString("d/MMM/yyyy"));
-                command.CommandText = command.CommandText + " and " +DOB.Name.ToString() + " = @" + DOB.Name.ToString();
+                command.CommandText = command.CommandText + " and " + DOB.Name.ToString() + " Like( @" + DOB.Name.ToString() +" ) ";
             }
+            reader = command.ExecuteReader();
+            StringBuilder toShow = new StringBuilder();
+            toShow.AppendLine("Profiles:") ;
+            while (reader.Read())
+            {
+                toShow.AppendLine( reader.GetValue(0).ToString() + " - " + reader.GetValue(1).ToString());
+            }
+            textBox1.Text = toShow.ToString();
 
+            reader.Close();
+            Program.Connection.Close();
           
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            foreach (Control ctr in Controls)
+            {
+                if (ctr is TextBox)
+                {
+                    ctr.Text = "";
+                }
+            }
+            Role_Id.SelectedIndex = -1;
+            DOB.Value = DateTime.Now;
         }
     }
 }

@@ -41,7 +41,16 @@ namespace OODNew
             List<string> list = new List<string>();
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
-            command.CommandText = "Select * From [User]";
+            if (Program.UserInfo.Role_id == "1")
+            {
+                command.CommandText = "Select * From [User]";
+            }
+            else
+            {
+                command.Parameters.AddWithValue("id", Program.UserInfo.Id);
+                command.CommandText = "Select * From [User] Where Id= @id";
+            }
+           
             reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -216,7 +225,6 @@ namespace OODNew
                 command.Parameters.AddWithValue("dob", dateTimePicker1.Value.ToString("d/MMM/yyyy"));
 
 
-
                 command.CommandText = "Update [User] set Name = @name, DOB = @dob, Email = @email, Phone = @phone, Address = @address, Username = @username, Password = @password, role_Id = @role, Commission = @commission, CPR = @cpr Where Id = @id";
                 int rowEffected = 0;
                 try
@@ -229,7 +237,23 @@ namespace OODNew
                 }
                 if (rowEffected == 1)
                 {
-                    MessageBox.Show("User Update");
+                    if (id == Program.UserInfo.Id)
+                    {
+                        Program.UserInfo.Name = txtName.Text;
+                        Program.UserInfo.Password = txtPassword.Text;
+                        Program.UserInfo.Phone = txtPhone.Text;
+                        Program.UserInfo.Role_id = (comboBox1.SelectedIndex + 1).ToString();
+                        Program.UserInfo.Username = txtUsername.Text;
+                        Program.UserInfo.Email = txtEmail.Text;
+                        Program.UserInfo.Dob = dateTimePicker1.Value.ToString("d/MMM/yyyy");
+                        Program.UserInfo.CPR = txtCPR.Text;
+                        Program.UserInfo.Commision = txtCommission.Text;
+                        Program.UserInfo.Address = txtAddress.Text;
+                    }
+                      
+                    MessageBox.Show("User Updated");
+                  
+
                 }
                 Program.Connection.Close();
             }
