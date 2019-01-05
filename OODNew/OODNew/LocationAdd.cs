@@ -45,6 +45,7 @@ namespace OODNew
             command = Program.Connection.CreateCommand();
             command.CommandText = "Select * From [Location]";
             reader = command.ExecuteReader();
+            locationsList.Add("0 - A Country");
             while (reader.Read())
             {
                 locationsList.Add(reader.GetValue(0).ToString() + " - " + reader.GetValue(1).ToString());
@@ -85,8 +86,16 @@ namespace OODNew
         }
         void clear()
         {
-            txtLocationName.Text = "";
-            cmbLocationID.SelectedIndex = -1;
+            //txtLocationName.Text = "";
+            //cmbLocationID.SelectedIndex = -1;
+            foreach (TextBox control in Controls.OfType<TextBox>())
+            {
+                    control.Text = "";
+            }
+            foreach (ComboBox control in Controls.OfType<ComboBox>())
+            {
+                control.SelectedIndex = -1;
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
