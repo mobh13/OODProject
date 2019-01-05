@@ -111,6 +111,7 @@
             this.cmbProfiles.Name = "cmbProfiles";
             this.cmbProfiles.Size = new System.Drawing.Size(149, 30);
             this.cmbProfiles.TabIndex = 7;
+            this.cmbProfiles.SelectedIndexChanged += new System.EventHandler(this.cmbProfiles_SelectedIndexChanged);
             this.cmbProfiles.SelectionChangeCommitted += new System.EventHandler(this.cmbProfiles_SelectionChangeCommitted);
             // 
             // lblLine

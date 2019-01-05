@@ -124,7 +124,7 @@ namespace OODNew
 
         private void viewToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            PropertView pView = new PropertView();
+            PropertyView pView = new PropertyView();
             pView.Show();
         }
 

@@ -277,5 +277,10 @@ namespace OODNew
             this.Close();
 
         }
+
+        private void cmbProfiles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
