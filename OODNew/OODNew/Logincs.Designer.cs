@@ -83,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(281, 298);
+            this.label2.Location = new System.Drawing.Point(266, 295);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 37);
@@ -94,7 +94,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(281, 375);
+            this.label3.Location = new System.Drawing.Point(266, 372);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(153, 37);
@@ -104,7 +104,7 @@
             // txtboxUsername
             // 
             this.txtboxUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxUsername.Location = new System.Drawing.Point(443, 301);
+            this.txtboxUsername.Location = new System.Drawing.Point(428, 298);
             this.txtboxUsername.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtboxUsername.Name = "txtboxUsername";
             this.txtboxUsername.Size = new System.Drawing.Size(286, 37);
@@ -113,7 +113,7 @@
             // txtboxPassword
             // 
             this.txtboxPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxPassword.Location = new System.Drawing.Point(443, 378);
+            this.txtboxPassword.Location = new System.Drawing.Point(428, 375);
             this.txtboxPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.PasswordChar = '*';
@@ -125,7 +125,7 @@
             this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.Green;
-            this.btnLogin.Location = new System.Drawing.Point(112, 478);
+            this.btnLogin.Location = new System.Drawing.Point(98, 479);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(165, 47);
             this.btnLogin.TabIndex = 33;
@@ -138,7 +138,7 @@
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(319, 478);
+            this.btnClear.Location = new System.Drawing.Point(305, 479);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(165, 47);
             this.btnClear.TabIndex = 32;
@@ -150,7 +150,7 @@
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(736, 478);
+            this.btnClose.Location = new System.Drawing.Point(722, 479);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(165, 47);
             this.btnClose.TabIndex = 34;
@@ -162,7 +162,7 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(532, 478);
+            this.button1.Location = new System.Drawing.Point(518, 479);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(165, 47);
             this.button1.TabIndex = 35;
