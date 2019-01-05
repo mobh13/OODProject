@@ -34,7 +34,6 @@
             this.lblLocationId = new System.Windows.Forms.Label();
             this.cmbLocations = new System.Windows.Forms.ComboBox();
             this.btnDelete = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,7 +70,7 @@
             this.lblLocationId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocationId.AutoSize = true;
             this.lblLocationId.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocationId.Location = new System.Drawing.Point(273, 338);
+            this.lblLocationId.Location = new System.Drawing.Point(260, 332);
             this.lblLocationId.Name = "lblLocationId";
             this.lblLocationId.Size = new System.Drawing.Size(177, 34);
             this.lblLocationId.TabIndex = 6;
@@ -83,7 +82,7 @@
             this.cmbLocations.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbLocations.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocations.FormattingEnabled = true;
-            this.cmbLocations.Location = new System.Drawing.Point(462, 335);
+            this.cmbLocations.Location = new System.Drawing.Point(449, 329);
             this.cmbLocations.Name = "cmbLocations";
             this.cmbLocations.Size = new System.Drawing.Size(298, 42);
             this.cmbLocations.TabIndex = 7;
@@ -92,35 +91,26 @@
             // 
             this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(308, 481);
+            this.btnDelete.ForeColor = System.Drawing.Color.Red;
+            this.btnDelete.Location = new System.Drawing.Point(361, 452);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(131, 39);
+            this.btnDelete.Size = new System.Drawing.Size(131, 51);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnClear
-            // 
-            this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(467, 481);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(131, 39);
-            this.btnClear.TabIndex = 30;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(629, 481);
+            this.btnClose.Location = new System.Drawing.Point(558, 452);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(131, 39);
+            this.btnClose.Size = new System.Drawing.Size(131, 51);
             this.btnClose.TabIndex = 31;
-            this.btnClose.Text = "Clsoe";
+            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 
@@ -140,9 +130,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1079, 584);
+            this.ClientSize = new System.Drawing.Size(1079, 567);
             this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.cmbLocations);
             this.Controls.Add(this.lblLocationId);
@@ -167,7 +156,6 @@
         private System.Windows.Forms.Label lblLocationId;
         private System.Windows.Forms.ComboBox cmbLocations;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClose;
     }
 }

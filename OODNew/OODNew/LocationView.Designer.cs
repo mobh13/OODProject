@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblLocationId = new System.Windows.Forms.Label();
             this.cmbLocations = new System.Windows.Forms.ComboBox();
-            this.btnSubmit = new System.Windows.Forms.Button();
             this.lblLine = new System.Windows.Forms.Label();
             this.lblLocationName = new System.Windows.Forms.Label();
             this.lblSubID = new System.Windows.Forms.Label();
@@ -76,7 +75,7 @@
             this.lblLocationId.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocationId.AutoSize = true;
             this.lblLocationId.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocationId.Location = new System.Drawing.Point(263, 284);
+            this.lblLocationId.Location = new System.Drawing.Point(230, 280);
             this.lblLocationId.Name = "lblLocationId";
             this.lblLocationId.Size = new System.Drawing.Size(177, 34);
             this.lblLocationId.TabIndex = 6;
@@ -88,21 +87,11 @@
             this.cmbLocations.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbLocations.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocations.FormattingEnabled = true;
-            this.cmbLocations.Location = new System.Drawing.Point(452, 280);
+            this.cmbLocations.Location = new System.Drawing.Point(460, 277);
             this.cmbLocations.Name = "cmbLocations";
             this.cmbLocations.Size = new System.Drawing.Size(298, 42);
             this.cmbLocations.TabIndex = 7;
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit.Location = new System.Drawing.Point(767, 281);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(131, 42);
-            this.btnSubmit.TabIndex = 8;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.cmbLocations.SelectedIndexChanged += new System.EventHandler(this.cmbLocations_SelectedIndexChanged);
             // 
             // lblLine
             // 
@@ -118,7 +107,7 @@
             this.lblLocationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocationName.AutoSize = true;
             this.lblLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocationName.Location = new System.Drawing.Point(222, 400);
+            this.lblLocationName.Location = new System.Drawing.Point(230, 376);
             this.lblLocationName.Name = "lblLocationName";
             this.lblLocationName.Size = new System.Drawing.Size(218, 32);
             this.lblLocationName.TabIndex = 10;
@@ -130,7 +119,7 @@
             this.lblSubID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSubID.AutoSize = true;
             this.lblSubID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubID.Location = new System.Drawing.Point(222, 468);
+            this.lblSubID.Location = new System.Drawing.Point(230, 448);
             this.lblSubID.Name = "lblSubID";
             this.lblSubID.Size = new System.Drawing.Size(226, 32);
             this.lblSubID.TabIndex = 16;
@@ -141,7 +130,7 @@
             // 
             this.txtLocationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocationName.Location = new System.Drawing.Point(452, 400);
+            this.txtLocationName.Location = new System.Drawing.Point(460, 376);
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.ReadOnly = true;
             this.txtLocationName.Size = new System.Drawing.Size(298, 39);
@@ -152,7 +141,7 @@
             // 
             this.txtSubID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSubID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubID.Location = new System.Drawing.Point(452, 468);
+            this.txtSubID.Location = new System.Drawing.Point(460, 448);
             this.txtSubID.Name = "txtSubID";
             this.txtSubID.ReadOnly = true;
             this.txtSubID.Size = new System.Drawing.Size(298, 39);
@@ -170,6 +159,7 @@
             this.btnClear.TabIndex = 30;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClose
             // 
@@ -179,7 +169,7 @@
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(131, 39);
             this.btnClose.TabIndex = 31;
-            this.btnClose.Text = "Clsoe";
+            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
@@ -208,7 +198,6 @@
             this.Controls.Add(this.lblSubID);
             this.Controls.Add(this.lblLocationName);
             this.Controls.Add(this.lblLine);
-            this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.cmbLocations);
             this.Controls.Add(this.lblLocationId);
             this.Controls.Add(this.pictureBox1);
@@ -231,7 +220,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblLocationId;
         private System.Windows.Forms.ComboBox cmbLocations;
-        private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Label lblLine;
         private System.Windows.Forms.Label lblLocationName;
         private System.Windows.Forms.Label lblSubID;
