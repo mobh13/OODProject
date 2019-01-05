@@ -36,8 +36,22 @@ namespace OODNew
 
         private void ProfileView_Load(object sender, EventArgs e)
         {
-            this.DOB.CustomFormat = "MM/dd/yyyy";
-          
+            List<string> list = new List<string>();
+            Program.Connection.Open();
+            command = Program.Connection.CreateCommand();
+            command.Parameters.Clear();
+
+            command.Parameters.AddWithValue("id", Program.UserInfo.Id);
+            command.CommandText = "Select ID from [Property] where Agent_Id = @id";
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                list.Add(reader.GetValue(0).ToString());
+            }
+            cmbProperty.DataSource = list;
+            cmbProperty.SelectedIndex = -1;
+            reader.Close();
+            Program.Connection.Close();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -67,39 +81,50 @@ namespace OODNew
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+
+
+            List<string> list = new List<string>();
+            string id = cmbProperty.SelectedValue.ToString();
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
             command.Parameters.Clear();
-           
-            command.CommandText = "Select * From [User] where 1 = 1";
+
+            command.Parameters.AddWithValue("id", id);
+            command.CommandText = "Select * From [Application] where Property_Id = @id";
             reader = command.ExecuteReader();
-            reader.Read();
-            foreach (Control ctr in Controls)
+            while (reader.Read())
             {
-                if (ctr is TextBox)
-                {
-                    if (ctr.Text != "")
-                    {
-                        command.Parameters.AddWithValue(ctr.Name, ctr.Text);
-                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString() ;
-
-                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString();
-                    }
-                }
+                list.Add(reader.GetValue(3).ToString());
             }
-            if (Role_Id.SelectedIndex != -1)
+            reader.Close();
+            StringBuilder toShow = new StringBuilder();
+            toShow.AppendLine("Profiles:");
+            foreach (string element in list)
             {
-                command.Parameters.AddWithValue(Role_Id.Name, Role_Id.SelectedIndex + 1);
-                command.CommandText = command.CommandText + " and " + Role_Id.Name.ToString() + " = @" + Role_Id.Name.ToString();
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("id", element);
+                command.CommandText = "Select * From [User] where Id = @id";
+                reader = command.ExecuteReader();
+                reader.Read();
+                toShow.AppendLine(reader.GetValue(0).ToString() + " - " + reader.GetValue(1).ToString() + " - " + reader.GetValue(6).ToString() + " - " + reader.GetValue(3).ToString() + " - " + reader.GetValue(4).ToString());
+                reader.Close();
             }
-
-            if (DOB.Value != DateTime.Today)
-            {
-                command.Parameters.AddWithValue(DOB.Name.ToString(), DOB.Value.ToString("d/MMM/yyyy"));
-                command.CommandText = command.CommandText + " and " +DOB.Name.ToString() + " = @" + DOB.Name.ToString();
-            }
+            textBox1.Text = toShow.ToString();
+            Program.Connection.Close();
 
           
+
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            cmbProperty.SelectedIndex = -1;
+            textBox1.Text = null;
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

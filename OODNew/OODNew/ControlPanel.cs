@@ -90,8 +90,22 @@ namespace OODNew
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProfileSearch pSearch = new ProfileSearch();
-            pSearch.Show();
+            if (Program.UserInfo.Role_id == "1")
+            {
+                ProfileSearch pSearch = new ProfileSearch();
+                pSearch.Show();
+
+            }
+            else if (Program.UserInfo.Role_id == "2")
+            {
+                AgentSearchProfile aPSearch = new AgentSearchProfile();
+            aPSearch.Show();
+                }
+            else
+            {
+                MessageBox.Show("Error you are not authorised to do this operation");
+            }
+           
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
