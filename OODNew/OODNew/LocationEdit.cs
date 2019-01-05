@@ -78,11 +78,7 @@ namespace OODNew
 
         }
 
-<<<<<<< HEAD
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-
-=======
+      
         private void cmbLocations_SelectionChangeCommitted(object sender, EventArgs e)
         {
             locationsLoad();
@@ -159,7 +155,6 @@ namespace OODNew
             {
                 MessageBox.Show("There are empty feilds, please enter all information.");
             }
->>>>>>> 8bf263b0ee3fc18e8cd9222c723f61c14ff25726
         }
     }
 }
