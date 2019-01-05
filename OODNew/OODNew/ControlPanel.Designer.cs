@@ -293,7 +293,7 @@
             this.slidShow.Image = ((System.Drawing.Image)(resources.GetObject("slidShow.Image")));
             this.slidShow.Location = new System.Drawing.Point(372, 259);
             this.slidShow.Name = "slidShow";
-            this.slidShow.Size = new System.Drawing.Size(686, 444);
+            this.slidShow.Size = new System.Drawing.Size(686, 424);
             this.slidShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidShow.TabIndex = 5;
             this.slidShow.TabStop = false;
@@ -327,7 +327,7 @@
             this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.Red;
-            this.btnLogOut.Location = new System.Drawing.Point(12, 656);
+            this.btnLogOut.Location = new System.Drawing.Point(12, 636);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(153, 47);
             this.btnLogOut.TabIndex = 33;

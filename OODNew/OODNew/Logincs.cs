@@ -94,7 +94,7 @@ namespace OODNew
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Close();
         }
         private void Logincs_Load(object sender, EventArgs e)
         {

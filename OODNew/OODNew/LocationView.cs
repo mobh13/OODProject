@@ -99,12 +99,13 @@ namespace OODNew
 
         private void btnClear_Click(object sender, EventArgs e)
         {
-            foreach (Control controls in Controls)
+            foreach (TextBox control in Controls.OfType<TextBox>())
             {
-                if (controls.Name == "TextBox" || controls.Name == "ComboBox")
-                {
-                    controls.Text = "";
-                }
+                control.Text = "";
+            }
+            foreach (ComboBox control in Controls.OfType<ComboBox>())
+            {
+                control.SelectedIndex = -1;
             }
         }
 
