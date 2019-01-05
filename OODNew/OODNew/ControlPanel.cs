@@ -74,8 +74,17 @@ namespace OODNew
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProfileAdd pAdd = new ProfileAdd();
-            pAdd.Show();
+            if (Program.UserInfo.Role_id == "1")
+            {
+                ProfileAdd pAdd = new ProfileAdd();
+                pAdd.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("Error you are not authorised to do this operation");
+            }
+            
         }
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
