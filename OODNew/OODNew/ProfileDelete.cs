@@ -44,7 +44,15 @@ namespace OODNew
             List<string> list = new List<string>();
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
-            command.CommandText = "Select * From [User]";
+            if (Program.UserInfo.Role_id == "1")
+            {
+                command.CommandText = "Select * From [User]";
+            }
+            else
+            {
+                command.Parameters.AddWithValue("id", Program.UserInfo.Id);
+                command.CommandText = "Select * From [User] Where Id= @id";
+            }
             reader = command.ExecuteReader();
             while (reader.Read())
             {
@@ -91,46 +99,91 @@ namespace OODNew
             List<string> bidIdList = new List<string>();
             List<string> applicationIdList = new List<string>();
 
-               DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this Profile ? \n Warning: All Profile Related records is going to be deleted For Example: Application , bids.",
-               "Delete Notice", MessageBoxButtons.YesNo);
-               if (dialogResult == DialogResult.Yes)
-               {
-                   string id = cmbProfiles.SelectedValue.ToString();
-                   Program.Connection.Open();
-                   command = Program.Connection.CreateCommand();
-                    command.Parameters.Clear();
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this Profile ? " +
+                "\n Warning: All Profile Related records is going to be deleted For Example: Application , bids." +
+                "\n Warning: If this is Your profile you will be logged out !!",
+            "Delete Notice", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                string id = cmbProfiles.SelectedValue.ToString();
+                Program.Connection.Open();
+                command = Program.Connection.CreateCommand();
+                command.Parameters.Clear();
                 command.Parameters.AddWithValue("id", id);
-                   command.CommandText = "Select Count(Id) from [Property] where Agent_Id = @id)";
+                command.CommandText = "Select Count(Id) from [Property] where Agent_Id = @id)";
                 reader = command.ExecuteReader();
-                   reader.Read();
-                   if(Convert.ToInt32(reader.GetValue(0).ToString() ) != 0 ){
-                       MessageBox.Show("Error this user has properties, you cannot delete a profile that has a property linked with.");
-                       reader.Close();
+                reader.Read();
+                if (Convert.ToInt32(reader.GetValue(0).ToString()) != 0)
+                {
+                    MessageBox.Show("Error this user has properties, you cannot delete a profile that has a property linked with.");
+                    reader.Close();
 
-                   }else{
-                       reader.Close();
-                          command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", id);
-                         command.CommandText = "Select Id from [Bid] where Application_Id in(select Id from [Application] where User_Id = @id)";
-                reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    bidIdList.Add(reader.GetValue(0).ToString());
                 }
-                reader.Close();
-                command.CommandText = "select Id from [Application] where User_Id = @id";
-                reader = command.ExecuteReader();
-                while (reader.Read())
+                else
                 {
-                    applicationIdList.Add(reader.GetValue(0).ToString());
-                }
-                reader.Close();
-
-                foreach (string bidId in bidIdList)
-                {
+                    reader.Close();
                     command.Parameters.Clear();
-                    command.Parameters.AddWithValue("id", bidId);
-                    command.CommandText = "Delete From [Payment] where Id=@id";
+                    command.Parameters.AddWithValue("id", id);
+                    command.CommandText = "Select Id from [Bid] where Application_Id in(select Id from [Application] where User_Id = @id)";
+                    reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        bidIdList.Add(reader.GetValue(0).ToString());
+                    }
+                    reader.Close();
+                    command.CommandText = "select Id from [Application] where User_Id = @id";
+                    reader = command.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        applicationIdList.Add(reader.GetValue(0).ToString());
+                    }
+                    reader.Close();
+
+                    foreach (string bidId in bidIdList)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("id", bidId);
+                        command.CommandText = "Delete From [Payment] where Id=@id";
+                        try
+                        {
+                            command.ExecuteNonQuery();
+                        }
+                        catch (SqlException ex)
+                        {
+                            MessageBox.Show(ex.ToString());
+                        }
+                    }
+                    foreach (string bidId in bidIdList)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("id", bidId);
+                        command.CommandText = "Delete From [Bid] where Id=@id";
+                        try
+                        {
+                            command.ExecuteNonQuery();
+                        }
+                        catch (SqlException ex)
+                        {
+                            MessageBox.Show(ex.ToString());
+                        }
+                    }
+                    foreach (string applicationID in applicationIdList)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("id", applicationID);
+                        command.CommandText = "Delete From [Application] where Id=@id";
+                        try
+                        {
+                            command.ExecuteNonQuery();
+                        }
+                        catch (SqlException ex)
+                        {
+                            MessageBox.Show(ex.ToString());
+                        }
+                    }
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("id", id);
+                    command.CommandText = "Delete From [Backup] where User_id=@id";
                     try
                     {
                         command.ExecuteNonQuery();
@@ -139,12 +192,9 @@ namespace OODNew
                     {
                         MessageBox.Show(ex.ToString());
                     }
-                }
-                foreach (string bidId in bidIdList)
-                {
                     command.Parameters.Clear();
-                    command.Parameters.AddWithValue("id", bidId);
-                    command.CommandText = "Delete From [Bid] where Id=@id";
+                    command.Parameters.AddWithValue("id", id);
+                    command.CommandText = "Delete From [Service_User] where User_Id=@id";
                     try
                     {
                         command.ExecuteNonQuery();
@@ -153,12 +203,9 @@ namespace OODNew
                     {
                         MessageBox.Show(ex.ToString());
                     }
-                }
-                foreach (string applicationID in applicationIdList)
-                {
                     command.Parameters.Clear();
-                    command.Parameters.AddWithValue("id", applicationID);
-                    command.CommandText = "Delete From [Application] where Id=@id";
+                    command.Parameters.AddWithValue("id", id);
+                    command.CommandText = "Delete From [Message] where Sender_Id=@id";
                     try
                     {
                         command.ExecuteNonQuery();
@@ -167,74 +214,56 @@ namespace OODNew
                     {
                         MessageBox.Show(ex.ToString());
                     }
-                }
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", id);
-                command.CommandText = "Delete From [Backup] where User_id=@id";
-                try
-                {
-                    command.ExecuteNonQuery();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", id);
-                command.CommandText = "Delete From [Service_User] where User_Id=@id";
-                try
-                {
-                    command.ExecuteNonQuery();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", id);
-                command.CommandText = "Delete From [Message] where Sender_Id=@id";
-                try
-                {
-                    command.ExecuteNonQuery();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", id);
-                command.CommandText = "Delete From [Message] where Reciver_Id=@id";
-                try
-                {
-                    command.ExecuteNonQuery();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-              
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("id", id);
-                command.CommandText = "Delete From [User] where Id=@id";
-                try
-                {
-                    command.ExecuteNonQuery();
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("id", id);
+                    command.CommandText = "Delete From [Message] where Reciver_Id=@id";
+                    try
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
 
-                   }
-              
+                    command.Parameters.Clear();
+                    command.Parameters.AddWithValue("id", id);
+                    command.CommandText = "Delete From [User] where Id=@id";
+                    int rowEffected = 0;
+                    try
+                    {
+                        rowEffected = command.ExecuteNonQuery();
+                    }
+                    catch (SqlException ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
+                    if (rowEffected == 1)
+                    {
+                        if (id == Program.UserInfo.Id)
+                        {
+                            this.Close();
+                            Logincs loginpnl = new Logincs();
+                            loginpnl.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User Deleted");
 
-                Program.Connection.Close();
-                LoadCmb();
+                        }
 
 
-               
-               }
+                    }
 
+
+                    Program.Connection.Close();
+                    LoadCmb();
+
+
+
+                }
+
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
