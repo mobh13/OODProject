@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Data.SqlClient;
 namespace OODNew
 {
     public partial class ControlPanel : Form
     {
+        private SqlCommand command;
+        private SqlDataReader reader;
         Bitmap[] images = new Bitmap[6];
         public ControlPanel()
         {
@@ -229,10 +231,29 @@ namespace OODNew
             images[3] = OODNew.Properties.Resources.image4;
             images[4] = OODNew.Properties.Resources.image5;
             images[5] = OODNew.Properties.Resources.image6;
+            string userName = Program.UserInfo.Name;
+            string userRoleID = Program.UserInfo.Role_id;
+            Program.Connection.Open();
+            command = Program.Connection.CreateCommand();
+            command.Parameters.Clear();
+            command.Parameters.AddWithValue("@roleId", userRoleID);
+            command.CommandText = "Select role_name From [Role] where role_id = @roleId";
+            reader = command.ExecuteReader();
+            reader.Read();
+            string userRole = reader.GetValue(0).ToString();
+            this.lblNameRole.Text = "User: " + userName + ", Role: " + userRole;
         }
 
         private void subMenuLocation_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            Logincs login = new Logincs();
+            this.Close();
+            login.Show();
+            Program.UserInfo = null;
         }
     }
 }

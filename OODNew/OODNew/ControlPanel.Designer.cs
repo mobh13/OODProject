@@ -55,6 +55,8 @@
             this.editToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.slidShow = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNameRole = new System.Windows.Forms.Label();
+            this.btnLogOut = new System.Windows.Forms.Button();
             this.MainMenuNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slidShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,7 +69,7 @@
             this.lblTitle.BackColor = System.Drawing.Color.Navy;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(681, 172);
+            this.lblTitle.Location = new System.Drawing.Point(692, 173);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(400, 69);
             this.lblTitle.TabIndex = 0;
@@ -79,7 +81,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(-4, -1);
+            this.label1.Location = new System.Drawing.Point(-2, -1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1096, 243);
             this.label1.TabIndex = 1;
@@ -108,7 +110,7 @@
             this.MainMenuNavigation.Margin = new System.Windows.Forms.Padding(3);
             this.MainMenuNavigation.Name = "MainMenuNavigation";
             this.MainMenuNavigation.Padding = new System.Windows.Forms.Padding(6, 1, 0, 1);
-            this.MainMenuNavigation.Size = new System.Drawing.Size(256, 282);
+            this.MainMenuNavigation.Size = new System.Drawing.Size(256, 262);
             this.MainMenuNavigation.TabIndex = 6;
             this.MainMenuNavigation.Text = "MainMenuNavigation";
             this.MainMenuNavigation.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -289,9 +291,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.slidShow.ErrorImage = null;
             this.slidShow.Image = ((System.Drawing.Image)(resources.GetObject("slidShow.Image")));
-            this.slidShow.Location = new System.Drawing.Point(374, 259);
+            this.slidShow.Location = new System.Drawing.Point(372, 259);
             this.slidShow.Name = "slidShow";
-            this.slidShow.Size = new System.Drawing.Size(686, 417);
+            this.slidShow.Size = new System.Drawing.Size(686, 444);
             this.slidShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidShow.TabIndex = 5;
             this.slidShow.TabStop = false;
@@ -309,12 +311,38 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // lblNameRole
+            // 
+            this.lblNameRole.AutoSize = true;
+            this.lblNameRole.BackColor = System.Drawing.Color.Navy;
+            this.lblNameRole.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameRole.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblNameRole.Location = new System.Drawing.Point(748, 9);
+            this.lblNameRole.Name = "lblNameRole";
+            this.lblNameRole.Size = new System.Drawing.Size(0, 22);
+            this.lblNameRole.TabIndex = 7;
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.Red;
+            this.btnLogOut.Location = new System.Drawing.Point(12, 656);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(153, 47);
+            this.btnLogOut.TabIndex = 33;
+            this.btnLogOut.Text = "Logout";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // ControlPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(1094, 715);
+            this.ClientSize = new System.Drawing.Size(1094, 729);
+            this.Controls.Add(this.btnLogOut);
+            this.Controls.Add(this.lblNameRole);
             this.Controls.Add(this.MainMenuNavigation);
             this.Controls.Add(this.slidShow);
             this.Controls.Add(this.pictureBox1);
@@ -361,6 +389,8 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem dToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem2;
+        private System.Windows.Forms.Label lblNameRole;
+        private System.Windows.Forms.Button btnLogOut;
     }
 }
 

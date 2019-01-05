@@ -94,8 +94,22 @@ namespace OODNew
 
         private void cmbLocations_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (this.cmbLocations.SelectedIndex != -1)
+            
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            foreach (Control controls in Controls)
             {
+                if (controls.Name == "TextBox" || controls.Name == "ComboBox")
+                {
+                    controls.Text = "";
+                }
+            }
+        }
+
+        private void cmbLocations_SelectionChangeCommitted(object sender, EventArgs e)
+        {
                 string locationID = this.cmbLocations.SelectedItem.ToString();
                 Program.Connection.Open();
                 command = Program.Connection.CreateCommand();
@@ -108,18 +122,6 @@ namespace OODNew
                 this.txtSubID.Text = reader.GetValue(2).ToString();
                 reader.Close();
                 Program.Connection.Close();
-            }
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            foreach (Control controls in Controls)
-            {
-                if (controls.Name == "TextBox" || controls.Name == "ComboBox")
-                {
-                    controls.Text = "";
-                }
-            }
         }
     }
 }
