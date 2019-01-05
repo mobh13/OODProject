@@ -16,6 +16,7 @@ namespace OODNew
     {
         private SqlCommand command;
         private SqlDataReader reader;
+        private DataTable dataTable;
 
         public PropertySearch()
         {
@@ -41,6 +42,12 @@ namespace OODNew
         {
             LoadComboBoxes();
             LoadFeatures();
+            dataTable = new DataTable();
+            string[] columns = { "ID", "Location ID", "Name", "Agent ID", "Price", "Description", "Status ID" };
+            foreach (string columnName in columns)
+            {
+                dataTable.Columns.Add(columnName);
+            }
         }
 
         private void LoadComboBoxes()
@@ -128,7 +135,8 @@ namespace OODNew
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            txtBxResult.Text = "";
+            dataTable.Rows.Clear();
+            dataTable.Clear();
             try
             {
                 command = Program.Connection.CreateCommand();
@@ -199,10 +207,13 @@ namespace OODNew
 
                 Program.Connection.Open();
                 reader = command.ExecuteReader();
+
                 while (reader.Read())
                 {
-                    txtBxResult.Text += string.Format("{0, 5} {1, 5}", reader.GetValue(0).ToString(), reader.GetValue(2).ToString() + "\r\n");
+                    dataTable.Rows.Add(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), reader.GetValue(2).ToString(),
+                        reader.GetValue(3).ToString(), reader.GetValue(4).ToString(), reader.GetValue(5).ToString(), reader.GetValue(6).ToString());
                 }
+                dgvPropertiesSearch.DataSource = dataTable;
                 reader.Close();
                 Program.Connection.Close();
             } catch (Exception ex) 
@@ -238,6 +249,8 @@ namespace OODNew
             {
                 clbFeatues.SetItemCheckState(i, CheckState.Unchecked);
             }
+
+            dataTable.Rows.Clear();
         }
     }
 }

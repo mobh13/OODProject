@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PropertySearch));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblLine = new System.Windows.Forms.Label();
-            this.txtBxResult = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.lblFeatues = new System.Windows.Forms.Label();
@@ -54,7 +54,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dgvPropertiesSearch = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPropertiesSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -134,19 +137,6 @@
             this.lblLine.Name = "lblLine";
             this.lblLine.Size = new System.Drawing.Size(626, 1);
             this.lblLine.TabIndex = 32;
-            // 
-            // txtBxResult
-            // 
-            this.txtBxResult.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtBxResult.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBxResult.Location = new System.Drawing.Point(126, 456);
-            this.txtBxResult.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBxResult.Multiline = true;
-            this.txtBxResult.Name = "txtBxResult";
-            this.txtBxResult.ReadOnly = true;
-            this.txtBxResult.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtBxResult.Size = new System.Drawing.Size(549, 178);
-            this.txtBxResult.TabIndex = 33;
             // 
             // txtId
             // 
@@ -332,7 +322,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 456);
+            this.label4.Location = new System.Drawing.Point(11, 456);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 21);
@@ -353,12 +343,46 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // dgvPropertiesSearch
+            // 
+            this.dgvPropertiesSearch.AllowUserToAddRows = false;
+            this.dgvPropertiesSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPropertiesSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPropertiesSearch.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dgvPropertiesSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPropertiesSearch.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvPropertiesSearch.Location = new System.Drawing.Point(77, 456);
+            this.dgvPropertiesSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvPropertiesSearch.Name = "dgvPropertiesSearch";
+            this.dgvPropertiesSearch.ReadOnly = true;
+            this.dgvPropertiesSearch.RowTemplate.Height = 29;
+            this.dgvPropertiesSearch.Size = new System.Drawing.Size(631, 193);
+            this.dgvPropertiesSearch.TabIndex = 62;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(142, 421);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(122, 13);
+            this.label3.TabIndex = 63;
+            this.label3.Text = "*Contains at least one of";
+            // 
             // PropertySearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(719, 660);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dgvPropertiesSearch);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtPriceTo);
             this.Controls.Add(this.label2);
@@ -376,7 +400,6 @@
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.lblID);
-            this.Controls.Add(this.txtBxResult);
             this.Controls.Add(this.lblLine);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClear);
@@ -390,6 +413,7 @@
             this.Text = "Property Search";
             this.Load += new System.EventHandler(this.ProfileView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPropertiesSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -404,7 +428,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblLine;
-        private System.Windows.Forms.TextBox txtBxResult;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.Label lblFeatues;
@@ -422,5 +445,7 @@
         private System.Windows.Forms.TextBox txtPriceTo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dgvPropertiesSearch;
+        private System.Windows.Forms.Label label3;
     }
 }
