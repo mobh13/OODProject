@@ -76,7 +76,7 @@
             this.lblLocationID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocationID.AutoSize = true;
             this.lblLocationID.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocationID.Location = new System.Drawing.Point(242, 291);
+            this.lblLocationID.Location = new System.Drawing.Point(266, 292);
             this.lblLocationID.Name = "lblLocationID";
             this.lblLocationID.Size = new System.Drawing.Size(177, 34);
             this.lblLocationID.TabIndex = 6;
@@ -88,7 +88,7 @@
             this.cmbLocations.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbLocations.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocations.FormattingEnabled = true;
-            this.cmbLocations.Location = new System.Drawing.Point(477, 288);
+            this.cmbLocations.Location = new System.Drawing.Point(501, 289);
             this.cmbLocations.Name = "cmbLocations";
             this.cmbLocations.Size = new System.Drawing.Size(298, 42);
             this.cmbLocations.TabIndex = 7;
@@ -98,7 +98,7 @@
             // 
             this.lblLine.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblLine.Location = new System.Drawing.Point(101, 345);
+            this.lblLine.Location = new System.Drawing.Point(71, 353);
             this.lblLine.Name = "lblLine";
             this.lblLine.Size = new System.Drawing.Size(939, 1);
             this.lblLine.TabIndex = 9;
@@ -144,7 +144,7 @@
             // 
             this.txtLocationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLocationName.Location = new System.Drawing.Point(477, 386);
+            this.txtLocationName.Location = new System.Drawing.Point(501, 387);
             this.txtLocationName.Name = "txtLocationName";
             this.txtLocationName.Size = new System.Drawing.Size(298, 39);
             this.txtLocationName.TabIndex = 37;
@@ -154,7 +154,7 @@
             this.lblSubID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblSubID.AutoSize = true;
             this.lblSubID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubID.Location = new System.Drawing.Point(242, 469);
+            this.lblSubID.Location = new System.Drawing.Point(266, 470);
             this.lblSubID.Name = "lblSubID";
             this.lblSubID.Size = new System.Drawing.Size(228, 32);
             this.lblSubID.TabIndex = 36;
@@ -165,7 +165,7 @@
             this.lblLocationName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblLocationName.AutoSize = true;
             this.lblLocationName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocationName.Location = new System.Drawing.Point(242, 389);
+            this.lblLocationName.Location = new System.Drawing.Point(266, 390);
             this.lblLocationName.Name = "lblLocationName";
             this.lblLocationName.Size = new System.Drawing.Size(218, 32);
             this.lblLocationName.TabIndex = 35;
@@ -188,7 +188,7 @@
             // 
             this.txtSubID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtSubID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSubID.Location = new System.Drawing.Point(477, 466);
+            this.txtSubID.Location = new System.Drawing.Point(501, 467);
             this.txtSubID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSubID.Name = "txtSubID";
             this.txtSubID.Size = new System.Drawing.Size(298, 39);
