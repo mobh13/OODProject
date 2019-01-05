@@ -97,8 +97,12 @@ namespace OODNew
                 list.Add(reader.GetValue(3).ToString());
             }
             reader.Close();
-            StringBuilder toShow = new StringBuilder();
-            toShow.AppendLine("Profiles:");
+            DataTable table = new DataTable();
+            table.Columns.Add("UserID");
+            table.Columns.Add("Name");
+            table.Columns.Add("Username");
+            table.Columns.Add("Email");
+            table.Columns.Add("Phone");
             foreach (string element in list)
             {
                 command.Parameters.Clear();
@@ -106,10 +110,11 @@ namespace OODNew
                 command.CommandText = "Select * From [User] where Id = @id";
                 reader = command.ExecuteReader();
                 reader.Read();
-                toShow.AppendLine(reader.GetValue(0).ToString() + " - " + reader.GetValue(1).ToString() + " - " + reader.GetValue(6).ToString() + " - " + reader.GetValue(3).ToString() + " - " + reader.GetValue(4).ToString());
+                table.Rows.Add(reader.GetValue(0).ToString() , reader.GetValue(1).ToString() , reader.GetValue(6).ToString() ,reader.GetValue(3).ToString()  ,  reader.GetValue(4).ToString());
                 reader.Close();
             }
-            textBox1.Text = toShow.ToString();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = table;
             Program.Connection.Close();
 
           
@@ -119,7 +124,7 @@ namespace OODNew
         private void btnClear_Click(object sender, EventArgs e)
         {
             cmbProperty.SelectedIndex = -1;
-            textBox1.Text = null;
+            dataGridView1.DataSource = null;
         }
 
         private void btnClose_Click(object sender, EventArgs e)

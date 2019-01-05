@@ -87,7 +87,7 @@ namespace OODNew
             command.Parameters.Clear();
            
             command.CommandText = "Select * From [User] where 1 = 1";
-            textBox1.Text = null;
+          
 
             foreach (Control ctr in Controls)
             {
@@ -113,13 +113,16 @@ namespace OODNew
                 command.CommandText = command.CommandText + " and " + DOB.Name.ToString() + " Like( @" + DOB.Name.ToString() +" ) ";
             }
             reader = command.ExecuteReader();
-            StringBuilder toShow = new StringBuilder();
-            toShow.AppendLine("Profiles:") ;
+            DataTable table = new DataTable();
+            table.Columns.Add("UserID");
+            table.Columns.Add("Name");
+            table.Columns.Add("Username");
             while (reader.Read())
             {
-                toShow.AppendLine( reader.GetValue(0).ToString() + " - " + reader.GetValue(1).ToString());
+                table.Rows.Add(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), reader.GetValue(6).ToString());
             }
-            textBox1.Text = toShow.ToString();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = table;
 
             reader.Close();
             Program.Connection.Close();
@@ -140,6 +143,7 @@ namespace OODNew
                     ctr.Text = "";
                 }
             }
+            dataGridView1.DataSource = null;
             Role_Id.SelectedIndex = -1;
             DOB.Value = DateTime.Now;
         }
