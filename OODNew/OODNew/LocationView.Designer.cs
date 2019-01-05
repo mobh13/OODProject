@@ -85,6 +85,7 @@
             // 
             this.cmbLocations.AllowDrop = true;
             this.cmbLocations.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbLocations.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLocations.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocations.FormattingEnabled = true;
             this.cmbLocations.Location = new System.Drawing.Point(460, 277);
@@ -172,6 +173,7 @@
             this.btnClose.TabIndex = 31;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pictureBox1
             // 

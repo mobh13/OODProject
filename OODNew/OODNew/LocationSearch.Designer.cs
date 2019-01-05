@@ -45,6 +45,7 @@
             this.cmbLocationID = new System.Windows.Forms.ComboBox();
             this.cmbLocationSubID = new System.Windows.Forms.ComboBox();
             this.dgvLocationsSearch = new System.Windows.Forms.DataGridView();
+            this.lblNote = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLocationsSearch)).BeginInit();
             this.SuspendLayout();
@@ -190,6 +191,7 @@
             // cmbLocationID
             // 
             this.cmbLocationID.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbLocationID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLocationID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocationID.FormattingEnabled = true;
             this.cmbLocationID.Location = new System.Drawing.Point(421, 280);
@@ -201,6 +203,7 @@
             // cmbLocationSubID
             // 
             this.cmbLocationSubID.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cmbLocationSubID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLocationSubID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocationSubID.FormattingEnabled = true;
             this.cmbLocationSubID.Location = new System.Drawing.Point(421, 402);
@@ -230,12 +233,22 @@
             this.dgvLocationsSearch.Size = new System.Drawing.Size(699, 199);
             this.dgvLocationsSearch.TabIndex = 61;
             // 
+            // lblNote
+            // 
+            this.lblNote.AutoSize = true;
+            this.lblNote.Location = new System.Drawing.Point(767, 451);
+            this.lblNote.Name = "lblNote";
+            this.lblNote.Size = new System.Drawing.Size(262, 19);
+            this.lblNote.TabIndex = 62;
+            this.lblNote.Text = "*Leave fields empty for all locations";
+            // 
             // LocationSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1079, 707);
+            this.Controls.Add(this.lblNote);
             this.Controls.Add(this.dgvLocationsSearch);
             this.Controls.Add(this.cmbLocationSubID);
             this.Controls.Add(this.cmbLocationID);
@@ -279,5 +292,6 @@
         private System.Windows.Forms.ComboBox cmbLocationID;
         private System.Windows.Forms.ComboBox cmbLocationSubID;
         private System.Windows.Forms.DataGridView dgvLocationsSearch;
+        private System.Windows.Forms.Label lblNote;
     }
 }

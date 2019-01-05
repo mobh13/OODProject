@@ -98,7 +98,6 @@ namespace OODNew
                 txtPrice.Text = reader.GetValue(4).ToString();
                 txtStatus.Text = reader.GetValue(6).ToString();
                 reader.Close();
-
                 List<string> featurePropertyList = new List<string>();
                 command.Parameters.Clear();
                 command.Parameters.AddWithValue("@id", propertyID);

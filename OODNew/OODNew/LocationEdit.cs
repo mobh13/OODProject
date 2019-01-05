@@ -85,7 +85,7 @@ namespace OODNew
         }
         void locationsLoad()
         {
-            string locationID = this.cmbLocations.SelectedItem.ToString();
+            string locationID = this.cmbLocations.SelectedItem.ToString().Substring(0, this.cmbLocations.SelectedItem.ToString().IndexOf('-'));
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
             command.Parameters.Clear();
@@ -118,7 +118,7 @@ namespace OODNew
             bool isEmpty = false;
             foreach (Control controls in this.Controls)
             {
-                if (controls.Name == "TextBox" || controls.Name == "ComboBox")
+                if (controls is TextBox || controls is ComboBox)
                 {
                     if (controls.Text == "" || controls.Text == null)
                     {
@@ -137,10 +137,11 @@ namespace OODNew
                 command.Parameters.AddWithValue("@id", locationID);
                 command.Parameters.AddWithValue("@name", locationName);
                 command.Parameters.AddWithValue("@sub", locationSubID);
-                command.CommandText = "Update [Location] set Name = @name and Sid = @sub where id = @id";
+                command.CommandText = "Update [Location] set Name = @name, Sid = @sub where id = @id";
                 try
                 {
                     command.ExecuteNonQuery();
+                    Program.Connection.Close();
                     locationsLoad();
                     clear();
                     MessageBox.Show("Records have been updated successfully.");
@@ -148,13 +149,19 @@ namespace OODNew
                 catch(SqlException ex)
                 {
                     MessageBox.Show("There have been an error while updating the record.\n"+ex);
+                    Program.Connection.Close();
                 }
-                Program.Connection.Close();
+                
             }
             else
             {
                 MessageBox.Show("There are empty feilds, please enter all information.");
             }
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

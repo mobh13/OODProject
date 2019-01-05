@@ -231,22 +231,22 @@ namespace OODNew
             images[3] = OODNew.Properties.Resources.image4;
             images[4] = OODNew.Properties.Resources.image5;
             images[5] = OODNew.Properties.Resources.image6;
-            string userName = Program.UserInfo.Name;
-            string userRoleID = Program.UserInfo.Role_id;
-            Program.Connection.Open();
-            command = Program.Connection.CreateCommand();
-            command.Parameters.Clear();
-            command.Parameters.AddWithValue("@roleId", userRoleID);
-            command.CommandText = "Select role_name From [Role] where role_id = @roleId";
-            reader = command.ExecuteReader();
-            reader.Read();
-            string userRole = reader.GetValue(0).ToString();
-            this.lblNameRole.Text = "User: " + userName + ", Role: " + userRole;
 
-
-
-            reader.Close();
-            Program.Connection.Close(); 
+            if(Program.UserInfo.Id != null){
+                string userName = Program.UserInfo.Name;
+                string userRoleID = Program.UserInfo.Role_id;
+                Program.Connection.Open();
+                command = Program.Connection.CreateCommand();
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@roleId", userRoleID);
+                command.CommandText = "Select role_name From [Role] where role_id = @roleId";
+                reader = command.ExecuteReader();
+                reader.Read();
+                string userRole = reader.GetValue(0).ToString();
+                this.lblNameRole.Text = "User: " + userName + ", Role: " + userRole;
+                reader.Close();
+                Program.Connection.Close(); 
+            }
         }
 
         private void subMenuLocation_Click(object sender, EventArgs e)

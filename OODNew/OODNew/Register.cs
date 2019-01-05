@@ -45,12 +45,12 @@ namespace OODNew
         {
             Program.Connection.Open();
             command = Program.Connection.CreateCommand();
-               bool isEmpty = false;
+            bool isEmpty = false;
             bool isChecked = false;
             
             foreach (Control ctr in Controls)
             {
-                if (ctr is TextBox && ctr.Text =="")
+                if (ctr is TextBox && ctr.Text == "")
                 {
                     Program.Connection.Close();
                     isEmpty = true;
@@ -73,7 +73,7 @@ namespace OODNew
                 isChecked = true;
             }
             int resInt = 0;
-              if (!int.TryParse(txtCPR.Text, out resInt)){
+            if (!int.TryParse(txtCPR.Text, out resInt)){
 
                 MessageBox.Show("Error Please Enter a valid CPR");
                 Program.Connection.Close();
@@ -82,9 +82,7 @@ namespace OODNew
             {
                 isChecked = true;
             }
-
-            
-
+            Program.Connection.Open();
                   command.Parameters.Clear();
                   command.Parameters.AddWithValue("username", txtUsername.Text);
                   command.CommandText = "select Count(Id) from [User] where Username = @username";
@@ -116,8 +114,6 @@ namespace OODNew
                 command.Parameters.AddWithValue("commission", txtCommission.Text);
                 command.Parameters.AddWithValue("role", cmbRole.SelectedIndex + 2);
                 command.Parameters.AddWithValue("dob", dtpBirthdate.Value.ToString("d/MMM/yyyy"));
-
-
 
                 command.CommandText = "Insert into [User] values(@name,@dob,@email,@phone,@address,@username,@password,@role,@commission,@cpr)";
                 int rowEffected = 0;

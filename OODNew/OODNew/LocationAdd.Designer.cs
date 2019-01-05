@@ -140,6 +140,7 @@
             // cmbLocationID
             // 
             this.cmbLocationID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbLocationID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbLocationID.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocationID.FormattingEnabled = true;
             this.cmbLocationID.Location = new System.Drawing.Point(502, 400);

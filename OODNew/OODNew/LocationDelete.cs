@@ -137,14 +137,16 @@ namespace OODNew
                     {
                         command.ExecuteNonQuery();
                         MessageBox.Show("Location was deleted successfully!");
+                        reader.Close();
+                        Program.Connection.Close();
                         loadLocations();
                     }
                     catch (SqlException ex)
                     {
                         MessageBox.Show("Record was not deleted.\n" + ex);
+                        reader.Close();
+                        Program.Connection.Close();
                     }
-                    reader.Close();
-                    Program.Connection.Close();
                 }
                 else
                 {
