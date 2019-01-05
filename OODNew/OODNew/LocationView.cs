@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace OODNew
 {
     public partial class LocationView : Form
     {
+        private SqlCommand command;
+        private SqlDataReader reader;
         public LocationView()
         {
             InitializeComponent();
@@ -34,7 +37,19 @@ namespace OODNew
 
         private void ProfileView_Load(object sender, EventArgs e)
         {
-
+            List<string> locationsList = new List<string>();
+            Program.Connection.Open();
+            command = Program.Connection.CreateCommand();
+            command.CommandText = "Select * From [Location]";
+            reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                locationsList.Add(reader.GetValue(0).ToString());
+            }
+            cmbLocations.DataSource = locationsList;
+            cmbLocations.SelectedIndex = -1;
+            reader.Close();
+            Program.Connection.Close();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -75,6 +90,36 @@ namespace OODNew
         private void lblName_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbLocations_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (this.cmbLocations.SelectedIndex != -1)
+            {
+                string locationID = this.cmbLocations.SelectedItem.ToString();
+                Program.Connection.Open();
+                command = Program.Connection.CreateCommand();
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@id", locationID);
+                command.CommandText = "Select * From [Location] where id = @id";
+                reader = command.ExecuteReader();
+                reader.Read();
+                this.txtLocationName.Text = reader.GetValue(1).ToString();
+                this.txtSubID.Text = reader.GetValue(2).ToString();
+                reader.Close();
+                Program.Connection.Close();
+            }
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            foreach (Control controls in Controls)
+            {
+                if (controls.Name == "TextBox" || controls.Name == "ComboBox")
+                {
+                    controls.Text = "";
+                }
+            }
         }
     }
 }
