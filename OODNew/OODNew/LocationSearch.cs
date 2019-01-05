@@ -15,6 +15,7 @@ namespace OODNew
     {
         private SqlCommand command;
         private SqlDataReader reader;
+        private DataTable dataTable;
         public LocationSearch()
         {
             InitializeComponent();
@@ -57,6 +58,7 @@ namespace OODNew
             cmbLocationSubID.SelectedIndex = -1;
             reader.Close();
             Program.Connection.Close();
+            dataTable = new DataTable();
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -99,14 +101,32 @@ namespace OODNew
             {
                 control.SelectedIndex = -1;
             }
+            this.dgvLocationsSearch.DataSource = null;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            if (this.cmbLocationSubID.SelectedIndex == -1 && this.cmbLocationID.SelectedIndex == -1 
-                && this.txtLocationName.Text == null)
+            dataTable.Columns.Clear();
+            dataTable.Clear();
+            string[] columns = { "ID", "Name", "Sub ID"};
+            foreach (string columnName in columns)
             {
-                MessageBox.Show("Please enter search criteria.");
+                dataTable.Columns.Add(columnName);
+            }
+            if (this.cmbLocationSubID.SelectedIndex == -1 && this.cmbLocationID.SelectedIndex == -1 
+                && this.txtLocationName.Text == "")
+            {
+                Program.Connection.Open();
+                command = Program.Connection.CreateCommand();
+                command.CommandText = "Select * From [Location] ";
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    dataTable.Rows.Add (reader.GetValue(0).ToString() , reader.GetValue(1).ToString() , reader.GetValue(2).ToString() );
+                }
+                this.dgvLocationsSearch.DataSource = dataTable;
+                reader.Close();
+                Program.Connection.Close();
             }
             else
             {
@@ -129,11 +149,11 @@ namespace OODNew
                     command.CommandText += " and name = @name ";
                 } 
                 reader = command.ExecuteReader();
-                this.txtBoxResults.Text = "ID\t\tName\t\tSubID\r\n";
                 while (reader.Read())
                 {
-                    this.txtBoxResults.Text += reader.GetValue(0).ToString() + "\t\t" + reader.GetValue(1).ToString() + "\t\t" + reader.GetValue(2).ToString() + "\r\n";
+                    dataTable.Rows.Add(reader.GetValue(0).ToString(), reader.GetValue(1).ToString(), reader.GetValue(2).ToString());
                 }
+                this.dgvLocationsSearch.DataSource = dataTable;
                 reader.Close();
                 Program.Connection.Close();
             }

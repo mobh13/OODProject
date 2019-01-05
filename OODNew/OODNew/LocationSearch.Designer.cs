@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LocationSearch));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblLine = new System.Windows.Forms.Label();
-            this.txtBoxResults = new System.Windows.Forms.TextBox();
             this.txtLocationName = new System.Windows.Forms.TextBox();
             this.lblSubLocationID = new System.Windows.Forms.Label();
             this.lblLcoationName = new System.Windows.Forms.Label();
@@ -44,7 +44,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbLocationID = new System.Windows.Forms.ComboBox();
             this.cmbLocationSubID = new System.Windows.Forms.ComboBox();
+            this.dgvLocationsSearch = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocationsSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -118,18 +120,6 @@
             this.lblLine.Name = "lblLine";
             this.lblLine.Size = new System.Drawing.Size(939, 2);
             this.lblLine.TabIndex = 32;
-            // 
-            // txtBoxResults
-            // 
-            this.txtBoxResults.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtBoxResults.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBoxResults.Location = new System.Drawing.Point(221, 488);
-            this.txtBoxResults.Multiline = true;
-            this.txtBoxResults.Name = "txtBoxResults";
-            this.txtBoxResults.ReadOnly = true;
-            this.txtBoxResults.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtBoxResults.Size = new System.Drawing.Size(709, 178);
-            this.txtBoxResults.TabIndex = 33;
             // 
             // txtLocationName
             // 
@@ -218,12 +208,35 @@
             this.cmbLocationSubID.Size = new System.Drawing.Size(297, 38);
             this.cmbLocationSubID.TabIndex = 60;
             // 
+            // dgvLocationsSearch
+            // 
+            this.dgvLocationsSearch.AllowUserToAddRows = false;
+            this.dgvLocationsSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvLocationsSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvLocationsSearch.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
+            this.dgvLocationsSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvLocationsSearch.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvLocationsSearch.Location = new System.Drawing.Point(221, 488);
+            this.dgvLocationsSearch.Name = "dgvLocationsSearch";
+            this.dgvLocationsSearch.ReadOnly = true;
+            this.dgvLocationsSearch.RowTemplate.Height = 29;
+            this.dgvLocationsSearch.Size = new System.Drawing.Size(699, 199);
+            this.dgvLocationsSearch.TabIndex = 61;
+            // 
             // LocationSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1079, 706);
+            this.ClientSize = new System.Drawing.Size(1079, 707);
+            this.Controls.Add(this.dgvLocationsSearch);
             this.Controls.Add(this.cmbLocationSubID);
             this.Controls.Add(this.cmbLocationID);
             this.Controls.Add(this.label4);
@@ -231,7 +244,6 @@
             this.Controls.Add(this.lblSubLocationID);
             this.Controls.Add(this.lblLcoationName);
             this.Controls.Add(this.lblLocationID);
-            this.Controls.Add(this.txtBoxResults);
             this.Controls.Add(this.lblLine);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClear);
@@ -244,6 +256,7 @@
             this.Text = "Search Locations";
             this.Load += new System.EventHandler(this.LocationSearch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLocationsSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -258,7 +271,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label lblLine;
-        private System.Windows.Forms.TextBox txtBoxResults;
         private System.Windows.Forms.TextBox txtLocationName;
         private System.Windows.Forms.Label lblSubLocationID;
         private System.Windows.Forms.Label lblLcoationName;
@@ -266,5 +278,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbLocationID;
         private System.Windows.Forms.ComboBox cmbLocationSubID;
+        private System.Windows.Forms.DataGridView dgvLocationsSearch;
     }
 }
