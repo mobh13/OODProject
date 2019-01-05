@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace OODNew
 {
     public partial class ProfileSearch : Form
@@ -73,7 +72,8 @@ namespace OODNew
             command.Parameters.Clear();
            
             command.CommandText = "Select * From [User] where 1 = 1";
-            
+            reader = command.ExecuteReader();
+            reader.Read();
             foreach (Control ctr in Controls)
             {
                 if (ctr is TextBox)
@@ -82,6 +82,8 @@ namespace OODNew
                     {
                         command.Parameters.AddWithValue(ctr.Name, ctr.Text);
                         command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString() ;
+
+                        command.CommandText = command.CommandText + " and "+ ctr.Name.ToString() + " = @" + ctr.Name.ToString();
                     }
                 }
             }
@@ -97,34 +99,7 @@ namespace OODNew
                 command.CommandText = command.CommandText + " and " +DOB.Name.ToString() + " = @" + DOB.Name.ToString();
             }
 
-            reader = command.ExecuteReader();
-            textBox1.Text = null;
-            textBox1.Text = "Profiles : \n";
-            while (reader.Read())
-            {
-                textBox1.Text = textBox1.Text + "\n " + reader.GetValue(0).ToString() + " - " + reader.GetValue(1).ToString();
-            }
-            reader.Close();
-            Program.Connection.Close();
-            
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            foreach (Control ctr in Controls)
-            {
-                if (ctr is TextBox)
-                {
-                    ctr.Text = "";
-                }
-            }
-            Role_Id.SelectedIndex = -1;
-            DOB.Value = DateTime.Now;
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
+          
         }
     }
 }
