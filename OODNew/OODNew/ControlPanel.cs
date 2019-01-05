@@ -12,6 +12,7 @@ namespace OODNew
 {
     public partial class ControlPanel : Form
     {
+        Bitmap[] images = new Bitmap[6];
         public ControlPanel()
         {
             InitializeComponent();
@@ -45,11 +46,11 @@ namespace OODNew
 
         private void loadNextImage()
         {
-            if (imgCount == 6)
+            if (imgCount > 5)
             {
                 imgCount = 1;
             }
-            slidShow.ImageLocation = string.Format(@"images\image{0}.jpg", imgCount);
+            slidShow.Image = images[imgCount];
             imgCount++;
         }
         private void timer1_Tick(object sender, EventArgs e)
@@ -134,37 +135,81 @@ namespace OODNew
 
         private void viewToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            LocationView lView = new LocationView();
-            lView.Show();
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1)
+            {
+                LocationView lView = new LocationView();
+                lView.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only admins have permissions for this funstionality.");
+            }
         }
 
         private void addToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            LocationAdd lAdd = new LocationAdd();
-            lAdd.Show();
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1)
+            {
+                LocationAdd lAdd = new LocationAdd();
+                lAdd.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only admins have permissions for this funstionality.");
+            }
         }
 
         private void searchToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            LocationSearch lSearch = new LocationSearch();
-            lSearch.Show();
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1)
+            {
+                LocationSearch lSearch = new LocationSearch();
+                lSearch.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only admins have permissions for this funstionality.");
+            }
         }
 
         private void dToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            LocationDelete lDelete = new LocationDelete();
-            lDelete.Show();
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1)
+            {
+                LocationDelete lDelete = new LocationDelete();
+                lDelete.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only admins have permissions for this funstionality.");
+            }
         }
 
         private void editToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            LocationEdit lEdit = new LocationEdit();
-            lEdit.Show();
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1)
+            {
+                LocationEdit lEdit = new LocationEdit();
+                lEdit.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only admins have permissions for this funstionality.");
+            }
         }
 
         private void ControlPanel_Load(object sender, EventArgs e)
         {
+            images[0] = OODNew.Properties.Resources.image1;
+            images[1] = OODNew.Properties.Resources.image2;
+            images[2] = OODNew.Properties.Resources.image3;
+            images[3] = OODNew.Properties.Resources.image4;
+            images[4] = OODNew.Properties.Resources.image5;
+            images[5] = OODNew.Properties.Resources.image6;
+        }
 
+        private void subMenuLocation_Click(object sender, EventArgs e)
+        {
         }
     }
 }

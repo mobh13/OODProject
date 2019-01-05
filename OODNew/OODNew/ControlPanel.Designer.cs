@@ -105,7 +105,7 @@
             this.subMenuLocation});
             this.MainMenuNavigation.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.MainMenuNavigation.Location = new System.Drawing.Point(12, 259);
-            this.MainMenuNavigation.Margin = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.MainMenuNavigation.Margin = new System.Windows.Forms.Padding(3);
             this.MainMenuNavigation.Name = "MainMenuNavigation";
             this.MainMenuNavigation.Padding = new System.Windows.Forms.Padding(6, 1, 0, 1);
             this.MainMenuNavigation.Size = new System.Drawing.Size(256, 282);
@@ -240,6 +240,7 @@
             this.subMenuLocation.Name = "subMenuLocation";
             this.subMenuLocation.Size = new System.Drawing.Size(209, 47);
             this.subMenuLocation.Text = "Location";
+            this.subMenuLocation.Click += new System.EventHandler(this.subMenuLocation_Click);
             // 
             // viewToolStripMenuItem2
             // 
