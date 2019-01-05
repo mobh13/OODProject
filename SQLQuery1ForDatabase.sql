@@ -237,7 +237,7 @@ GO
 
 CREATE TABLE [PropertyStatus]
 (
-	[PropertyStatusId] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,,
+	[PropertyStatusId] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
 	[PropertyStatusName] varchar(250) NOT NULL
 )
 GO
