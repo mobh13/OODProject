@@ -218,7 +218,7 @@ GO
 
 CREATE TABLE [PaymentStatus]
 (
-	[PaymentStatusId] int NOT NULL,
+	[PaymentStatusId] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,
 	[PaymentStatusName] varchar(250) NOT NULL
 )
 GO
@@ -237,7 +237,7 @@ GO
 
 CREATE TABLE [PropertyStatus]
 (
-	[PropertyStatusId] int NOT NULL,
+	[PropertyStatusId] int NOT NULL IDENTITY (1, 1) NOT FOR REPLICATION,,
 	[PropertyStatusName] varchar(250) NOT NULL
 )
 GO
