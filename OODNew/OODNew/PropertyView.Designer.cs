@@ -107,6 +107,7 @@
             this.cmbProperties.Size = new System.Drawing.Size(161, 30);
             this.cmbProperties.TabIndex = 7;
             this.cmbProperties.SelectedIndexChanged += new System.EventHandler(this.cmbProperties_SelectedIndexChanged);
+            this.cmbProperties.SelectionChangeCommitted += new System.EventHandler(this.cmbProperties_SelectionChangeCommitted);
             // 
             // btnSubmit
             // 

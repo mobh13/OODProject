@@ -145,53 +145,7 @@ namespace OODNew
 
         private void cmbProperties_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (this.cmbProperties.SelectedIndex != -1)
-            {
-
-                foreach (int i in clbFeatues.CheckedIndices)
-                {
-                    clbFeatues.SetItemCheckState(i, CheckState.Unchecked);
-                }
-
-
-                string propertyID = this.cmbProperties.SelectedItem.ToString();
-                Program.Connection.Open();
-                command = Program.Connection.CreateCommand();
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("@id", propertyID);
-                command.CommandText = "Select * From [Property] where id = @id";
-                reader = command.ExecuteReader();
-                reader.Read();
-                txtName.Text = reader.GetValue(2).ToString();
-                cmbLocations.SelectedIndex = cmbLocations.FindString(reader.GetValue(1).ToString());
-                txtDescription.Text = reader.GetValue(5).ToString();
-                cmbAgents.SelectedIndex = cmbAgents.FindString(reader.GetValue(3).ToString());
-                txtPrice.Text = reader.GetValue(4).ToString();
-                cmbStatus.SelectedIndex = cmbStatus.FindString(reader.GetValue(6).ToString());
-                reader.Close();
-
-                List<string> featurePropertyList = new List<string>();
-                command.Parameters.Clear();
-                command.Parameters.AddWithValue("@id", propertyID);
-                command.CommandText = "Select [FeatureProperty].featureId From [FeatureProperty], [Feature] where " +
-                "[FeatureProperty].featureId = [Feature].featureId and propertyId = @id";
-                reader = command.ExecuteReader();
-                while (reader.Read())
-                {
-                    featurePropertyList.Add(reader.GetValue(0).ToString());
-                }
-
-                for (int i = 1; i < clbFeatues.Items.Count; i++)
-                {
-                    if (featurePropertyList.Contains(clbFeatues.Items[i].ToString().Substring(0, clbFeatues.Items[i].ToString().IndexOf(" "))))
-                    {
-                        clbFeatues.SetItemCheckState(i, CheckState.Checked);
-                    }
-                }
-
-                reader.Close();
-                Program.Connection.Close();
-            }
+            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -292,6 +246,57 @@ namespace OODNew
             else
             {
                 MessageBox.Show("There are empty fields.");
+            }
+        }
+
+        private void cmbProperties_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            if (this.cmbProperties.SelectedIndex != -1)
+            {
+
+                foreach (int i in clbFeatues.CheckedIndices)
+                {
+                    clbFeatues.SetItemCheckState(i, CheckState.Unchecked);
+                }
+
+
+                string propertyID = this.cmbProperties.SelectedItem.ToString();
+                Program.Connection.Open();
+                command = Program.Connection.CreateCommand();
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@id", propertyID);
+                command.CommandText = "Select * From [Property] where id = @id";
+                reader = command.ExecuteReader();
+                reader.Read();
+                txtName.Text = reader.GetValue(2).ToString();
+                cmbLocations.SelectedIndex = cmbLocations.FindString(reader.GetValue(1).ToString());
+                txtDescription.Text = reader.GetValue(5).ToString();
+                cmbAgents.SelectedIndex = cmbAgents.FindString(reader.GetValue(3).ToString());
+                txtPrice.Text = reader.GetValue(4).ToString();
+                cmbStatus.SelectedIndex = cmbStatus.FindString(reader.GetValue(6).ToString());
+                reader.Close();
+
+                List<string> featurePropertyList = new List<string>();
+                command.Parameters.Clear();
+                command.Parameters.AddWithValue("@id", propertyID);
+                command.CommandText = "Select [FeatureProperty].featureId From [FeatureProperty], [Feature] where " +
+                "[FeatureProperty].featureId = [Feature].featureId and propertyId = @id";
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    featurePropertyList.Add(reader.GetValue(0).ToString());
+                }
+
+                for (int i = 1; i < clbFeatues.Items.Count; i++)
+                {
+                    if (featurePropertyList.Contains(clbFeatues.Items[i].ToString().Substring(0, clbFeatues.Items[i].ToString().IndexOf(" "))))
+                    {
+                        clbFeatues.SetItemCheckState(i, CheckState.Checked);
+                    }
+                }
+
+                reader.Close();
+                Program.Connection.Close();
             }
         }
     }

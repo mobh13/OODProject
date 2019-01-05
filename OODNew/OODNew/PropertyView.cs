@@ -80,6 +80,30 @@ namespace OODNew
 
         private void cmbProperties_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            this.cmbProperties.SelectedIndex = -1;
+            foreach (TextBox txt in this.Controls.OfType<TextBox>())
+            {
+                txt.Text = "";
+            }
+        }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbProperties_SelectionChangeCommitted(object sender, EventArgs e)
+        {
             if (this.cmbProperties.SelectedIndex != -1)
             {
                 txtFeatures.Text = "";
@@ -113,29 +137,10 @@ namespace OODNew
                 {
                     txtFeatures.Text += feature + "\r\n";
                 }
-                
+
                 reader.Close();
                 Program.Connection.Close();
             }
-        }
-
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            this.cmbProperties.SelectedIndex = -1;
-            foreach (TextBox txt in this.Controls.OfType<TextBox>())
-            {
-                txt.Text = "";
-            }
-        }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
