@@ -1,6 +1,6 @@
 ﻿namespace OODNew
 {
-    partial class PropertView
+    partial class PropertyView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PropertView));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PropertyView));
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblProfileID = new System.Windows.Forms.Label();
@@ -50,7 +50,7 @@
             this.txtLocation = new System.Windows.Forms.TextBox();
             this.txtAgent = new System.Windows.Forms.TextBox();
             this.txtStatus = new System.Windows.Forms.TextBox();
-            this.txtFeatues = new System.Windows.Forms.TextBox();
+            this.txtFeatures = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -88,12 +88,12 @@
             this.lblProfileID.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblProfileID.AutoSize = true;
             this.lblProfileID.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProfileID.Location = new System.Drawing.Point(179, 189);
+            this.lblProfileID.Location = new System.Drawing.Point(163, 189);
             this.lblProfileID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblProfileID.Name = "lblProfileID";
-            this.lblProfileID.Size = new System.Drawing.Size(104, 22);
+            this.lblProfileID.Size = new System.Drawing.Size(117, 22);
             this.lblProfileID.TabIndex = 6;
-            this.lblProfileID.Text = "Proerty ID:";
+            this.lblProfileID.Text = "Property ID:";
             // 
             // cmbProperties
             // 
@@ -102,7 +102,7 @@
             this.cmbProperties.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbProperties.FormattingEnabled = true;
             this.cmbProperties.Location = new System.Drawing.Point(284, 187);
-            this.cmbProperties.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbProperties.Margin = new System.Windows.Forms.Padding(2);
             this.cmbProperties.Name = "cmbProperties";
             this.cmbProperties.Size = new System.Drawing.Size(161, 30);
             this.cmbProperties.TabIndex = 7;
@@ -113,12 +113,13 @@
             this.btnSubmit.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnSubmit.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit.Location = new System.Drawing.Point(447, 189);
-            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(87, 27);
             this.btnSubmit.TabIndex = 8;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
             // lblLine
             // 
@@ -136,24 +137,26 @@
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
             this.btnClear.Location = new System.Drawing.Point(271, 481);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(87, 27);
             this.btnClear.TabIndex = 30;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.Location = new System.Drawing.Point(381, 481);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(87, 27);
             this.btnClose.TabIndex = 31;
-            this.btnClose.Text = "Clsoe";
+            this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // lblFeatues
             // 
@@ -172,7 +175,7 @@
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.Location = new System.Drawing.Point(145, 242);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(200, 29);
@@ -183,7 +186,7 @@
             this.txtDescription.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDescription.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescription.Location = new System.Drawing.Point(145, 283);
-            this.txtDescription.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescription.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.ReadOnly = true;
             this.txtDescription.Size = new System.Drawing.Size(200, 29);
@@ -194,7 +197,7 @@
             this.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.Location = new System.Drawing.Point(145, 325);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.ReadOnly = true;
             this.txtPrice.Size = new System.Drawing.Size(200, 29);
@@ -277,7 +280,7 @@
             this.txtLocation.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtLocation.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLocation.Location = new System.Drawing.Point(475, 244);
-            this.txtLocation.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLocation.Margin = new System.Windows.Forms.Padding(2);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.ReadOnly = true;
             this.txtLocation.Size = new System.Drawing.Size(200, 29);
@@ -288,7 +291,7 @@
             this.txtAgent.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtAgent.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAgent.Location = new System.Drawing.Point(475, 285);
-            this.txtAgent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAgent.Margin = new System.Windows.Forms.Padding(2);
             this.txtAgent.Name = "txtAgent";
             this.txtAgent.ReadOnly = true;
             this.txtAgent.Size = new System.Drawing.Size(200, 29);
@@ -299,24 +302,24 @@
             this.txtStatus.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtStatus.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStatus.Location = new System.Drawing.Point(475, 327);
-            this.txtStatus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStatus.Margin = new System.Windows.Forms.Padding(2);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.ReadOnly = true;
             this.txtStatus.Size = new System.Drawing.Size(200, 29);
             this.txtStatus.TabIndex = 54;
             // 
-            // txtFeatues
+            // txtFeatures
             // 
-            this.txtFeatues.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtFeatues.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFeatues.Location = new System.Drawing.Point(145, 373);
-            this.txtFeatues.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtFeatues.Multiline = true;
-            this.txtFeatues.Name = "txtFeatues";
-            this.txtFeatues.ReadOnly = true;
-            this.txtFeatues.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtFeatues.Size = new System.Drawing.Size(200, 92);
-            this.txtFeatues.TabIndex = 57;
+            this.txtFeatures.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtFeatures.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFeatures.Location = new System.Drawing.Point(145, 373);
+            this.txtFeatures.Margin = new System.Windows.Forms.Padding(2);
+            this.txtFeatures.Multiline = true;
+            this.txtFeatures.Name = "txtFeatures";
+            this.txtFeatures.ReadOnly = true;
+            this.txtFeatures.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtFeatures.Size = new System.Drawing.Size(200, 92);
+            this.txtFeatures.TabIndex = 57;
             // 
             // pictureBox1
             // 
@@ -324,7 +327,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
             this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(342, 166);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -332,13 +335,13 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // PropertView
+            // PropertyView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(719, 522);
-            this.Controls.Add(this.txtFeatues);
+            this.Controls.Add(this.txtFeatures);
             this.Controls.Add(this.txtLocation);
             this.Controls.Add(this.txtAgent);
             this.Controls.Add(this.txtStatus);
@@ -361,8 +364,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "PropertView";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "PropertyView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "View Property";
             this.Load += new System.EventHandler(this.ProfileView_Load);
@@ -396,6 +399,6 @@
         private System.Windows.Forms.TextBox txtLocation;
         private System.Windows.Forms.TextBox txtAgent;
         private System.Windows.Forms.TextBox txtStatus;
-        private System.Windows.Forms.TextBox txtFeatues;
+        private System.Windows.Forms.TextBox txtFeatures;
     }
 }
