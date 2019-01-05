@@ -115,8 +115,7 @@ namespace OODNew
                 isChecked = true;
             }
 
-              if (txtUsername.Text != this.oldUsername)
-              {
+              
 
                   command.Parameters.Clear();
                   command.Parameters.AddWithValue("username", txtUsername.Text);
@@ -129,8 +128,9 @@ namespace OODNew
 
                       isChecked = false;
                   }
+                  reader.Close();
 
-              }
+            
             if (isEmpty)
             {
                 MessageBox.Show("Error Please Fill all information");

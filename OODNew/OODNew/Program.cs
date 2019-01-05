@@ -40,7 +40,7 @@ namespace OODNew
         {
             set
             {
-                UserInfo = value;
+                user = value;
 
             }
             get

@@ -242,6 +242,8 @@ namespace OODNew
             reader.Read();
             string userRole = reader.GetValue(0).ToString();
             this.lblNameRole.Text = "User: " + userName + ", Role: " + userRole;
+            Program.Connection.Close();
+
         }
 
         private void subMenuLocation_Click(object sender, EventArgs e)
@@ -253,7 +255,7 @@ namespace OODNew
             Logincs login = new Logincs();
             this.Close();
             login.Show();
-            Program.UserInfo = null;
+            Program.UserInfo = new User();
         }
     }
 }
