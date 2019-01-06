@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PropertySearch));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -67,10 +67,9 @@
             this.lblTitle.BackColor = System.Drawing.Color.Navy;
             this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitle.Location = new System.Drawing.Point(431, 118);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Location = new System.Drawing.Point(646, 172);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(288, 45);
+            this.lblTitle.Size = new System.Drawing.Size(421, 69);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "Search Profiles";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
@@ -81,10 +80,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.BackColor = System.Drawing.Color.Navy;
             this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(-1, -15);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(-2, -22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(720, 180);
+            this.label1.Size = new System.Drawing.Size(1080, 263);
             this.label1.TabIndex = 4;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -92,10 +90,9 @@
             // 
             this.btnSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.Location = new System.Drawing.Point(374, 389);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Location = new System.Drawing.Point(561, 569);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(87, 27);
+            this.btnSearch.Size = new System.Drawing.Size(130, 39);
             this.btnSearch.TabIndex = 8;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
@@ -106,10 +103,9 @@
             this.btnClear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClear.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Red;
-            this.btnClear.Location = new System.Drawing.Point(485, 389);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClear.Location = new System.Drawing.Point(728, 569);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(87, 27);
+            this.btnClear.Size = new System.Drawing.Size(130, 39);
             this.btnClear.TabIndex = 30;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -119,10 +115,9 @@
             // 
             this.btnClose.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnClose.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(589, 389);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
+            this.btnClose.Location = new System.Drawing.Point(884, 569);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(87, 27);
+            this.btnClose.Size = new System.Drawing.Size(130, 39);
             this.btnClose.TabIndex = 31;
             this.btnClose.Text = "Close";
             this.btnClose.UseVisualStyleBackColor = true;
@@ -132,20 +127,18 @@
             // 
             this.lblLine.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLine.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblLine.Location = new System.Drawing.Point(51, 441);
-            this.lblLine.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLine.Location = new System.Drawing.Point(76, 645);
             this.lblLine.Name = "lblLine";
-            this.lblLine.Size = new System.Drawing.Size(626, 1);
+            this.lblLine.Size = new System.Drawing.Size(939, 1);
             this.lblLine.TabIndex = 32;
             // 
             // txtId
             // 
             this.txtId.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtId.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(145, 192);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2);
+            this.txtId.Location = new System.Drawing.Point(218, 281);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(200, 29);
+            this.txtId.Size = new System.Drawing.Size(298, 39);
             this.txtId.TabIndex = 35;
             // 
             // lblID
@@ -153,10 +146,9 @@
             this.lblID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(25, 194);
-            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblID.Location = new System.Drawing.Point(38, 284);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(33, 21);
+            this.lblID.Size = new System.Drawing.Size(47, 32);
             this.lblID.TabIndex = 34;
             this.lblID.Text = "ID:";
             // 
@@ -165,10 +157,9 @@
             this.lblFeatues.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblFeatues.AutoSize = true;
             this.lblFeatues.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFeatues.Location = new System.Drawing.Point(25, 325);
-            this.lblFeatues.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblFeatues.Location = new System.Drawing.Point(38, 475);
             this.lblFeatues.Name = "lblFeatues";
-            this.lblFeatues.Size = new System.Drawing.Size(85, 21);
+            this.lblFeatues.Size = new System.Drawing.Size(121, 32);
             this.lblFeatues.TabIndex = 53;
             this.lblFeatues.Text = "Featues:";
             // 
@@ -176,10 +167,9 @@
             // 
             this.clbFeatues.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.clbFeatues.FormattingEnabled = true;
-            this.clbFeatues.Location = new System.Drawing.Point(145, 325);
-            this.clbFeatues.Margin = new System.Windows.Forms.Padding(2);
+            this.clbFeatues.Location = new System.Drawing.Point(218, 475);
             this.clbFeatues.Name = "clbFeatues";
-            this.clbFeatues.Size = new System.Drawing.Size(200, 94);
+            this.clbFeatues.Size = new System.Drawing.Size(298, 136);
             this.clbFeatues.TabIndex = 52;
             // 
             // cmbStatus
@@ -187,10 +177,9 @@
             this.cmbStatus.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbStatus.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Location = new System.Drawing.Point(475, 324);
-            this.cmbStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbStatus.Location = new System.Drawing.Point(712, 474);
             this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(200, 29);
+            this.cmbStatus.Size = new System.Drawing.Size(298, 38);
             this.cmbStatus.TabIndex = 51;
             // 
             // cmbAgents
@@ -198,10 +187,9 @@
             this.cmbAgents.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbAgents.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbAgents.FormattingEnabled = true;
-            this.cmbAgents.Location = new System.Drawing.Point(475, 235);
-            this.cmbAgents.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbAgents.Location = new System.Drawing.Point(712, 343);
             this.cmbAgents.Name = "cmbAgents";
-            this.cmbAgents.Size = new System.Drawing.Size(200, 29);
+            this.cmbAgents.Size = new System.Drawing.Size(298, 38);
             this.cmbAgents.TabIndex = 50;
             // 
             // cmbLocations
@@ -209,30 +197,27 @@
             this.cmbLocations.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cmbLocations.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbLocations.FormattingEnabled = true;
-            this.cmbLocations.Location = new System.Drawing.Point(475, 193);
-            this.cmbLocations.Margin = new System.Windows.Forms.Padding(2);
+            this.cmbLocations.Location = new System.Drawing.Point(712, 282);
             this.cmbLocations.Name = "cmbLocations";
-            this.cmbLocations.Size = new System.Drawing.Size(200, 29);
+            this.cmbLocations.Size = new System.Drawing.Size(298, 38);
             this.cmbLocations.TabIndex = 49;
             // 
             // txtName
             // 
             this.txtName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(145, 233);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2);
+            this.txtName.Location = new System.Drawing.Point(218, 341);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(200, 29);
+            this.txtName.Size = new System.Drawing.Size(298, 39);
             this.txtName.TabIndex = 48;
             // 
             // txtPrice
             // 
             this.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPrice.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(145, 280);
-            this.txtPrice.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPrice.Location = new System.Drawing.Point(218, 409);
             this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(200, 29);
+            this.txtPrice.Size = new System.Drawing.Size(298, 39);
             this.txtPrice.TabIndex = 46;
             // 
             // lblStatus
@@ -240,10 +225,9 @@
             this.lblStatus.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(398, 325);
-            this.lblStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblStatus.Location = new System.Drawing.Point(597, 475);
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(68, 21);
+            this.lblStatus.Size = new System.Drawing.Size(95, 32);
             this.lblStatus.TabIndex = 45;
             this.lblStatus.Text = "Status:";
             // 
@@ -252,10 +236,9 @@
             this.lblAgent.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblAgent.AutoSize = true;
             this.lblAgent.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAgent.Location = new System.Drawing.Point(395, 236);
-            this.lblAgent.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAgent.Location = new System.Drawing.Point(592, 345);
             this.lblAgent.Name = "lblAgent";
-            this.lblAgent.Size = new System.Drawing.Size(72, 21);
+            this.lblAgent.Size = new System.Drawing.Size(99, 32);
             this.lblAgent.TabIndex = 44;
             this.lblAgent.Text = "Agent:";
             // 
@@ -264,10 +247,9 @@
             this.lblLocation.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblLocation.AutoSize = true;
             this.lblLocation.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLocation.Location = new System.Drawing.Point(373, 192);
-            this.lblLocation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblLocation.Location = new System.Drawing.Point(560, 281);
             this.lblLocation.Name = "lblLocation";
-            this.lblLocation.Size = new System.Drawing.Size(92, 21);
+            this.lblLocation.Size = new System.Drawing.Size(133, 32);
             this.lblLocation.TabIndex = 43;
             this.lblLocation.Text = "Location:";
             // 
@@ -276,10 +258,9 @@
             this.lblPrice.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblPrice.AutoSize = true;
             this.lblPrice.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Location = new System.Drawing.Point(25, 282);
-            this.lblPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPrice.Location = new System.Drawing.Point(38, 412);
             this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(106, 21);
+            this.lblPrice.Size = new System.Drawing.Size(154, 32);
             this.lblPrice.TabIndex = 42;
             this.lblPrice.Text = "Price From:";
             // 
@@ -288,10 +269,9 @@
             this.lblName.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(25, 235);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Location = new System.Drawing.Point(38, 343);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(69, 21);
+            this.lblName.Size = new System.Drawing.Size(100, 32);
             this.lblName.TabIndex = 40;
             this.lblName.Text = "Name:";
             // 
@@ -299,10 +279,9 @@
             // 
             this.txtPriceTo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPriceTo.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPriceTo.Location = new System.Drawing.Point(475, 277);
-            this.txtPriceTo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPriceTo.Location = new System.Drawing.Point(712, 405);
             this.txtPriceTo.Name = "txtPriceTo";
-            this.txtPriceTo.Size = new System.Drawing.Size(200, 29);
+            this.txtPriceTo.Size = new System.Drawing.Size(298, 39);
             this.txtPriceTo.TabIndex = 55;
             // 
             // label2
@@ -310,10 +289,9 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(428, 282);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(642, 412);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 21);
+            this.label2.Size = new System.Drawing.Size(50, 32);
             this.label2.TabIndex = 54;
             this.label2.Text = "To:";
             // 
@@ -322,10 +300,9 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(11, 456);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(16, 666);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 21);
+            this.label4.Size = new System.Drawing.Size(93, 30);
             this.label4.TabIndex = 57;
             this.label4.Text = "Results";
             // 
@@ -334,10 +311,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Navy;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(2, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(342, 166);
+            this.pictureBox1.Size = new System.Drawing.Size(513, 243);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -346,41 +322,42 @@
             // dgvPropertiesSearch
             // 
             this.dgvPropertiesSearch.AllowUserToAddRows = false;
-            this.dgvPropertiesSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPropertiesSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvPropertiesSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPropertiesSearch.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.dgvPropertiesSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPropertiesSearch.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvPropertiesSearch.Location = new System.Drawing.Point(77, 456);
-            this.dgvPropertiesSearch.Margin = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPropertiesSearch.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvPropertiesSearch.Location = new System.Drawing.Point(116, 666);
             this.dgvPropertiesSearch.Name = "dgvPropertiesSearch";
             this.dgvPropertiesSearch.ReadOnly = true;
             this.dgvPropertiesSearch.RowTemplate.Height = 29;
-            this.dgvPropertiesSearch.Size = new System.Drawing.Size(631, 193);
+            this.dgvPropertiesSearch.Size = new System.Drawing.Size(923, 195);
             this.dgvPropertiesSearch.TabIndex = 62;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(142, 421);
+            this.label3.Location = new System.Drawing.Point(213, 615);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(122, 13);
+            this.label3.Size = new System.Drawing.Size(331, 19);
             this.label3.TabIndex = 63;
-            this.label3.Text = "*Contains at least one of";
+            this.label3.Text = "*Results will have atleast one selected feature";
             // 
             // PropertySearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(719, 660);
+            this.ClientSize = new System.Drawing.Size(1078, 965);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgvPropertiesSearch);
             this.Controls.Add(this.label4);
@@ -407,7 +384,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PropertySearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Property Search";

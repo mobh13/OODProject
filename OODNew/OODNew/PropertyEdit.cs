@@ -182,7 +182,7 @@ namespace OODNew
 
             foreach (Control controls in this.Controls)
             {
-                if (controls.Name == "TextBox" || controls.Name == "ComboBox")
+                if (controls is TextBox || controls is ComboBox)
                 {
                     if (controls.Text == "" || controls.Text == null)
                     {

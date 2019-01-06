@@ -22,7 +22,7 @@ namespace OODNew
             connection.ConnectionString = Properties.Settings.Default.RealEstateConnectionString;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Logincs());
+            Application.Run(new PropertySearch());
         }
         public static SqlConnection Connection
         {

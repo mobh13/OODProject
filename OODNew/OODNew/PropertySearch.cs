@@ -188,16 +188,15 @@ namespace OODNew
 
                 if (clbFeatues.CheckedIndices.Count > 0)
                 {
-                    command.CommandText += "and [Property].Id in ( select PropertyId from [FeatureProperty] where FeatureId in (";
+                    command.CommandText += "and [Property].Id in ( select PropertyId from [FeatureProperty] where FeatureId = all ( select featureID from FeatureProperty where featureID = ";
                     int x = 1;
                     foreach (int i in clbFeatues.CheckedIndices)
                     {
                         command.CommandText += clbFeatues.Items[i].ToString().Substring(0, clbFeatues.Items[i].ToString().IndexOf(' '));
                         if (x < clbFeatues.CheckedIndices.Count)
                         {
-                            command.CommandText +=  ", ";
+                            command.CommandText +=  " or featureID = ";
                         }
-
                         x++;
                     }
 
