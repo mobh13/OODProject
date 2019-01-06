@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PropertySearch));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
@@ -322,42 +322,41 @@
             // dgvPropertiesSearch
             // 
             this.dgvPropertiesSearch.AllowUserToAddRows = false;
-            this.dgvPropertiesSearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvPropertiesSearch.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dgvPropertiesSearch.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvPropertiesSearch.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
-            this.dgvPropertiesSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvPropertiesSearch.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvPropertiesSearch.Location = new System.Drawing.Point(116, 666);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvPropertiesSearch.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvPropertiesSearch.Location = new System.Drawing.Point(115, 666);
             this.dgvPropertiesSearch.Name = "dgvPropertiesSearch";
             this.dgvPropertiesSearch.ReadOnly = true;
             this.dgvPropertiesSearch.RowTemplate.Height = 29;
-            this.dgvPropertiesSearch.Size = new System.Drawing.Size(923, 195);
+            this.dgvPropertiesSearch.Size = new System.Drawing.Size(923, 192);
             this.dgvPropertiesSearch.TabIndex = 62;
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(213, 615);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(331, 19);
+            this.label3.Size = new System.Drawing.Size(384, 19);
             this.label3.TabIndex = 63;
-            this.label3.Text = "*Results will have atleast one selected feature";
+            this.label3.Text = "*Results will have atleast one of the selected features";
             // 
             // PropertySearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1078, 965);
+            this.ClientSize = new System.Drawing.Size(1078, 928);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgvPropertiesSearch);
             this.Controls.Add(this.label4);

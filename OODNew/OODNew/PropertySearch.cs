@@ -188,7 +188,7 @@ namespace OODNew
 
                 if (clbFeatues.CheckedIndices.Count > 0)
                 {
-                    command.CommandText += "and [Property].Id in ( select PropertyId from [FeatureProperty] where FeatureId = all ( select featureID from FeatureProperty where featureID = ";
+                    command.CommandText += "and [Property].Id in ( select PropertyId from [FeatureProperty] where FeatureId = any ( select featureID from FeatureProperty where featureID = ";
                     int x = 1;
                     foreach (int i in clbFeatues.CheckedIndices)
                     {

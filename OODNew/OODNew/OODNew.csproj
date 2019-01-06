@@ -47,8 +47,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +67,12 @@
     </Compile>
     <Compile Include="ControlPanel.Designer.cs">
       <DependentUpon>ControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="countProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="countProperties.Designer.cs">
+      <DependentUpon>countProperties.cs</DependentUpon>
     </Compile>
     <Compile Include="LocationAdd.cs">
       <SubType>Form</SubType>
@@ -151,12 +160,6 @@
     <Compile Include="PropertyAdd.Designer.cs">
       <DependentUpon>PropertyAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="PropertyBuySell.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PropertyBuySell.Designer.cs">
-      <DependentUpon>PropertyBuySell.cs</DependentUpon>
-    </Compile>
     <Compile Include="PropertyDelete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,8 +190,17 @@
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs" />
+    <Compile Include="UsersCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsersCount.Designer.cs">
+      <DependentUpon>UsersCount.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="ControlPanel.resx">
       <DependentUpon>ControlPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="countProperties.resx">
+      <DependentUpon>countProperties.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LocationAdd.resx">
       <DependentUpon>LocationAdd.cs</DependentUpon>
@@ -208,6 +220,7 @@
     <EmbeddedResource Include="Logincs.resx">
       <DependentUpon>Logincs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="numberOfUsers.rdlc" />
     <EmbeddedResource Include="ProfileAdd.resx">
       <DependentUpon>ProfileAdd.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,9 +255,6 @@
     <EmbeddedResource Include="PropertyAdd.resx">
       <DependentUpon>PropertyAdd.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PropertyBuySell.resx">
-      <DependentUpon>PropertyBuySell.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PropertyDelete.resx">
       <DependentUpon>PropertyDelete.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,6 +266,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportPropertiesCounter.rdlc" />
+    <EmbeddedResource Include="UsersCount.resx">
+      <DependentUpon>UsersCount.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

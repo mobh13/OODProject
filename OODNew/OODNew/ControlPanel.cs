@@ -22,17 +22,17 @@ namespace OODNew
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
-          
+
         }
 
         private void treeView1_BeforeSelect(object sender, TreeViewCancelEventArgs e)
         {
-         
+
         }
 
         private void treeView1_BeforeExpand(object sender, TreeViewCancelEventArgs e)
         {
-            
+
         }
 
         private void treeView1_AfterSelect_1(object sender, TreeViewEventArgs e)
@@ -87,7 +87,7 @@ namespace OODNew
             {
                 MessageBox.Show("Error you are not authorised to do this operation");
             }
-            
+
         }
 
         private void searchToolStripMenuItem_Click(object sender, EventArgs e)
@@ -101,13 +101,13 @@ namespace OODNew
             else if (Program.UserInfo.Role_id == "2")
             {
                 AgentSearchProfile aPSearch = new AgentSearchProfile();
-            aPSearch.Show();
-                }
+                aPSearch.Show();
+            }
             else
             {
                 MessageBox.Show("Error you are not authorised to do this operation");
             }
-           
+
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -130,8 +130,15 @@ namespace OODNew
 
         private void addToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            PropertyAdd pAdd = new PropertyAdd();
-            pAdd.Show();
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1 || Convert.ToInt32(Program.UserInfo.Role_id) == 2)
+            {
+                PropertyAdd pAdd = new PropertyAdd();
+                pAdd.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only agents and amdins can add properties.");
+            }
         }
 
         private void searchToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -142,20 +149,33 @@ namespace OODNew
 
         private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            PropertyDelete pDelete = new PropertyDelete();
-            pDelete.Show();
+           
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1 )
+            {
+                PropertyDelete pDelete = new PropertyDelete();
+                pDelete.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only amdins can delete properties.");
+            }
         }
 
         private void editToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            PropertyEdit pEdit = new PropertyEdit();
-            pEdit.Show();
+            if (Convert.ToInt32(Program.UserInfo.Role_id) == 1 || Convert.ToInt32(Program.UserInfo.Role_id) == 2)
+            {
+                PropertyEdit pEdit = new PropertyEdit();
+                pEdit.Show();
+            }
+            else
+            {
+                MessageBox.Show("Only agents and amdins can add properties.");
+            }
         }
 
         private void buySellToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            PropertyBuySell pBuySell = new PropertyBuySell();
-            pBuySell.Show();
         }
 
         private void viewToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -232,7 +252,8 @@ namespace OODNew
             images[4] = OODNew.Properties.Resources.image5;
             images[5] = OODNew.Properties.Resources.image6;
 
-            if(Program.UserInfo.Id != null){
+            if (Program.UserInfo.Id != null)
+            {
                 string userName = Program.UserInfo.Name;
                 string userRoleID = Program.UserInfo.Role_id;
                 Program.Connection.Open();
@@ -245,7 +266,7 @@ namespace OODNew
                 string userRole = reader.GetValue(0).ToString();
                 this.lblNameRole.Text = "User: " + userName + ", Role: " + userRole;
                 reader.Close();
-                Program.Connection.Close(); 
+                Program.Connection.Close();
             }
         }
 
@@ -259,7 +280,18 @@ namespace OODNew
             this.Close();
             login.Show();
             Program.UserInfo = new User();
+        }
 
+        private void countPropertiesByAgentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            countProperties cProperties = new countProperties();
+            cProperties.Show();
+        }
+
+        private void numberOfUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UsersCount countUsers = new UsersCount();
+            countUsers.Show();
         }
     }
 }

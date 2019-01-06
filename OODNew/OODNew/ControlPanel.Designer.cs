@@ -46,17 +46,19 @@
             this.searchToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buySellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.subMenuLocation = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.searchToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.dToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.slidShow = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.countPropertiesByAgentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.numberOfUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblNameRole = new System.Windows.Forms.Label();
             this.btnLogOut = new System.Windows.Forms.Button();
+            this.slidShow = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MainMenuNavigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.slidShow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,7 +106,8 @@
             this.MainMenuNavigation.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.subMenuProfile,
             this.subMenuProperty,
-            this.subMenuLocation});
+            this.subMenuLocation,
+            this.toolStripMenuItem1});
             this.MainMenuNavigation.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Table;
             this.MainMenuNavigation.Location = new System.Drawing.Point(12, 259);
             this.MainMenuNavigation.Margin = new System.Windows.Forms.Padding(3);
@@ -175,8 +178,7 @@
             this.addToolStripMenuItem1,
             this.searchToolStripMenuItem1,
             this.deleteToolStripMenuItem1,
-            this.editToolStripMenuItem1,
-            this.buySellToolStripMenuItem});
+            this.editToolStripMenuItem1});
             this.subMenuProperty.Image = global::OODNew.Properties.Resources.radio_dot_1018892;
             this.subMenuProperty.Name = "subMenuProperty";
             this.subMenuProperty.Size = new System.Drawing.Size(201, 47);
@@ -186,7 +188,7 @@
             // 
             this.viewToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.viewToolStripMenuItem1.Name = "viewToolStripMenuItem1";
-            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.viewToolStripMenuItem1.Size = new System.Drawing.Size(232, 48);
             this.viewToolStripMenuItem1.Text = "View";
             this.viewToolStripMenuItem1.Click += new System.EventHandler(this.viewToolStripMenuItem1_Click);
             // 
@@ -194,7 +196,7 @@
             // 
             this.addToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(232, 48);
             this.addToolStripMenuItem1.Text = "Add";
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
             // 
@@ -202,7 +204,7 @@
             // 
             this.searchToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.searchToolStripMenuItem1.Name = "searchToolStripMenuItem1";
-            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.searchToolStripMenuItem1.Size = new System.Drawing.Size(232, 48);
             this.searchToolStripMenuItem1.Text = "Search";
             this.searchToolStripMenuItem1.Click += new System.EventHandler(this.searchToolStripMenuItem1_Click);
             // 
@@ -210,7 +212,7 @@
             // 
             this.deleteToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
-            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(232, 48);
             this.deleteToolStripMenuItem1.Text = "Delete";
             this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
             // 
@@ -218,17 +220,9 @@
             // 
             this.editToolStripMenuItem1.Image = global::OODNew.Properties.Resources.forward;
             this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(276, 48);
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(232, 48);
             this.editToolStripMenuItem1.Text = "Edit";
             this.editToolStripMenuItem1.Click += new System.EventHandler(this.editToolStripMenuItem1_Click);
-            // 
-            // buySellToolStripMenuItem
-            // 
-            this.buySellToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
-            this.buySellToolStripMenuItem.Name = "buySellToolStripMenuItem";
-            this.buySellToolStripMenuItem.Size = new System.Drawing.Size(276, 48);
-            this.buySellToolStripMenuItem.Text = "Buy && Sell";
-            this.buySellToolStripMenuItem.Click += new System.EventHandler(this.buySellToolStripMenuItem_Click);
             // 
             // subMenuLocation
             // 
@@ -284,6 +278,58 @@
             this.editToolStripMenuItem2.Text = "Edit";
             this.editToolStripMenuItem2.Click += new System.EventHandler(this.editToolStripMenuItem2_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.countPropertiesByAgentsToolStripMenuItem,
+            this.numberOfUsersToolStripMenuItem});
+            this.toolStripMenuItem1.Image = global::OODNew.Properties.Resources.radio_dot_1018892;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(186, 47);
+            this.toolStripMenuItem1.Text = "Reports";
+            // 
+            // countPropertiesByAgentsToolStripMenuItem
+            // 
+            this.countPropertiesByAgentsToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countPropertiesByAgentsToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
+            this.countPropertiesByAgentsToolStripMenuItem.Name = "countPropertiesByAgentsToolStripMenuItem";
+            this.countPropertiesByAgentsToolStripMenuItem.Size = new System.Drawing.Size(479, 38);
+            this.countPropertiesByAgentsToolStripMenuItem.Text = "Count Properties by Agents";
+            this.countPropertiesByAgentsToolStripMenuItem.Click += new System.EventHandler(this.countPropertiesByAgentsToolStripMenuItem_Click);
+            // 
+            // numberOfUsersToolStripMenuItem
+            // 
+            this.numberOfUsersToolStripMenuItem.Font = new System.Drawing.Font("Century Gothic", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberOfUsersToolStripMenuItem.Image = global::OODNew.Properties.Resources.forward;
+            this.numberOfUsersToolStripMenuItem.Name = "numberOfUsersToolStripMenuItem";
+            this.numberOfUsersToolStripMenuItem.Size = new System.Drawing.Size(479, 38);
+            this.numberOfUsersToolStripMenuItem.Text = "Number of Users ";
+            this.numberOfUsersToolStripMenuItem.Click += new System.EventHandler(this.numberOfUsersToolStripMenuItem_Click);
+            // 
+            // lblNameRole
+            // 
+            this.lblNameRole.AutoSize = true;
+            this.lblNameRole.BackColor = System.Drawing.Color.Navy;
+            this.lblNameRole.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameRole.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblNameRole.Location = new System.Drawing.Point(748, 9);
+            this.lblNameRole.Name = "lblNameRole";
+            this.lblNameRole.Size = new System.Drawing.Size(0, 22);
+            this.lblNameRole.TabIndex = 7;
+            // 
+            // btnLogOut
+            // 
+            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.Red;
+            this.btnLogOut.Location = new System.Drawing.Point(12, 636);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(153, 47);
+            this.btnLogOut.TabIndex = 33;
+            this.btnLogOut.Text = "Logout";
+            this.btnLogOut.UseVisualStyleBackColor = true;
+            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
+            // 
             // slidShow
             // 
             this.slidShow.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -310,30 +356,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // lblNameRole
-            // 
-            this.lblNameRole.AutoSize = true;
-            this.lblNameRole.BackColor = System.Drawing.Color.Navy;
-            this.lblNameRole.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNameRole.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNameRole.Location = new System.Drawing.Point(748, 9);
-            this.lblNameRole.Name = "lblNameRole";
-            this.lblNameRole.Size = new System.Drawing.Size(0, 22);
-            this.lblNameRole.TabIndex = 7;
-            // 
-            // btnLogOut
-            // 
-            this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogOut.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogOut.ForeColor = System.Drawing.Color.Red;
-            this.btnLogOut.Location = new System.Drawing.Point(12, 636);
-            this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(153, 47);
-            this.btnLogOut.TabIndex = 33;
-            this.btnLogOut.Text = "Logout";
-            this.btnLogOut.UseVisualStyleBackColor = true;
-            this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
             // ControlPanel
             // 
@@ -383,7 +405,6 @@
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem buySellToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem2;
@@ -391,6 +412,9 @@
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem2;
         private System.Windows.Forms.Label lblNameRole;
         private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem countPropertiesByAgentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem numberOfUsersToolStripMenuItem;
     }
 }
 
