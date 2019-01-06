@@ -37,19 +37,19 @@ namespace OODNew
 
         private void ProfileView_Load(object sender, EventArgs e)
         {
-            List<string> list = new List<string>();
-            Program.Connection.Open();
-            command = Program.Connection.CreateCommand();
-            command.CommandText = "Select * From [Role]";
-            reader = command.ExecuteReader();
-            while (reader.Read())
+            List<string> list = new List<string>(); //create new string list
+            Program.Connection.Open(); // open connection
+            command = Program.Connection.CreateCommand(); // create connection
+            command.CommandText = "Select * From [Role]"; // get the roles
+            reader = command.ExecuteReader(); // execute reader
+            while (reader.Read()) // while reader have records left
             {
-                list.Add(reader.GetValue(1).ToString());
+                list.Add(reader.GetValue(1).ToString()); // add the name of the role to the list
             }
-            cmbRole.DataSource = list;
-            cmbRole.SelectedIndex = -1;
-            reader.Close();
-            Program.Connection.Close();
+            cmbRole.DataSource = list; // set the list as the data Source
+            cmbRole.SelectedIndex = -1; // change the selected index to -1 to reset the comboBox
+            reader.Close(); // close reader
+            Program.Connection.Close(); // close connection
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -82,6 +82,7 @@ namespace OODNew
             bool isEmpty = false;
             bool isChecked = false;
             
+            //check if one of the text boxes is empty then change the var isEmpty to true
             foreach (Control ctr in Controls)
             {
                 if (ctr is TextBox && ctr.Text =="")
@@ -89,10 +90,12 @@ namespace OODNew
                     isEmpty = true;
                 }
             }
+            // check if the selected index of the ComboBox = -1 then change the var isEmpty to true
             if (cmbRole.SelectedIndex == -1)
             {
                 isEmpty = true;
             }
+            // check if the value of the enterd commision is correct
             double resDouble = 0.0;
             if (!double.TryParse(txtCommission.Text, out  resDouble)){
 
@@ -105,6 +108,8 @@ namespace OODNew
                 isChecked = true;
             }
             int resInt = 0;
+            // check if the value of the enterd CPR is correct
+
               if (!int.TryParse(txtCPR.Text, out resInt)){
 
                 MessageBox.Show("Error Please Enter a valid CPR");
@@ -115,7 +120,7 @@ namespace OODNew
                 isChecked = true;
             }
 
-              
+              /* check if the enterd user already exists in the database or not */
 
                   command.Parameters.Clear();
                   command.Parameters.AddWithValue("username", txtUsername.Text);
@@ -135,8 +140,9 @@ namespace OODNew
             {
                 MessageBox.Show("Error Please Fill all information");
             }
-            else if(!isEmpty && isChecked)
+            else if(!isEmpty && isChecked) 
             {
+                /* if all the validation above is valid then open connection and insert to the database these information*/
                 Program.Connection.Open();
                 command = Program.Connection.CreateCommand();
                 command.Parameters.Clear();
@@ -154,23 +160,26 @@ namespace OODNew
                 
               
                 command.CommandText = "Insert into [User] values(@name,@dob,@email,@phone,@address,@username,@password,@role,@commission,@cpr)";
-              int rowEffected = 0;
+              int rowEffected = 0; // to get the effected rows of the query above
+                /* Try and catch is to get the exception and show it to the user and prevent the application from crashing*/
                 try{            
                     rowEffected= command.ExecuteNonQuery();
                 }
                 catch(Exception ex){
                     MessageBox.Show(ex.ToString());
                 }
-            if(rowEffected == 1){
+            if(rowEffected == 1){ // if the number of rows effected  = 1 then the user was added and show message
                 MessageBox.Show("User added");
             }
-            Program.Connection.Close();
+            Program.Connection.Close(); // close connection
             }
 
         }
 
         private void btnClear_Click(object sender, EventArgs e)
         {
+            /* for each element in the controls list clear the text if the controller is a textbox*/
+
             foreach (Control ctr in Controls)
             {
                 if (ctr is TextBox)
@@ -178,13 +187,13 @@ namespace OODNew
                     ctr.Text = "";
                 }
             }
-            cmbRole.SelectedIndex = -1;
-            dtpBirthdate.Value = DateTime.Now;
+            cmbRole.SelectedIndex = -1; // change the selected index to -1 to reset the comboBox selection
+            dtpBirthdate.Value = DateTime.Now; // set the date and time picker to todays date
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close(); // close this form
 
         }
     }
